@@ -1,0 +1,20 @@
+# Created by trellis-cli v1.9.0
+# Documentation: https://docs.roots.io/trellis/master/wordpress-sites/
+
+wordpress_sites:
+  incrivelhistoria.com.br:
+    site_hosts:
+    - canonical: incrivelhistoria.com.br
+      redirects:
+      - www.incrivelhistoria.com.br
+    local_path: ../site
+    branch: master
+    repo: git@github.com:example/example.com.git
+    repo_subtree_path: site
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: letsencrypt
+    cache:
+      enabled: false
