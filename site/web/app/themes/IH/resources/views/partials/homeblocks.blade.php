@@ -3,7 +3,7 @@
     <aside class="sidebar md:w-1/4 bg-green-400">
         @include('sections.sidebar')
     </aside>
-</div>dassa
+</div>dassasadass
 
 <section id="all-categories" class="border-b border-solid border-gray-400 pb-12 mt-8">
     <x-page-allcategories />
