@@ -4,9 +4,9 @@
 wordpress_sites:
   incrivelhistoria.com.br:
     site_hosts:
-    - canonical: incrivelhistoria.com.br
-      redirects:
-      - www.incrivelhistoria.com.br
+    - canonical: staging.incrivelhistoria.com.br
+      # redirects:
+      # - www.incrivelhistoria.com.br
     local_path: ../site
     branch: master
     repo: git@github.com:dsemblano/incrivelhistoria.com.br.git
@@ -17,4 +17,4 @@ wordpress_sites:
       enabled: true
       provider: self-signed
     cache:
-      enabled: false
+      enabled: true
