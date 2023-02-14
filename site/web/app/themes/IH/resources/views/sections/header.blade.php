@@ -1,4 +1,4 @@
-<header class="banner header-home w-full bg-white z-50 py-2 h-16">
+<header class="banner header-home w-full h-full bg-red-500 z-50 py-2">
 
   <nav class="nav-primary h-full">
     <div class="container">
