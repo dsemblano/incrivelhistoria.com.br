@@ -10,7 +10,7 @@
   );
 @endphp
 
-<h2 class="font-bold text-xl my-4 text-gray-600">Todas as categorias</h2>
+<h2 class="text-xl my-4 text-gray-600">Todas as categorias</h2>
 
 <?php
 echo '<ul class="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">';
@@ -43,8 +43,8 @@ foreach($terms as $term):
         <!--<?php //echo the_terms( $post->ID, $taxonomy, 'Term: ', ' &raquo; ' );// with link?> &raquo;-->
         <!-- Term(s): <?php //echo join(', ',wp_get_post_terms($post->ID, $taxonomy, array("fields" => "names")));// without link?> &raquo;  -->
         {{-- <a href={{ the_permalink() }}>{{ the_post_thumbnail('mais_extendida') }} </a> --}}
-        <?php echo '<a class="text-sm font-bold uppercase text-red-700 leading-8" href="'.$get_term_link.'">'. '<span>'.$term_name.'</span>'.'</a>';?>
-        <h2 class="font-bold text-xl">{{ the_title() }}</h2>
+        <?php echo '<a class="text-sm uppercase text-red-700 leading-8" href="'.$get_term_link.'">'. '<span>'.$term_name.'</span>'.'</a>';?>
+        <h2 class="text-xl"><a href={{ the_permalink() }}>{{ the_title() }}</a></h2>
         </li>
     <?php
     endwhile;
