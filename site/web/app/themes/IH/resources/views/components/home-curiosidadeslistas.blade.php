@@ -1,7 +1,7 @@
 <div {{ $attributes }}>
   @php $category = postbycategory('curiosidades'); @endphp
 
-  <section id="curiosidades-listas" class="bg-orange-500 w-full">
+  <section id="curiosidades-listas" class="w-full">
     <h2 class="text-xl mb-4 text-red-700">Curiosidades e Listas</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
       @if ($category->have_posts())
@@ -22,7 +22,7 @@
   </section>
   
   {{-- Next grid --}}  
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6 bg-red-400">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
 
     {{-- Next category --}}
     @php $category = postbycategory('historia-do-brasil'); @endphp
@@ -97,7 +97,7 @@
   {{-- end grid --}}
 
   {{-- Next grid --}}  
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6 bg-red-400">
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
 
     {{-- Next category --}}
     @php $category = postbycategory('crime-organizado'); @endphp
