@@ -6,7 +6,7 @@
 
   @php $current_page = basename(get_permalink()) @endphp
 
-  <div class="{{ ! is_front_page() ? "$current_page" : 'home' }} container">
+  <div class="container">
     <div class="flex flex-col md:flex-row mt-8 justify-between">
       <main id="main" class="main">
         @yield('content')
