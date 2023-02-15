@@ -13,7 +13,7 @@
       </main>
     
       @if (! is_front_page())
-      <aside class="sidebar md:w-2/4">
+      <aside class="sidebar md:w-1/4">
         @include('sections.sidebar')
       </aside>
       @endif

@@ -1,4 +1,4 @@
-<article @php(post_class(''))>
+<article @php(post_class('prose lg:prose-xl'))>
   {{ the_category(' &bull; ') }}
   <header>
     <h1 class="p-name">
