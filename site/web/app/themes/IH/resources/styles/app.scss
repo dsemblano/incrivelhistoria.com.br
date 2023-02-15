@@ -3,6 +3,18 @@
 @import 'tailwindcss/utilities';
 @import './menu';
 
+
+@font-face {
+    font-family: 'Signore';
+    src: url('~@fonts/signore/Signore_Serif_Typeface.otf'),
+        url('~@fonts/signore/Signore_Serif_Typeface.woff2') format("woff2"), 
+        url('~@fonts/signore/Signore_Serif_Typeface.woff') format("woff"), 
+        url('~@fonts/signore/Signore_Serif_Typeface.ttf') format("truetype");
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     // font-family: 'Lato', sans-serif;
     font-family: 'Roboto Serif', serif;
@@ -12,7 +24,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Signore', sans-serif;
     font-size: 2.75rem;
     color: #212937;
     line-height: 3.25rem;

@@ -7,7 +7,7 @@
         @php $category = postbycategory('curiosidades'); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="">
+        <article class="mb-10 h-48">
           <a href={{ the_permalink() }}>
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -33,7 +33,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -56,7 +56,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -79,7 +79,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -108,7 +108,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -131,7 +131,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -154,7 +154,7 @@
         <div class="">
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="">
+          <article class="mb-10 h-48">
             <a href={{ the_permalink() }}>
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
