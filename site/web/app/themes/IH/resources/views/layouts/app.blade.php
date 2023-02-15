@@ -4,12 +4,18 @@
 
 @include('sections.header')
 
-  <main id="main" class="main {{ ! is_front_page() ? "container $current_page" : '' }}">
-    @yield('content')
-  </main>
+  @php $current_page = basename(get_permalink()) @endphp
 
-  {{-- <aside class="sidebar flex-initial lg:w-1/4">
-    @php(dynamic_sidebar('sidebar-primary'))
-  </aside> --}}
+  <div class="flex flex-col md:flex-row mt-8 {{ ! is_front_page() ? "$current_page" : 'home' }} container mx-auto">
+    <main id="main" class="main">
+      @yield('content')
+    </main>
+  
+    @if (! is_front_page())
+    <aside class="sidebar">
+      @include('sections.sidebar')
+    </aside>
+    @endif
+  </div>
 
 @include('sections.footer')
