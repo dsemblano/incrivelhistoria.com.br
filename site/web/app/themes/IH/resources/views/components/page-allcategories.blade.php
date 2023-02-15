@@ -10,10 +10,10 @@
   );
 @endphp
 
-<div class="text-xl my-4 text-gray-600">Todas as categorias</div>
+<span class="category-name inline-block text-2xl mb-4 text-gray-700 uppercase font-bold">Por categoria</span>
 
 <?php
-echo '<ul class="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">';
+echo '<div class="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">';
 
 foreach($terms as $term):
 
@@ -39,17 +39,17 @@ foreach($terms as $term):
         $post_title = $post->post_title;
         $get_term_link = get_term_link($term_id);
     ?>
-        <li>
+        <article>
         <!--<?php //echo the_terms( $post->ID, $taxonomy, 'Term: ', ' &raquo; ' );// with link?> &raquo;-->
         <!-- Term(s): <?php //echo join(', ',wp_get_post_terms($post->ID, $taxonomy, array("fields" => "names")));// without link?> &raquo;  -->
         {{-- <a href={{ the_permalink() }}>{{ the_post_thumbnail('mais_extendida') }} </a> --}}
         <?php echo '<span class="category-name inline-block text-2xl mb-4 text-red-700 leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</span>';?>
         <h2 class="text-xl"><a href={{ the_permalink() }}>{{ the_title() }}</a></h2>
-        </li>
+        </article>
     <?php
     endwhile;
 
 endforeach;
 
-echo '</ul>';       
+echo '</div>';       
 ?>
