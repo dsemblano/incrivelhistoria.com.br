@@ -1,13 +1,13 @@
 <section {{ $attributes }}>
 
-  <div class="mt-4 border-b border-solid border-gray-400 pb-12 md:w-3/4 md:pr-6 lg:pr-8">
+  <div class="pb-12 md:w-3/4 md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         @php $category = postbycategory('curiosidades', 4); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-10 md:h-36 lg:h-48">
+        <article class="mb-5 md:h-36 lg:h-48">
           <a class="no-underline hover:underline" href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -32,7 +32,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">História do Brasil</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -53,7 +53,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Direitos Humanos</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -74,7 +74,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Batalhas Históricas</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -101,7 +101,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Crime Organizado</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -122,7 +122,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Guerras</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>
@@ -143,7 +143,7 @@
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Períodos</span>
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-10 md:h-36 lg:h-48">
+          <article class="mb-5 md:h-36 lg:h-48">
             <a class="no-underline hover:underline" href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               <h2 class="text-xl mt-2">{{ the_title() }}</h2>

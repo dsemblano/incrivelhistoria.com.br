@@ -1,2 +1,2 @@
-@php(dynamic_sidebar('sidebar-primary'))
 @include('partials.lastposts')
+@php(dynamic_sidebar('sidebar-primary'))
