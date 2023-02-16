@@ -1,6 +1,6 @@
 // https://tailwindcss.com/docs/configuration
 module.exports = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
+  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}', './node_modules/flowbite/**/*.js'],
   theme: {
     container: {
       center: true,
@@ -13,5 +13,6 @@ module.exports = {
   plugins: [
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/typography'),
+    require('flowbite/plugin')
   ],
 };

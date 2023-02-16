@@ -136,3 +136,10 @@ add_action('widgets_init', function () {
 });
 
 
+// Thumbnails images
+add_image_size('slideshow', 730, 371, true);
+add_image_size('curiosidades_large', 480, 370, true);
+add_image_size('curiosidades_small', 220, 155, true);
+add_image_size('mais', 225, 150, true);
+add_image_size('mais_extendida', 350, 155, true);
+add_image_size('top10', 325, 155, true);

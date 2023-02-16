@@ -27,6 +27,7 @@
     "install": "^0.13.0"
   },
   "dependencies": {
+    "flowbite": "^1.6.3",
     "tailwindcss-debug-screens": "^2.2.1"
   }
 }
