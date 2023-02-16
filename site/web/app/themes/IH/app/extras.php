@@ -2,7 +2,7 @@
 
 // All custom functions here
 
-function postbycategory($arg, $page=4) {
+function postbycategory($arg, $page=2) {
     $array = [
         'category_name' => $arg,
         'orderby' => 'rand',

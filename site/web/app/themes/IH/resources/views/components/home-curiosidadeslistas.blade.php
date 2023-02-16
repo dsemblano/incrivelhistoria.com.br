@@ -4,7 +4,7 @@
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-        @php $category = postbycategory('curiosidades'); @endphp
+        @php $category = postbycategory('curiosidades', 4); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
         <article class="mb-10 md:h-36 lg:h-48">

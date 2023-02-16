@@ -12,7 +12,7 @@
 <section id="recentes"  class="mt-8">
     <h3 class="category-name inline-block text-2xl mb-4 text-red-700">Recentes</h3>
     <ul>
-        @php $recent_posts = wp_get_recent_posts(); @endphp
+        @php $recent_posts = wp_get_recent_posts((array('numberposts' => 3))); @endphp
         @foreach( $recent_posts as $recent )
             <li class="mb-5">
                 <h4>
