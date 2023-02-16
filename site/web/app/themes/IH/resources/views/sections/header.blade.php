@@ -1,11 +1,11 @@
-<header class="banner header-home w-full h-full bg-red-500 z-50 py-2">
+<header class="banner header-home w-full h-full bg-transparent z-50 py-2 mt-4">
 
   <nav class="nav-primary h-full">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
   
-        <picture class="logos-header order-2 relative left-6 xl:order-1">
+        <picture class="logos-header order-2 xl:order-1">
           @include('partials/logo')        
         </picture>
   
@@ -20,7 +20,7 @@
             </svg>
           </button>
   
-          <button id="button-sandwich" aria-label="Botão menu sanduíche" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-white rounded-lg xl:hidden"     aria-controls="mobile-menu-3" aria-expanded="false">
+          <button id="button-sandwich" aria-label="Botão menu sanduíche" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-black rounded-lg xl:hidden"     aria-controls="mobile-menu-3" aria-expanded="false">
             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             </svg>
@@ -35,7 +35,7 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-white tracking-widest w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-black tracking-widest w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-lg relative']) !!}
         </div>
   

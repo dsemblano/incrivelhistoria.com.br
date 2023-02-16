@@ -26,8 +26,6 @@
 @screen xl {
 
   .menu-categorias-menu-container {
-    @apply bg-blue-700;
-
     box-shadow: none;
 
     ul#menu-categorias-menu {
@@ -42,8 +40,6 @@
       }
 
       .sub-menu {
-        @apply bg-orange-700;
-
         margin-left: 0;
         display: none;
         position: absolute;
