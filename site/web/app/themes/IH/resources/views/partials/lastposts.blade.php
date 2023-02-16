@@ -10,7 +10,7 @@
 </ul> --}}
 
 <section id="recentes" class="border-b border-solid border-gray-400 mb-8">
-    <h3 class="category-name inline-block text-2xl mb-4 text-red-700">Recentes</h3>
+    <h3 class="category-name inline-block text-2xl mb-4 text-red-700">Matérias recentes</h3>
     <ul>
         @php $recent_posts = wp_get_recent_posts((array('numberposts' => 3))); @endphp
         @foreach( $recent_posts as $recent )
