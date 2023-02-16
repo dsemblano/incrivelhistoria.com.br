@@ -45,3 +45,11 @@ h3 {
 figure.wp-caption {
     width: 100% !important;
 }
+
+.tagcloud a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
