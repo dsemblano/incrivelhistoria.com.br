@@ -20,7 +20,7 @@
                         {{ $recent['post_title'] }}
                     </a>
                 </h4>
-                {{-- {!! get_the_post_thumbnail($recent['ID']) !!} --}}
+                {!! get_the_post_thumbnail($recent['ID'], 'large') !!}
             </li>
         @endforeach
         @php wp_reset_query(); @endphp
