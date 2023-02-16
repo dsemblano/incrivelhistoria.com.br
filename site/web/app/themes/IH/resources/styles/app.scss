@@ -53,3 +53,11 @@ figure.wp-caption {
         text-decoration: underline;
     }
 }
+
+.widget_tag_cloud {
+    h3 {
+        @apply inline-block text-2xl mb-4 text-red-700;
+
+        font-family: 'Signore', sans-serif;
+    }
+}

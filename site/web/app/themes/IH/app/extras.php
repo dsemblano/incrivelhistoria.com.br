@@ -12,3 +12,10 @@ function postbycategory($arg, $page=4) {
     return new \WP_Query($array);
     wp_reset_postdata();
 }
+
+function lastposts($numbers=5) {
+    $array = ['posts_per_page' => $numbers];
+
+    return new \WP_Query( $array );
+    wp_reset_postdata();
+}
