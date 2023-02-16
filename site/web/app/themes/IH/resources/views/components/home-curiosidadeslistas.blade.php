@@ -1,6 +1,6 @@
 <section {{ $attributes }}>
 
-  <div class="pb-12 md:w-3/4 md:pr-6 lg:pr-8">
+  <div class="md:w-3/4 md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
