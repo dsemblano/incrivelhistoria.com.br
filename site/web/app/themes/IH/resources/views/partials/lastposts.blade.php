@@ -7,8 +7,13 @@
         <a class="no-underline hover:underline" href="{{ get_permalink() }}">
         {{ the_post_thumbnail('large' ) }}
         <h4 class="text-base lg:text-xl mt-2">{{ the_title() }}</h4>
+        <span>
+            <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
+            {{ get_the_date() }}
+            </time>
+        </span>
         </a>
     </article>
     @endwhile
-    
+
 </section>
