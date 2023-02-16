@@ -1,4 +1,4 @@
-<section id="recentes" class="border-b border-solid border-gray-400 mb-8">
+<section id="recentes" class="mb-6">
     <h3 class="category-name inline-block text-2xl mb-4 text-red-700">Matérias recentes</h3>
     
     @php $lastposts = lastposts(3); @endphp
