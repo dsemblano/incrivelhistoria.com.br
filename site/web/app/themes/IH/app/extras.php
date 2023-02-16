@@ -2,7 +2,7 @@
 
 // All custom functions here
 
-function postbycategory($arg, $page=2) {
+function postbycategory($arg, $page=4) {
     $array = [
         'category_name' => $arg,
         'orderby' => 'rand',
@@ -13,9 +13,12 @@ function postbycategory($arg, $page=2) {
     wp_reset_postdata();
 }
 
-function lastposts($numbers=5) {
-    $array = ['posts_per_page' => $numbers];
+function lastposts($posts=5) {
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => $posts
+    );
 
-    return new \WP_Query( $array );
+    return new WP_Query( $args );
     wp_reset_postdata();
 }
