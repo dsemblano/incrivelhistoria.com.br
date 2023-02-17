@@ -7,7 +7,9 @@ module.exports = {
       padding: '1rem',
     },
     extend: {
-      colors: {}, // Extend Tailwind's default colors
+      colors: {
+        'IHazul': '#B4CEFC'
+      }, // Extend Tailwind's default colors
     },
   },
   plugins: [
