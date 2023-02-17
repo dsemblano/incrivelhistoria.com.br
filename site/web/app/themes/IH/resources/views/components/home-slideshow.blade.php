@@ -13,7 +13,7 @@
     @if ($slideshow->have_posts())
       @while ($slideshow->have_posts()) @php $slideshow->the_post() @endphp
           <div class="carousel-cell">
-              <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+              <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail() }}
                 <header>
                   <h2>{{ the_title() }}</h2>

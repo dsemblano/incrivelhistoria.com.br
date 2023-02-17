@@ -8,10 +8,14 @@
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
         <article class="mb-5 md:h-36 lg:h-48">
-          <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+          <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            <h2 class="text-xl mt-2">{{ the_title() }}</h2>
           </a>
+            <h2 class="text-xl mt-2">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
+              </a>
+            </h2>
         </article>
         @endwhile
         @else
@@ -33,10 +37,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else
@@ -54,10 +61,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else
@@ -75,10 +85,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else
@@ -102,10 +115,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else
@@ -123,10 +139,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else
@@ -144,10 +163,13 @@
           @if ($category->have_posts())
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5 md:h-48 lg:h-56">
-            <a class="no-underline hover:underline" href="{{ get_permalink() }}">
+            <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-              <h2 class="text-xl mt-2">{{ the_title() }}</h2>
             </a>
+              <h2 class="text-xl mt-2">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
           </article>
           @endwhile
           @else

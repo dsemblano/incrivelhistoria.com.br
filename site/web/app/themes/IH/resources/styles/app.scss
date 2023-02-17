@@ -48,11 +48,19 @@ figure.wp-caption {
     width: 100% !important;
 }
 
+// links
+
+.postslinks {
+    &:hover {
+        @apply no-underline hover:underline hover:text-sky-600;
+    }    
+}
+
 .tagcloud a {
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        @apply no-underline hover:underline hover:text-sky-600;
     }
 }
 
