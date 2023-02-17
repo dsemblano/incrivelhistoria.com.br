@@ -7,7 +7,7 @@
   @php $current_page = basename(get_permalink()) @endphp
 
   <div class="container portrait:bg-yellow-400 landscape:bg-purple-500">
-    <div class="flex flex-col landscape:flex-row md:flex-row mt-8 justify-between">
+    <div class="flex flex-col landscape:flex-row lg:flex-row mt-8 justify-between">
       <main id="main" class="main {{ ! is_front_page() ? "landscape:w-3/4" : '' }} landscape:bg-orange-500">
         @yield('content')
       </main>

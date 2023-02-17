@@ -1,6 +1,6 @@
 <section {{ $attributes }}>
 
-  <div class="md:w-3/4 md:pr-6 lg:pr-8">
+  <div class="landscape:w-3/4 md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
@@ -161,7 +161,7 @@
     {{-- end grid --}}
   </div>
 
-  <aside class="sidebar md:w-1/4">
+  <aside class="sidebar w-1/4 landscape:w-1/4">
     @include('sections.sidebar')
   </aside>
 
