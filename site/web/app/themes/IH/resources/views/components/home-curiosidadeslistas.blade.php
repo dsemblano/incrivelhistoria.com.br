@@ -161,7 +161,7 @@
     {{-- end grid --}}
   </div>
 
-  <aside class="sidebar landscape:w-1/4">
+  <aside class="sidebar md:w-1/4 landscape:w-1/4">
     @include('sections.sidebar')
   </aside>
 
