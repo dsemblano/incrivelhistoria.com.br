@@ -1,5 +1,8 @@
 <article @php(post_class('prose lg:prose-xl'))>
-  {{ the_category(' &bull; ') }}
+  <span class="article_categories">
+    {{ the_category(' &bull; ') }}
+  </span>
+  
   <header>
     <h1 class="p-name">
       {!! $title !!}

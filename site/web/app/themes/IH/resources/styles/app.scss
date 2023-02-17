@@ -51,19 +51,18 @@ figure.wp-caption {
 // links
 
 .postslinks,
+.article_categories a,
+.tagcloud a,
+.entry-title a,
+.category-name a,
+.e-content a,
 .crp_title {
+    text-decoration: none;
     &:hover {
         @apply no-underline hover:underline hover:text-sky-600;
     }    
 }
 
-.tagcloud a {
-    text-decoration: none;
-
-    &:hover {
-        @apply no-underline hover:underline hover:text-sky-600;
-    }
-}
 
 .widget_tag_cloud {
     margin-top: 1.5rem;
