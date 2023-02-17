@@ -5,12 +5,16 @@
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
     <article class="mb-5">
         <a href="{{ get_permalink() }}">
-        {{ the_post_thumbnail('large' ) }}
-        <h4 class="text-base lg:text-xl mt-2">{{ the_title() }}</h4>
+            {{ the_post_thumbnail('large' ) }}
+        </a>
+        <h4 class="text-base lg:text-xl mt-2">
+            <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
+            </a>
+        </h4>
         <time class="dt-published text-xs md:text-base inline-block mt-1" datetime="{{ get_post_time('c', true) }}">
             {{ get_the_date() }}
         </time>
-        </a>
     </article>
     @endwhile
 

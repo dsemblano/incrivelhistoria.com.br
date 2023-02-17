@@ -50,7 +50,8 @@ figure.wp-caption {
 
 // links
 
-.postslinks {
+.postslinks,
+.crp_title {
     &:hover {
         @apply no-underline hover:underline hover:text-sky-600;
     }    
