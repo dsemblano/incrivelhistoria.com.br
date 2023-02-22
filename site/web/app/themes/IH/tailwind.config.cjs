@@ -8,8 +8,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        'IHazul': '#B4CEFC'
+        'IHazul': '#B4CEFC',
+        'cinzapadrao': '#2D3441',
       }, // Extend Tailwind's default colors
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.cinzapadrao'),
+            'h1, h2, h3, h4, h5': {
+              color: theme('colors.cinzapadrao'),
+            }
+          }
+        }
+      }),
     },
   },
   plugins: [

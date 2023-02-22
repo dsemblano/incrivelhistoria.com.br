@@ -15,10 +15,13 @@
     font-style: normal;
 }
 
+$textcolor: #2D3441;
+
 body {
     // font-family: 'Lato', sans-serif;
     // font-family: 'Roboto Serif', serif;
     font-family: 'Noto Serif', serif;
+    color: $textcolor;
 }
 
 ::selection {
@@ -28,7 +31,6 @@ body {
 h1 {
     font-family: 'Signore', serif;
     font-size: 2.75rem;
-    color: #212937;
     line-height: 3.25rem;
 }
 
