@@ -10,7 +10,7 @@
       </div>
 
       <div class="w-1/2 bg-green-200">
-        @include('partials.socialmedia')
+        {{-- @include('partials.socialmedia') --}}
       </div>    
     </div>
   </div>
