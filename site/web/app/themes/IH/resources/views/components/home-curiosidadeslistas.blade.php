@@ -3,8 +3,8 @@
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-        @php $category = postbycategory('curiosidades', 4); @endphp
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        @php $category = postbycategory('curiosidades'); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
         <article class="mb-5 md:h-36 lg:h-48">

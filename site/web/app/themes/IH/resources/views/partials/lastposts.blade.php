@@ -5,7 +5,7 @@
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
     <article class="mb-5">
         <a href="{{ get_permalink() }}">
-            {{ the_post_thumbnail('large' ) }}
+            {{ the_post_thumbnail('large', array('class' => '') ) }}
         </a>
         <h4 class="text-base lg:text-xl mt-2">
             <a class="postslinks" href="{{ get_permalink() }}">
