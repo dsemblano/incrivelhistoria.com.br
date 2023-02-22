@@ -1141,6 +1141,11 @@
           "name": "IHazul",
           "slug": "ihazul",
           "color": "#b4cefc"
+        },
+        {
+          "name": "Cinzapadrao",
+          "slug": "cinzapadrao",
+          "color": "#2d3441"
         }
       ]
     },
