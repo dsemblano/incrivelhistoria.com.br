@@ -1,12 +1,12 @@
 <section id="recentes" class="mb-6">
-    <h3 class="category-name inline-block text-2xl mb-4 text-red-700">Matérias recentes</h3>
+    <h3 class="category-name inline-block text-2xl mb-0 text-red-700">Matérias recentes</h3>
     
-    @php $lastposts = lastposts(3); @endphp
+    @php $lastposts = lastposts(6); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
     <article class="mb-5">
-        <a href="{{ get_permalink() }}">
+        {{-- <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('large', array('class' => '') ) }}
-        </a>
+        </a> --}}
         <h4 class="text-base lg:text-xl mt-2">
             <a class="postslinks" href="{{ get_permalink() }}">
                 {{ the_title() }}
