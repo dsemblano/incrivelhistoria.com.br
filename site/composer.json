@@ -57,6 +57,8 @@
     "wpackagist-plugin/wordpress-popular-posts":">=5.5.1",
     "wpackagist-plugin/open-external-links-in-a-new-window":">=1.43",
     "wpackagist-plugin/autodescription":">=4.2.7.1",
+    "wpackagist-plugin/redirection":">=5.3.9",
+    "wpackagist-plugin/remove-category-url":"1.1.6",
     "roots/acorn": "^3.1"
   },
   "require-dev": {
