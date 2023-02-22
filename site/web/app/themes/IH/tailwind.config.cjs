@@ -15,7 +15,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.cinzapadrao'),
-            'h1, h2, h3, h4, h5': {
+            'h1, h2, h3, h4, h5, blockquote, p, a': {
               color: theme('colors.cinzapadrao'),
             }
           }
