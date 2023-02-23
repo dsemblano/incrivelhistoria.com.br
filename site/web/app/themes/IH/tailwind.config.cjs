@@ -11,16 +11,16 @@ module.exports = {
         'IHazul': '#B4CEFC',
         'cinzapadrao': '#2D3441',
       }, // Extend Tailwind's default colors
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme('colors.cinzapadrao'),
-            'h1, h2, h3, h4, h5, blockquote, p, a': {
-              color: theme('colors.cinzapadrao'),
-            }
-          }
-        }
-      }),
+      // typography: (theme) => ({
+      //   DEFAULT: {
+      //     css: {
+      //       color: theme('colors.cinzapadrao'),
+      //       'h1, h2, h3, h4, h5, blockquote, p, a': {
+      //         color: theme('colors.cinzapadrao'),
+      //       }
+      //     }
+      //   }
+      // }),
     },
   },
   plugins: [

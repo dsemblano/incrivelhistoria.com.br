@@ -19,15 +19,15 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
-    "@roots/bud": "6.8.0",
-    "@roots/bud-sass": "^6.8.0",
-    "@roots/bud-tailwindcss": "6.8.0",
-    "@roots/sage": "6.8.0",
+    "@roots/bud": "6.9.0",
+    "@roots/bud-sass": "^6.9.0",
+    "@roots/bud-tailwindcss": "6.9.0",
+    "@roots/sage": "6.9.0",
     "@tailwindcss/typography": "^0.5.9",
-    "install": "^0.13.0",
-    "remove": "^0.1.5"
+    "install": "^0.13.0"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001457",
     "flowbite": "^1.6.3",
     "tailwindcss-debug-screens": "^2.2.1"
   }
