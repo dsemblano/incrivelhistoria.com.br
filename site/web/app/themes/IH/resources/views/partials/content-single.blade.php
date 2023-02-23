@@ -1,5 +1,5 @@
 <article @php(post_class('prose lg:prose-xl'))>
-  <span class="article_categories">
+  <span class="article_categories text-sm lg:text-md">
     {{ the_category(' &bull; ') }}
   </span>
   

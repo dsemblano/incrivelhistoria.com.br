@@ -7,7 +7,7 @@
         {{-- <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('large', array('class' => '') ) }}
         </a> --}}
-        <h4 class="text-base lg:text-xl mt-2">
+        <h4 class="text-base lg:text-lg mt-2">
             <a class="postslinks" href="{{ get_permalink() }}">
                 {{ the_title() }}
             </a>

@@ -11,7 +11,7 @@
           <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
           </a>
-            <h2 class="text-xl mt-2">
+            <h2 class="text-lg mt-2">
               <a class="postslinks" href="{{ get_permalink() }}">
                 {{ the_title() }}
               </a>
@@ -40,7 +40,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -64,7 +64,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -88,7 +88,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -118,7 +118,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -142,7 +142,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -166,7 +166,7 @@
             <a href="{{ get_permalink() }}">
               {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
             </a>
-              <h2 class="text-xl mt-2">
+              <h2 class="text-lg mt-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
