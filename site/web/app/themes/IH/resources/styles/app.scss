@@ -74,6 +74,7 @@ figure.wp-caption {
 
 .widget_block {
     margin-top: 1.5rem;
+    h2,
     h3 {
         @apply category-name inline-block text-2xl mb-0 text-red-700;
 
