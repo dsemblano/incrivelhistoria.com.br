@@ -38,9 +38,14 @@ h2,
 h3,
 h4,
 .crp_title,
+.wpp-post-title,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
+}
+
+.wpp-post-title {
+  @apply text-base lg:text-lg mt-2;
 }
 
 .category-name,
@@ -70,7 +75,6 @@ figure.wp-caption {
         @apply no-underline hover:underline hover:text-sky-600;
     }    
 }
-
 
 .widget_block {
     margin-top: 1.5rem;
