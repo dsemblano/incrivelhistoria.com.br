@@ -60,7 +60,7 @@ figure.wp-caption {
 
 .postslinks,
 .article_categories a,
-.tagcloud a,
+.wp-block-tag-cloud a,
 .entry-title a,
 .category-name a,
 .e-content a,
@@ -72,10 +72,10 @@ figure.wp-caption {
 }
 
 
-.widget_tag_cloud {
+.widget_block {
     margin-top: 1.5rem;
     h3 {
-        @apply inline-block text-2xl mb-4 text-red-700;
+        @apply category-name inline-block text-2xl mb-0 text-red-700;
 
         font-family: 'Signore', sans-serif;
     }
