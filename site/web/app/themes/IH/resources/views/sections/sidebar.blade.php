@@ -1,6 +1,6 @@
-<div class="md:hidden">
+{{-- <div class="md:hidden">
     @include('partials.hrelement')
-</div>
+</div> --}}
 
 @include('partials.lastposts')
 @include('partials.hrelement')
