@@ -11,13 +11,15 @@
           <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
           </a>
-            <h2 class="text-lg my-2">
+            <h2 class="text-lg my-2 font-bold">
               <a class="postslinks" href="{{ get_permalink() }}">
                 {{ the_title() }}
               </a>
             </h2>
-            <p class="mb-2">
-              {{ get_the_excerpt() }}
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
             </p>
             @include('partials.readingtime')
         </article>
@@ -35,11 +37,12 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
   
       {{-- Next category --}}
-      @php $category = postbycategory('historia-do-brasil'); @endphp
     
       <section id="historia-brasil" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">História do Brasil</span>
-          @if ($category->have_posts())
+
+        @php $category = postbycategory('historia-do-brasil'); @endphp
+        @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
           <article class="mb-5">
@@ -48,44 +51,79 @@
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-              @php $first_loop = false; @endphp
-            @endif
-              <h2 class="text-lg my-2">
+
+              <h2 class="text-lg my-2 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
           </article>
           @endwhile
-          @else
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
         @endif
+
       </section>
     
       {{-- Next category --}}  
-      @php $category = postbycategory('direitos-humanos'); @endphp
     
       <section id="direitos-humanos" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Direitos Humanos</span>
+        @php $category = postbycategory('direitos-humanos'); @endphp
         @if ($category->have_posts())
-        @php $first_loop = true; @endphp
-        @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5">
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-            <a href="{{ get_permalink() }}">
-              {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            </a>
-            @php $first_loop = false; @endphp
-          @endif
-            <h2 class="text-lg my-2">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+          @php $first_loop = true; @endphp
+          @while ($category->have_posts()) @php $category->the_post() @endphp
+          <article class="mb-5">
+            {{-- @php echo $first_loop; @endphp --}}
+            @if ($first_loop)
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-        </article>
-        @endwhile
-          @else
+
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
+          </article>
+          @endwhile
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
@@ -93,28 +131,45 @@
       </section>
   
       {{-- Next category --}}
-      @php $category = postbycategory('batalhas-historicas'); @endphp
   
       <section id="batalhas-historicas" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Batalhas Históricas</span>
+        @php $category = postbycategory('batalhas-historicas'); @endphp
         @if ($category->have_posts())
-        @php $first_loop = true; @endphp
-        @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5">
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-            <a href="{{ get_permalink() }}">
-              {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            </a>
-            @php $first_loop = false; @endphp
-          @endif
-            <h2 class="text-lg my-2">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+          @php $first_loop = true; @endphp
+          @while ($category->have_posts()) @php $category->the_post() @endphp
+          <article class="mb-5">
+            {{-- @php echo $first_loop; @endphp --}}
+            @if ($first_loop)
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-        </article>
-        @endwhile
-          @else
+
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
+          </article>
+          @endwhile
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
@@ -130,84 +185,136 @@
       {{-- Next category --}}
       @php $category = postbycategory('crime-organizado'); @endphp
     
-      <section id="historia-brasil" class="">
+      <section id="crime-organizado" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Crime Organizado</span>
+        @php $category = postbycategory('crime-organizado'); @endphp
         @if ($category->have_posts())
-        @php $first_loop = true; @endphp
-        @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5">
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-            <a href="{{ get_permalink() }}">
-              {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            </a>
-            @php $first_loop = false; @endphp
-          @endif
-            <h2 class="text-lg my-2">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+          @php $first_loop = true; @endphp
+          @while ($category->have_posts()) @php $category->the_post() @endphp
+          <article class="mb-5">
+            {{-- @php echo $first_loop; @endphp --}}
+            @if ($first_loop)
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-        </article>
-        @endwhile
-          @else
+
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
+          </article>
+          @endwhile
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
         @endif
       </section>
     
-      {{-- Next category --}}    
-      @php $category = postbycategory('guerras'); @endphp
+      {{-- Next category --}}
     
-      <section id="direitos-humanos" class="">
+      <section id="guerras" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Guerras</span>
+        @php $category = postbycategory('guerras'); @endphp
         @if ($category->have_posts())
-        @php $first_loop = true; @endphp
-        @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5">
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-            <a href="{{ get_permalink() }}">
-              {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            </a>
-            @php $first_loop = false; @endphp
-          @endif
-            <h2 class="text-lg my-2">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+          @php $first_loop = true; @endphp
+          @while ($category->have_posts()) @php $category->the_post() @endphp
+          <article class="mb-5">
+            {{-- @php echo $first_loop; @endphp --}}
+            @if ($first_loop)
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-        </article>
-        @endwhile
-          @else
+
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
+          </article>
+          @endwhile
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
         @endif
       </section>
   
-      {{-- Next category --}}  
-      @php $category = postbycategory('batalhas-historicas'); @endphp
+      {{-- Next category --}}
   
       <section id="periodos" class="">
         <span class="category-name inline-block text-2xl mb-4 text-red-700">Períodos</span>
+        @php $category = postbycategory('periodos'); @endphp
         @if ($category->have_posts())
-        @php $first_loop = true; @endphp
-        @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5">
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-            <a href="{{ get_permalink() }}">
-              {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-            </a>
-            @php $first_loop = false; @endphp
-          @endif
-            <h2 class="text-lg my-2">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+          @php $first_loop = true; @endphp
+          @while ($category->have_posts()) @php $category->the_post() @endphp
+          <article class="mb-5">
+            {{-- @php echo $first_loop; @endphp --}}
+            @if ($first_loop)
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-        </article>
-        @endwhile
-          @else
+
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+              <hr class="mt-6">
+
+            @php $first_loop = false; @endphp
+              @else
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+            @endif
+          </article>
+          @endwhile
+        @else
           <div class="alert alert-warning">
             {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
           </div>
