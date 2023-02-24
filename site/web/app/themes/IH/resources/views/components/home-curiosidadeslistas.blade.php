@@ -16,11 +16,7 @@
                 {{ the_title() }}
               </a>
             </h2>
-            <div class="timeread flex flex-row">
-              <i class="fa-regular fa-clock"></i>
-              {!! do_shortcode('[rt_reading_time label="Leitura:" postfix="minutos" postfix_singular="minuto"]') !!}
-              teste
-            </div>
+            @include('partials.readingtime')
         </article>
         @endwhile
         @else
