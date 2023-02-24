@@ -64,7 +64,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
@@ -111,7 +110,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
@@ -157,7 +155,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
@@ -210,7 +207,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
@@ -256,7 +252,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
@@ -302,7 +297,6 @@
                 </a>
               </p>
               @include('partials.readingtime')
-              <hr class="mt-6">
 
             @php $first_loop = false; @endphp
               @else
