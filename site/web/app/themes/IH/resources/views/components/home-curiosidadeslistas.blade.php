@@ -7,7 +7,7 @@
         @php $category = postbycategory('curiosidades'); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5 md:mb-12 md:h-48">
+        <article class="mb-5 h-auto">
           <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
           </a>
@@ -16,6 +16,9 @@
                 {{ the_title() }}
               </a>
             </h2>
+            <p class="mb-2">
+              {{ get_the_excerpt() }}
+            </p>
             @include('partials.readingtime')
         </article>
         @endwhile
