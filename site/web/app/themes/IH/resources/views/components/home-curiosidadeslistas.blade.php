@@ -17,7 +17,6 @@
               </a>
             </h2>
             <div class="timeread flex flex-row">
-              <x-heroicon-o-arrow-left />
               {!! do_shortcode('[rt_reading_time label="Leitura:" postfix="minutos" postfix_singular="minuto"]') !!}
               teste
             </div>
