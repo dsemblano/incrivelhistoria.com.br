@@ -1,7 +1,7 @@
 <section id="recentes" class="mb-6">
     <h3 class="category-name inline-block text-2xl mb-0 text-red-700">Matérias recentes</h3>
     
-    @php $lastposts = lastposts(6); @endphp
+    @php $lastposts = lastposts(4); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
     <article class="mb-5">
         {{-- <a href="{{ get_permalink() }}">
@@ -14,7 +14,7 @@
         </h4>
         <div class="flex flex-row mt-2 gap-3">
             @include('partials.readingtime')
-            <time class="dt-published text-sm inline-block" datetime="{{ get_post_time('c', true) }}">
+            <time class="dt-published text-sm inline-block mt-" datetime="{{ get_post_time('c', true) }}">
                 {{ get_the_date() }}
             </time>
         </div>
