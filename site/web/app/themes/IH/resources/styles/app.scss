@@ -15,6 +15,12 @@
     font-style: normal;
 }
 
+// Variables
+$links: #2B9EB3;
+$headers: #1B1B1E;
+$body: #707070;
+$borders: #E0E0E0;
+$emphasis: #FFC857;
 $textcolor: #2D3441;
 
 body {
@@ -39,6 +45,7 @@ h3,
 h4,
 .crp_title,
 .wpp-post-title,
+.rt-reading-time,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -87,6 +94,10 @@ figure.wp-caption {
 }
 
 // single posts, comments
+.rt-reading-time {
+  @apply text-sm;
+}
+
 #comment {
     width: 100%;
   }
