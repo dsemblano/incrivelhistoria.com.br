@@ -12,9 +12,13 @@
                 {{ the_title() }}
             </a>
         </h4>
-        <time class="dt-published text-xs md:text-base inline-block mt-1" datetime="{{ get_post_time('c', true) }}">
-            {{ get_the_date() }}
-        </time>
+        <div class="flex flex-row mt-2 gap-3">
+            @include('partials.readingtime')
+            <time class="dt-published text-sm inline-block" datetime="{{ get_post_time('c', true) }}">
+                {{ get_the_date() }}
+            </time>
+        </div>
+        
     </article>
     @endwhile
 
