@@ -22,7 +22,7 @@ export default async (app) => {
      * Directory contents to be included in the compilation
      * @see {@link https://bud.js.org/docs/bud.assets/}
      */
-    .assets(['images'])
+    .assets(['images', 'svg'])
 
     /**
      * Matched files trigger a page reload when modified
