@@ -7,7 +7,7 @@
         @php $category = postbycategory('curiosidades'); @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-5 h-auto">
+        <article class="mb-8 h-auto">
           <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
           </a>
@@ -45,7 +45,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
@@ -91,7 +91,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
@@ -136,7 +136,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
@@ -188,7 +188,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
@@ -233,7 +233,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
@@ -278,7 +278,7 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-5">
+          <article class="mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
