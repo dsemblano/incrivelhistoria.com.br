@@ -30,7 +30,7 @@ return [
             |
             */
         
-            'path' => 'web/app/themes/sage/resources/images/icons',
+            'path' => 'vendor/blade-ui-kit/blade-heroicons/resources/svg',
         
             /*
             |-----------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
             |
             */
         
-            'prefix' => 'icon',
+            'prefix' => 'heroicon',
         
             /*
             |-----------------------------------------------------------------
