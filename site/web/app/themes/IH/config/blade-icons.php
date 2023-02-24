@@ -30,7 +30,7 @@ return [
             |
             */
         
-            'path' => 'resources/svg',
+            'path' => 'web/app/themes/sage/resources/images/icons',
         
             /*
             |-----------------------------------------------------------------
