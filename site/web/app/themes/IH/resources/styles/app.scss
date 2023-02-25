@@ -47,6 +47,7 @@ h4,
 .wpp-post-title,
 .rt-reading-time,
 .excerpt,
+.recent-posts li a,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -77,7 +78,8 @@ figure.wp-caption {
 .entry-title a,
 .category-name a,
 .e-content a,
-.crp_title {
+.recent-posts li a,
+.crp_title {  
     text-decoration: none;
     &:hover {
         @apply no-underline hover:underline hover:text-sky-600;
