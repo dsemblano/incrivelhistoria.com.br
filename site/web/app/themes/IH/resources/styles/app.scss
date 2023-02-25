@@ -15,6 +15,30 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'RedactionRegular';
+  src: url('~@fonts/redaction/Redaction-Regular.otf');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedactionBold';
+  src: url('~@fonts/redaction/Redaction-Bold.otf');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jenson';
+  src: url('~@fonts/jenson/Jenson-Pro-Regular.otf');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Variables
 $links: #2B9EB3;
 $headers: #1B1B1E;
@@ -35,7 +59,7 @@ body {
 }
 
 h1 {
-    font-family: 'Signore', serif;
+    font-family: 'Jenson', serif;
     font-size: 2.75rem;
     line-height: 3.25rem;
 }
@@ -58,8 +82,13 @@ h4,
 }
 
 .category-name,
+.e-content h2,
+.e-content h3,
+.e-content h4,
+.article_categories a,
+.menu-categorias-menu-container,
 .crp_related_shortcode h3 {
-    font-family: 'Signore', sans-serif;
+    font-family: 'Jenson', serif;
 }
 
 // h3 {
@@ -92,7 +121,7 @@ figure.wp-caption {
     h3 {
         @apply category-name inline-block text-2xl mb-0 text-red-700;
 
-        font-family: 'Signore', sans-serif;
+        font-family: 'Jenson', serif;
     }
 }
 

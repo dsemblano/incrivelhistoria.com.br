@@ -1,9 +1,9 @@
 <article @php(post_class('prose lg:prose-xl'))>
-  <span class="article_categories text-sm lg:text-md">
+  <span class="article_categories text-lg lg:text-2xl">
     {{ the_category(' &bull; ') }}
   </span>
   
-  <header>
+  <header class="mt-6">
     <h1 class="p-name">
       {!! $title !!}
     </h1>
