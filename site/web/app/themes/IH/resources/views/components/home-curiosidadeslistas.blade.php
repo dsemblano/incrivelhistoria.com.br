@@ -67,11 +67,17 @@
 
             @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
@@ -111,13 +117,19 @@
               </p>
               @include('partials.readingtime')
 
-            @php $first_loop = false; @endphp
+              @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
@@ -156,13 +168,19 @@
               </p>
               @include('partials.readingtime')
 
-            @php $first_loop = false; @endphp
+              @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
@@ -208,13 +226,19 @@
               </p>
               @include('partials.readingtime')
 
-            @php $first_loop = false; @endphp
+              @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
@@ -253,13 +277,19 @@
               </p>
               @include('partials.readingtime')
 
-            @php $first_loop = false; @endphp
+              @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
@@ -298,13 +328,19 @@
               </p>
               @include('partials.readingtime')
 
-            @php $first_loop = false; @endphp
+              @php $first_loop = false; @endphp
               @else
-              <h2 class="text-lg my-2 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
+              <div class="flex flex-row gap-2">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-              </h2>
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>
+
             @endif
           </article>
           @endwhile
