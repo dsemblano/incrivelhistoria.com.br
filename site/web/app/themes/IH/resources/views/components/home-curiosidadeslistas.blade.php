@@ -3,27 +3,70 @@
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name inline-block text-2xl mb-4 text-red-700">Curiosidades e Listas</span>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div class="flex flex-col">
+
         @php $category = postbycategory('curiosidades'); @endphp
+        @php $first_loop = true; @endphp
         @if ($category->have_posts())
         @while ($category->have_posts()) @php $category->the_post() @endphp
-        <article class="mb-8 h-auto">
-          <a href="{{ get_permalink() }}">
-            {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
-          </a>
-            <h2 class="text-lg my-2 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
+        @if ($first_loop)
+
+        <div class="top flex flex-col md:flex-row">
+          <article class="mb-8 h-auto flex flex-col md:flex-row">
+          
+            <div class="left mr-4 w-full md:w-2/3">
+              <a href="{{ get_permalink() }}">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
               </a>
-            </h2>
-            <p class="mb-3 excerpt">
+            </div>
+            
+            <div class="right flex-row w-full md:w-1/3">
+              <h2 class="text-lg my-2 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
+          </article>
+        </div>
+        <div class="bottom flex flex-col md:flex-row md:gap-8">
+        @php $first_loop = false; @endphp
+        @else
+
+          <article class="mb-8 h-auto w-full md:w-1/2">
+            <div class="flex flex-row md:flex-col gap-2 md:gap-0">
+              <div class="left w-1/2 md:w-full">
+                <a href="{{ get_permalink() }}">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full' ) ) }}
+                </a>
+              </div>
+
+              <div class="right w-1/2 md:w-full">
+                <h2 class="text-lg my-2 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+              </div>              
+            </div>
+            <p class="mb-3 excerpt w-full">
               <a class="postslinks" href="{{ get_permalink() }}">
                 {{ get_the_excerpt() }}
               </a>
             </p>
             @include('partials.readingtime')
-        </article>
+          </article>
+      
+        @endif
+        
         @endwhile
+      </div>
         @else
         <div class="alert alert-warning">
           {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
@@ -34,7 +77,7 @@
     @include('partials.hrelement')
     
     {{-- Next grid --}}  
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
   
       {{-- Next category --}}
     
@@ -68,10 +111,10 @@
             @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -120,10 +163,10 @@
               @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -171,10 +214,10 @@
               @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -195,7 +238,7 @@
     {{-- end grid --}}
   
     {{-- Next grid --}}  
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
   
       {{-- Next category --}}
       @php $category = postbycategory('crime-organizado'); @endphp
@@ -229,10 +272,10 @@
               @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -280,10 +323,10 @@
               @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -331,10 +374,10 @@
               @php $first_loop = false; @endphp
               @else
               <div class="flex flex-row gap-2">
-                <a href="{{ get_permalink() }}">
+                <a class="w-1/2" href="{{ get_permalink() }}">
                   {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full' ) ) }}
                 </a>
-                <h2 class="text-lg my-2 font-bold">
+                <h2 class="text-lg my-2 font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
