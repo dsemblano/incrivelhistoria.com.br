@@ -1,7 +1,7 @@
 <footer class="content-info bg-gray-800 text-white">
   <div class="container">
     
-    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer pt-8 text-white flex flex-col py-2 text-black tracking-widest w-full justify-evenly
+    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer pt-8 text-white flex flex-col py-2 tracking-widest w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-lg relative']) !!}
     
     <div class="iconssocialmedia flex lg:flex-row justify-around content-around">

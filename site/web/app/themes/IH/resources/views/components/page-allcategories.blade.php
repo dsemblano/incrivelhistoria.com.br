@@ -13,7 +13,7 @@
 <span class="category-name mb-4 text-gray-700 uppercase font-bold">Por categoria</span>
 
 <?php
-echo '<div class="gap-10 grid grid-cols-2 lg:grid-cols-4">';
+echo '<div class="gap-4 lg:gap-10 grid grid-cols-2 lg:grid-cols-4">';
 
 foreach($terms as $term):
 
