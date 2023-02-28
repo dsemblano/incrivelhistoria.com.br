@@ -1,4 +1,4 @@
-<span class="category-name inline-block text-2xl mb-4 text-gray-700 uppercase font-bold">Destaques</span>
+<span class="category-name mb-4 text-gray-700 uppercase font-bold">Destaques</span>
 <x-home-curiosidadeslistas id="categorias" class="flex flex-col landscape:flex-row gap-4 lg:flex-row justify-around content-around" />
 
 @include('partials.hrelement')

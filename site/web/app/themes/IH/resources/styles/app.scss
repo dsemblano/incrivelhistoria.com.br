@@ -119,10 +119,14 @@ figure.wp-caption {
     margin-top: 1.5rem;
     h2,
     h3 {
-        @apply category-name inline-block text-2xl mb-0 text-red-700;
+        @apply category-name inline-block text-xl mb-0 text-red-700;
 
         font-family: 'Jenson', serif;
     }
+}
+
+.category-name {
+  @apply text-red-700 text-3xl inline-block;
 }
 
 // single posts, comments

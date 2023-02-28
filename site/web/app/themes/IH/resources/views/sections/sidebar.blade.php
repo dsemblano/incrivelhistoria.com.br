@@ -3,7 +3,7 @@
 </div> --}}
 
 @include('partials.lastposts')
-<h3 class="category-name inline-block text-2xl mb-0 text-red-700">Mais acessadas</h3>
+<h3 class="category-name mb-0">Mais acessadas</h3>
 <?php
 
 // Get popular posts based on post views
