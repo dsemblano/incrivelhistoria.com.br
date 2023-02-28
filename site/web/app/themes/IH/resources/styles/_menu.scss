@@ -10,7 +10,7 @@
     }
 
     .sub-menu {
-      @apply bg-transparent;
+      @apply bg-transparent ml-4 border border-solid border-gray-400 pt-4 pl-4 w-11/12 ;
 
       margin-left: 1rem;
     }
