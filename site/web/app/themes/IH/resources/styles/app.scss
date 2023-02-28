@@ -130,6 +130,13 @@ figure.wp-caption {
 }
 
 // single posts, comments
+
+.e-content {
+  figure:first-of-type {
+    display: none;
+  }
+}
+
 .rt-reading-time {
   @apply text-sm;
 }
