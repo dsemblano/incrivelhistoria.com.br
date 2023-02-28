@@ -1,18 +1,19 @@
-<article @php(post_class('w-full'))>
+<article @php(post_class('w-full mt-10'))>
   <span class="article_categories text-lg lg:text-2xl container block">
     {{ the_category(' &bull; ') }}
   </span>
   
   <header class="mt-6">
-    <h1 class="p-name container">
+    <h1 class="p-name container mb-6">
       {!! $title !!}
     </h1>
     <picture class="featured-singleimg w-full">
-      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-screen') ) }}
+      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-screen mb-6') ) }}
     </picture>
 
-    <div class="container">
-      @include('partials.entry-meta')  
+    <div class="container flex flex-row justify-around gap-5 md:justify-start">
+      @include('partials.entry-meta')
+      @include('partials.readingtime')
     </div>
     
   </header>
