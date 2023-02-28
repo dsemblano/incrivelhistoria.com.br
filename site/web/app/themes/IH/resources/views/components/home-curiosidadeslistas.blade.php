@@ -48,7 +48,7 @@
               </div>
 
               <div class="right w-1/2 md:w-full">
-                <h2 class="text-2xl md:my-2 font-bold">
+                <h2 class="text-lg lg:text-2xl md:my-2 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
