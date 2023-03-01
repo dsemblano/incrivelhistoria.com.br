@@ -48,14 +48,14 @@
               </div>
 
               <div class="right w-1/2 md:w-full md:mt-4">
-                <h2 class="text-lg lg:text-2xl md:my-2 font-bold">
+                <h2 class="text-lg lg:text-2xl md:my-4 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
                 </h2>
               </div>              
             </div>
-            <p class="mb-3 excerpt w-full">
+            <p class="mb-3 excerpt w-full mt-4 md:mt-0">
               <a class="postslinks" href="{{ get_permalink() }}">
                 {{ get_the_excerpt() }}
               </a>
