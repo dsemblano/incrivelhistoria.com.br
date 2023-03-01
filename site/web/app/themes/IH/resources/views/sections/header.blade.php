@@ -40,6 +40,15 @@
         </div>
   
       </nav>
+      <div class="hidden xl:block mt-3 container">
+        <div class="flex flex-row justify-end">
+          <div class="relative">
+            @include('partials/inputsearch')
+          </div>
+        </div>
+      </div>
+    </div>
+      
 
 </header>
 

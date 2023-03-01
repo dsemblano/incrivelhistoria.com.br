@@ -8,7 +8,12 @@
       {!! __('Nenhum resultado encontrado.', 'sage') !!}
     </x-alert>
 
-    {!! get_search_form(false) !!}
+    <div class="flex flex-row justify-start mt-4">
+      <div class="relative">
+        @include('partials/inputsearch')
+      </div>
+    </div>
+    
   @endif
 
   @while(have_posts()) @php(the_post())

@@ -8,6 +8,11 @@
       {!! __('Sorry, but the page you are trying to view does not exist.', 'sage') !!}
     </x-alert>
 
-    {!! get_search_form(false) !!}
+    <div class="flex flex-row justify-start mt-4">
+      <div class="relative">
+        @include('partials/inputsearch')
+      </div>
+    </div>
+    
   @endif
 @endsection

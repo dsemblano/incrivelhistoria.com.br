@@ -8,7 +8,11 @@
       {!! __('Nenhum resultado encontrado.', 'sage') !!}
     </x-alert>
 
-    {!! get_search_form(false) !!}
+    <div class="flex flex-row justify-start mt-4">
+      <div class="relative">
+        @include('partials/inputsearch')
+      </div>
+    </div>
   @endif
 
   <section class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 w-full md:pr-6 lg:pr-8">
