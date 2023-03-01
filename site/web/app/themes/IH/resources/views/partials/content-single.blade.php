@@ -4,11 +4,11 @@
   </span>
   
   <header class="mt-6">
-    <div class="container relative left-0 top-24 bg-white w-fit px-10 lg:px-8 pb-8 text-center">
-      <h1 class="p-name text-lg lg:text-8xl">
+    <div class="container relative left-0 top-24 bg-white w-fit px-4 lg:px-8 pb-4 text-center">
+      <h1 class="p-name font-bold text-lg lg:text-8xl">
         {!! $title !!}
       </h1>
-      <div class="container text-center flex flex-col items-center text-sm lg:text-xl gap-3">
+      <div class="container text-center flex flex-col items-center text-xs lg:text-xl gap-1 lg:gap-3">
         @include('partials.entry-meta')
         @include('partials.readingtime')
       </div>
