@@ -22,3 +22,16 @@ function lastposts($posts=5) {
     return new WP_Query( $args );
     wp_reset_postdata();
 }
+
+// Search highlight
+function custom_search_highlight($text) {
+    if (is_search()) {
+      $sr = get_query_var('s');
+      $keys = explode(" ", $sr);
+      $text = preg_replace('/('.implode('|', $keys) .')/iu', '<mark>$0</mark>', $text);
+    }
+    return $text;
+  }
+  add_filter('the_excerpt', 'custom_search_highlight');
+  add_filter('the_title', 'custom_search_highlight');
+  
