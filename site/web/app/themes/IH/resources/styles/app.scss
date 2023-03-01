@@ -114,6 +114,7 @@ figure.wp-caption {
 .wp-block-tag-cloud a,
 .entry-title a,
 .category-name a,
+.categories a,
 .e-content a,
 .recent-posts li a,
 .crp_title {  
@@ -121,6 +122,10 @@ figure.wp-caption {
     &:hover {
         @apply no-underline hover:underline hover:text-sky-600;
     }    
+}
+
+.post .e-content a:not(.sidebar a, .crp_related a) {
+  @apply underline text-sky-600 hover:text-sky-900;
 }
 
 .widget_block {
