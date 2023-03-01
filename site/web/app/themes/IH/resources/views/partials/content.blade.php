@@ -3,7 +3,7 @@
     {{ the_post_thumbnail('medium_large', array( 'class' => 'w-full' ) ) }}
   </a>
   <header>
-    <h2 class="entry-title text-base lg:text-lg mt-2">
+    <h2 class="entry-title text-lg my-4 font-bold">
       <a href="{{ get_permalink() }}">
         {!! $title !!}
       </a>
