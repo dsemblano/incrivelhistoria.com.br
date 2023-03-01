@@ -4,7 +4,7 @@
   </span>
   
   <header class="mt-6">
-    <div class="container relative left-0 top-24 bg-white w-80 md:min-w-max px-4 lg:px-8 pb-4 text-center">
+    <div class="container relative left-0 top-24 bg-white w-80 md:w-5/6 px-4 lg:px-8 pb-4 text-center">
       <h1 class="p-name font-bold text-4xl lg:text-8xl">
         {!! $title !!}
       </h1>
