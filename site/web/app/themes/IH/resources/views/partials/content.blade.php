@@ -9,6 +9,12 @@
       </a>
     </h2>
 
+    <p class="my-3 excerpt">
+      <a class="postslinks" href="{{ get_permalink() }}">
+        {{ get_the_excerpt() }}
+      </a>
+    </p>
+
     {{-- @include('partials.entry-meta') --}}
     {{-- <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
       {{ get_the_date() }}
