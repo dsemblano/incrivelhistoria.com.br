@@ -4,8 +4,8 @@
   </span>
   
   <header class="mt-6">
-    <div class="container relative left-0 top-24 bg-white w-fit px-4 lg:px-8 pb-4 text-center">
-      <h1 class="p-name font-bold text-lg lg:text-8xl">
+    <div class="container relative left-0 top-24 bg-white w-80 md:min-w-max px-4 lg:px-8 pb-4 text-center">
+      <h1 class="p-name font-bold text-4xl lg:text-8xl">
         {!! $title !!}
       </h1>
       <div class="container text-center flex flex-col items-center text-xs lg:text-xl gap-1 lg:gap-3">
