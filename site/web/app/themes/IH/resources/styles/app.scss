@@ -37,7 +37,7 @@
   font-display: swap;
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 // Variables
 $links: #2B9EB3;
@@ -46,6 +46,12 @@ $body: #707070;
 $borders: #E0E0E0;
 $emphasis: #FFC857;
 $textcolor: #2D3441;
+
+img:not(.featured-singleimg .wp-post-image):hover {
+  filter: sepia(100%);
+  transition: all 0.2s ease-in-out;
+}
+
 
 body {
     // font-family: 'Lato', sans-serif;
