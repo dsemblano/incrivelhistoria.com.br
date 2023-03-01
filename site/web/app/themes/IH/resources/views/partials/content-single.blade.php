@@ -4,17 +4,24 @@
   </span>
   
   <header class="mt-6">
-    <h1 class="p-name container mb-6">
-      {!! $title !!}
-    </h1>
+    <div class="container relative left-0 top-24 bg-white w-fit px-10 lg:px-8 pb-8 text-center">
+      <h1 class="p-name text-lg lg:text-8xl">
+        {!! $title !!}
+      </h1>
+      <div class="container text-center flex flex-col items-center text-sm lg:text-xl gap-3">
+        @include('partials.entry-meta')
+        @include('partials.readingtime')
+      </div>
+    </div>
+    
     <picture class="featured-singleimg w-full">
       {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-screen mb-6') ) }}
     </picture>
-
+{{-- 
     <div class="container flex flex-row justify-around gap-5 md:justify-start">
       @include('partials.entry-meta')
       @include('partials.readingtime')
-    </div>
+    </div> --}}
     
   </header>
 
