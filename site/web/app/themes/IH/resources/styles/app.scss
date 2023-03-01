@@ -137,6 +137,11 @@ figure.wp-caption {
   @apply text-red-700 text-3xl inline-block;
 }
 
+section article:last-of-type {
+  /* background-color: red; */
+  border: 0;
+}
+
 // single posts, comments
 
 .e-content {

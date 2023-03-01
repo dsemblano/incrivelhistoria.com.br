@@ -1,7 +1,7 @@
 <section {{ $attributes }}>
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
-    <section id="curiosidades-listas" class="w-full">
+    <section id="curiosidades-listas" class="w-full border-b border-gray-200 pb-12 mb-12">
       <span class="category-name mb-4">Curiosidades e Listas</span>
       <div class="flex flex-col">
 
@@ -12,7 +12,7 @@
         @if ($first_loop)
 
         <div class="top flex flex-col md:flex-row">
-          <article class="mb-8 h-auto flex flex-col md:flex-row">
+          <article class="h-auto flex flex-col md:flex-row border-b border-gray-200 pb-12 mb-12">
           
             <div class="left mr-4 w-full md:w-2/3">
               <a href="{{ get_permalink() }}">
@@ -20,7 +20,7 @@
               </a>
             </div>
             
-            <div class="right flex-row w-full md:w-1/3">
+            <div class="right flex-row w-full md:w-1/3 md:pl-4">
               <h2 class="text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
@@ -47,7 +47,7 @@
                 </a>
               </div>
 
-              <div class="right w-1/2 md:w-full">
+              <div class="right w-1/2 md:w-full md:mt-4">
                 <h2 class="text-lg lg:text-2xl md:my-2 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
@@ -74,7 +74,7 @@
       </div>
       @endif
     </section>
-    @include('partials.hrelement')
+    {{-- @include('partials.hrelement') --}}
     
     {{-- Next grid --}}  
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
@@ -88,14 +88,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -140,14 +140,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -191,14 +191,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -249,14 +249,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -300,14 +300,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -351,14 +351,14 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="mb-8">
+          <article class="border-b border-gray-200 pb-8 mb-8">
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </a>
 
-              <h2 class="text-lg my-2 font-bold">
+              <h2 class="text-lg my-4 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
