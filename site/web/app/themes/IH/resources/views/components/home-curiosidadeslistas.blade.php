@@ -11,10 +11,10 @@
         @while ($category->have_posts()) @php $category->the_post() @endphp
         @if ($first_loop)
 
-        <div class="top flex flex-col md:flex-row">
-          <article class="h-auto flex flex-col md:flex-row border-b border-gray-200 pb-12 mb-12">
+        <div class="top flex flex-col lg:flex-row">
+          <article class="h-auto flex flex-col lg:flex-row border-b border-gray-200 pb-12 mb-12">
           
-            <div class="left mr-4 w-full md:w-2/3">
+            <div class="left mr-4 w-full lg:w-2/3">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -22,8 +22,8 @@
               </a>
             </div>
             
-            <div class="right flex-row w-full md:w-1/3 md:pl-4">
-              <h2 class="text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
+            <div class="right flex-row w-full lg:w-1/3 lg:pl-4">
+              <h2 class="text-2xl lg:text-4xl mb-2 mt-4 md:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
