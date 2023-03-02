@@ -51,14 +51,14 @@ figure.imgpost {
   overflow: hidden;
 }
 
-img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img) {
+img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, .page-header img) {
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img):hover {
+img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, .page-header img):hover {
   filter: sepia(70%);
   -webkit-transform: scale(1.3);
 	transform: scale(1.3);
