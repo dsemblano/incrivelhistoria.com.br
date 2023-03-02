@@ -23,7 +23,7 @@
             </div>
             
             <div class="right flex-row w-full lg:w-1/3 lg:pl-4">
-              <h2 class="text-2xl lg:text-4xl mb-2 mt-4 md:mt-0 font-bold">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -95,7 +95,7 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <article class="border-b border-gray-200 pb-8 mb-8 md:h- lg:h-96">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
