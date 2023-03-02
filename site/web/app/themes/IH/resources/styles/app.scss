@@ -151,7 +151,7 @@ figure.wp-caption {
 }
 
 .category-name {
-  @apply text-red-700 text-3xl inline-block;
+  @apply text-red-700 md:text-2xl text-3xl inline-block;
 }
 
 section article:last-of-type {

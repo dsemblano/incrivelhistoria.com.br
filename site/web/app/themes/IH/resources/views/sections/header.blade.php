@@ -36,7 +36,7 @@
             @include('partials/inputsearch')
           </div>
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-black tracking-widest w-full justify-evenly
-          xl:flex-row xl:mt-0 nav text-lg relative']) !!}
+          xl:flex-row xl:mt-0 nav text-lg 2xl:text-xl relative']) !!}
         </div>
   
       </nav>

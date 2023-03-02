@@ -92,9 +92,10 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
+          
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
+            <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -113,24 +114,25 @@
                 </a>
               </p>
               @include('partials.readingtime')
+            </article>
 
             @php $first_loop = false; @endphp
               @else
-              <div class="flex flex-row gap-2">
-                <a class="w-1/2" href="{{ get_permalink() }}">
-                  <figure class="imgpost">
-                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                  </figure>
-                </a>
-                <h2 class="text-lg font-bold w-1/2">
-                  <a class="postslinks" href="{{ get_permalink() }}">
-                    {{ the_title() }}
+              <article class="border-b border-gray-200 pb-8 mb-8">
+                <div class="flex flex-row gap-2">
+                  <a class="w-1/2" href="{{ get_permalink() }}">
+                    <figure class="imgpost">
+                      {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                    </figure>
                   </a>
-                </h2>
-              </div>
-
+                  <h2 class="text-lg font-bold w-1/2">
+                    <a class="postslinks" href="{{ get_permalink() }}">
+                      {{ the_title() }}
+                    </a>
+                  </h2>
+                </div>
+              </article>
             @endif
-          </article>
           @endwhile
         @else
           <div class="alert alert-warning">
@@ -148,30 +150,33 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
-            {{-- @php echo $first_loop; @endphp --}}
-            @if ($first_loop)
-              <a href="{{ get_permalink() }}">
-                <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                </figure>
+          
+          {{-- @php echo $first_loop; @endphp --}}
+          @if ($first_loop)
+          <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <a href="{{ get_permalink() }}">
+              <figure class="imgpost">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+              </figure>
+            </a>
+
+            <h2 class="text-lg my-4 font-bold">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
               </a>
+            </h2>
 
-              <h2 class="text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
+            </p>
+            @include('partials.readingtime')
+          </article>
 
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-
-              @php $first_loop = false; @endphp
-              @else
+          @php $first_loop = false; @endphp
+            @else
+            <article class="border-b border-gray-200 pb-8 mb-8">
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
                   <figure class="imgpost">
@@ -184,15 +189,14 @@
                   </a>
                 </h2>
               </div>
-
-            @endif
-          </article>
-          @endwhile
-        @else
-          <div class="alert alert-warning">
-            {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-          </div>
-        @endif
+            </article>
+          @endif
+        @endwhile
+      @else
+        <div class="alert alert-warning">
+          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+        </div>
+      @endif
       </section>
   
       {{-- Next category --}}
@@ -203,30 +207,33 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
-            {{-- @php echo $first_loop; @endphp --}}
-            @if ($first_loop)
-              <a href="{{ get_permalink() }}">
-                <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                </figure>
+          
+          {{-- @php echo $first_loop; @endphp --}}
+          @if ($first_loop)
+          <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <a href="{{ get_permalink() }}">
+              <figure class="imgpost">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+              </figure>
+            </a>
+
+            <h2 class="text-lg my-4 font-bold">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
               </a>
+            </h2>
 
-              <h2 class="text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
+            </p>
+            @include('partials.readingtime')
+          </article>
 
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-
-              @php $first_loop = false; @endphp
-              @else
+          @php $first_loop = false; @endphp
+            @else
+            <article class="border-b border-gray-200 pb-8 mb-8">
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
                   <figure class="imgpost">
@@ -239,15 +246,14 @@
                   </a>
                 </h2>
               </div>
-
-            @endif
-          </article>
-          @endwhile
-        @else
-          <div class="alert alert-warning">
-            {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-          </div>
-        @endif
+            </article>
+          @endif
+        @endwhile
+      @else
+        <div class="alert alert-warning">
+          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+        </div>
+      @endif
       </section>
     
     </div>
@@ -265,30 +271,33 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
-            {{-- @php echo $first_loop; @endphp --}}
-            @if ($first_loop)
-              <a href="{{ get_permalink() }}">
-                <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                </figure>
+          
+          {{-- @php echo $first_loop; @endphp --}}
+          @if ($first_loop)
+          <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <a href="{{ get_permalink() }}">
+              <figure class="imgpost">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+              </figure>
+            </a>
+
+            <h2 class="text-lg my-4 font-bold">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
               </a>
+            </h2>
 
-              <h2 class="text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
+            </p>
+            @include('partials.readingtime')
+          </article>
 
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-
-              @php $first_loop = false; @endphp
-              @else
+          @php $first_loop = false; @endphp
+            @else
+            <article class="border-b border-gray-200 pb-8 mb-8">
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
                   <figure class="imgpost">
@@ -301,15 +310,14 @@
                   </a>
                 </h2>
               </div>
-
-            @endif
-          </article>
-          @endwhile
-        @else
-          <div class="alert alert-warning">
-            {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-          </div>
-        @endif
+            </article>
+          @endif
+        @endwhile
+      @else
+        <div class="alert alert-warning">
+          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+        </div>
+      @endif
       </section>
     
       {{-- Next category --}}
@@ -320,30 +328,33 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
-            {{-- @php echo $first_loop; @endphp --}}
-            @if ($first_loop)
-              <a href="{{ get_permalink() }}">
-                <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                </figure>
+          
+          {{-- @php echo $first_loop; @endphp --}}
+          @if ($first_loop)
+          <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <a href="{{ get_permalink() }}">
+              <figure class="imgpost">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+              </figure>
+            </a>
+
+            <h2 class="text-lg my-4 font-bold">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
               </a>
+            </h2>
 
-              <h2 class="text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
+            </p>
+            @include('partials.readingtime')
+          </article>
 
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-
-              @php $first_loop = false; @endphp
-              @else
+          @php $first_loop = false; @endphp
+            @else
+            <article class="border-b border-gray-200 pb-8 mb-8">
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
                   <figure class="imgpost">
@@ -356,15 +367,14 @@
                   </a>
                 </h2>
               </div>
-
-            @endif
-          </article>
-          @endwhile
-        @else
-          <div class="alert alert-warning">
-            {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-          </div>
-        @endif
+            </article>
+          @endif
+        @endwhile
+      @else
+        <div class="alert alert-warning">
+          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+        </div>
+      @endif
       </section>
   
       {{-- Next category --}}
@@ -375,30 +385,33 @@
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
           @while ($category->have_posts()) @php $category->the_post() @endphp
-          <article class="border-b border-gray-200 pb-8 mb-8">
-            {{-- @php echo $first_loop; @endphp --}}
-            @if ($first_loop)
-              <a href="{{ get_permalink() }}">
-                <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
-                </figure>
+          
+          {{-- @php echo $first_loop; @endphp --}}
+          @if ($first_loop)
+          <article class="border-b border-gray-200 pb-8 mb-8 md:h-96">
+            <a href="{{ get_permalink() }}">
+              <figure class="imgpost">
+                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+              </figure>
+            </a>
+
+            <h2 class="text-lg my-4 font-bold">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ the_title() }}
               </a>
+            </h2>
 
-              <h2 class="text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
+            <p class="mb-3 excerpt">
+              <a class="postslinks" href="{{ get_permalink() }}">
+                {{ get_the_excerpt() }}
+              </a>
+            </p>
+            @include('partials.readingtime')
+          </article>
 
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-
-              @php $first_loop = false; @endphp
-              @else
+          @php $first_loop = false; @endphp
+            @else
+            <article class="border-b border-gray-200 pb-8 mb-8">
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
                   <figure class="imgpost">
@@ -411,15 +424,14 @@
                   </a>
                 </h2>
               </div>
-
-            @endif
-          </article>
-          @endwhile
-        @else
-          <div class="alert alert-warning">
-            {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-          </div>
-        @endif
+            </article>
+          @endif
+        @endwhile
+      @else
+        <div class="alert alert-warning">
+          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+        </div>
+      @endif
       </section>
     
     </div>
