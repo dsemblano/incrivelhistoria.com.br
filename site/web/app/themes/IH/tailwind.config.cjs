@@ -7,6 +7,9 @@ module.exports = {
       padding: '1rem',
     },
     extend: {
+      height: {
+        "97": "28rem",
+      },
       colors: {
         'IHazul': '#B4CEFC',
         'cinzapadrao': '#2D3441',
