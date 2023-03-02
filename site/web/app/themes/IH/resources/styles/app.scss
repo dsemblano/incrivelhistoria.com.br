@@ -92,6 +92,7 @@ h4,
 .recent-posts li a,
 .categories,
 .p-author,
+.heading-category,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -185,7 +186,7 @@ section article:last-of-type {
 
 // Pagination
 .pagination {
-    @apply text-red-700 mt-14;
+    @apply text-red-700 my-14;
 
 
     h2 {
