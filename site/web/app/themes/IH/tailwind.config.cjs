@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       height: {
-        "97": "28rem",
+        "97": "30rem",
       },
       colors: {
         'IHazul': '#B4CEFC',
