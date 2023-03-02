@@ -28,7 +28,7 @@
 
 <div class="container">
   <div class="flex flex-col landscape:flex-row lg:flex-row mt-8 justify-between e-content">
-    <div class="landscape:w-3/4 prose lg:prose-xl">
+    <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl">
       @php(the_content())
       @php(comments_template())
       {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}
