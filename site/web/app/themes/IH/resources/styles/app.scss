@@ -47,9 +47,21 @@ $borders: #E0E0E0;
 $emphasis: #FFC857;
 $textcolor: #2D3441;
 
-img:not(.featured-singleimg .wp-post-image):hover {
+figure.imgpost {
+  overflow: hidden;
+}
+
+img:not(.featured-singleimg .wp-post-image, .sidebar img ) {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+img:not(.featured-singleimg .wp-post-image, .sidebar img):hover {
   filter: sepia(70%);
-  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 

@@ -1,6 +1,6 @@
 <article @php(post_class(''))>
   <a href="{{ get_permalink() }}">
-    {{ the_post_thumbnail('medium_large', array( 'class' => 'w-full' ) ) }}
+    {{ the_post_thumbnail('medium_large', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
   </a>
   <header>
     <h2 class="entry-title text-lg my-4 font-bold">

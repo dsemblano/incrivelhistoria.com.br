@@ -16,7 +16,9 @@
           
             <div class="left mr-4 w-full md:w-2/3">
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
             </div>
             
@@ -43,7 +45,9 @@
             <div class="flex flex-row md:flex-col gap-2 md:gap-0">
               <div class="left w-1/2 md:w-full">
                 <a href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
               </div>
 
@@ -92,7 +96,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -112,7 +118,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
@@ -144,7 +152,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -164,7 +174,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
@@ -195,7 +207,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -215,7 +229,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
@@ -253,7 +269,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -273,7 +291,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
@@ -304,7 +324,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -324,7 +346,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
@@ -355,7 +379,9 @@
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
               <a href="{{ get_permalink() }}">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                <figure class="imgpost">
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                </figure>
               </a>
 
               <h2 class="text-lg my-4 font-bold">
@@ -375,7 +401,9 @@
               @else
               <div class="flex flex-row gap-2">
                 <a class="w-1/2" href="{{ get_permalink() }}">
-                  {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  </figure>
                 </a>
                 <h2 class="text-lg font-bold w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
