@@ -1,7 +1,7 @@
 <section {{ $attributes }}>
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
-    <section id="curiosidades-listas" class="w-full border-b border-gray-200 pb-12 mb-12">
+    <section id="curiosidades-listas" class="w-full border-default pb-12 mb-12">
       <span class="category-name mb-4">Curiosidades e Listas</span>
       <div class="flex flex-col">
 
@@ -12,7 +12,7 @@
         @if ($first_loop)
 
         <div class="top flex flex-col lg:flex-row">
-          <article class="h-auto flex flex-col lg:flex-row border-b border-gray-200 pb-12 mb-12">
+          <article class="h-auto flex flex-col lg:flex-row border-default pb-12 mb-12">
           
             <div class="left mr-4 w-full lg:w-2/3">
               <a href="{{ get_permalink() }}">
@@ -95,30 +95,31 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+            <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
                 </figure>
               </a>
-
-              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
-
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
+              <div class="wrap">
+                <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+  
+                <p class="mb-3 excerpt">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ get_the_excerpt() }}
+                  </a>
+                </p>
+                @include('partials.readingtime')
+              </div>
             </article>
 
             @php $first_loop = false; @endphp
               @else
-              <article class="border-b border-gray-200 pb-8 mb-8">
+              <article class="border-default pb-8 mb-8">
                 <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -153,30 +154,31 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </figure>
             </a>
+            <div class="wrap">
+              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
 
-            <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
-              </a>
-            </h2>
-
-            <p class="mb-3 excerpt">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-            @include('partials.readingtime')
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
           </article>
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-b border-gray-200 pb-8 mb-8">
+            <article class="border-default pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -210,30 +212,31 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </figure>
             </a>
+            <div class="wrap">
+              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
 
-            <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
-              </a>
-            </h2>
-
-            <p class="mb-3 excerpt">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-            @include('partials.readingtime')
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
           </article>
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-b border-gray-200 pb-8 mb-8">
+            <article class="border-default pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -274,30 +277,31 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </figure>
             </a>
+            <div class="wrap">
+              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
 
-            <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
-              </a>
-            </h2>
-
-            <p class="mb-3 excerpt">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-            @include('partials.readingtime')
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
           </article>
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-b border-gray-200 pb-8 mb-8">
+            <article class="border-default pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -331,30 +335,31 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </figure>
             </a>
+            <div class="wrap">
+              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
 
-            <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
-              </a>
-            </h2>
-
-            <p class="mb-3 excerpt">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-            @include('partials.readingtime')
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
           </article>
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-b border-gray-200 pb-8 mb-8">
+            <article class="border-default pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -388,30 +393,31 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-b border-gray-200 pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
               </figure>
             </a>
+            <div class="wrap">
+              <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ the_title() }}
+                </a>
+              </h2>
 
-            <h2 class="text-lg md:text-base lg:text-lg my-4 font-bold">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ the_title() }}
-              </a>
-            </h2>
-
-            <p class="mb-3 excerpt">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-            @include('partials.readingtime')
+              <p class="mb-3 excerpt">
+                <a class="postslinks" href="{{ get_permalink() }}">
+                  {{ get_the_excerpt() }}
+                </a>
+              </p>
+              @include('partials.readingtime')
+            </div>
           </article>
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-b border-gray-200 pb-8 mb-8">
+            <article class="border-default pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">

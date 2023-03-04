@@ -47,6 +47,14 @@ $borders: #E0E0E0;
 $emphasis: #FFC857;
 $textcolor: #2D3441;
 
+.border-default {
+  @apply border border-gray-200 rounded-t-md bg-white;
+}
+
+.wrap {
+  padding: 1rem;
+}
+
 figure.imgpost {
   overflow: hidden;
 }
@@ -70,6 +78,7 @@ body {
     // font-family: 'Roboto Serif', serif;
     font-family: 'Noto Serif', serif;
     color: $textcolor;
+    background-color: #f5f5f5;  
 }
 
 ::selection {
