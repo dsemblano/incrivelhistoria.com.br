@@ -2,7 +2,9 @@
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
     <section id="curiosidades-listas" class="w-full pb-12 mb-12">
-      <span class="category-name mb-4">Curiosidades e Listas</span>
+      <span class="category-name mb-4">
+        @php echo caturl('curiosidades') @endphp
+      </span>
       <div class="flex flex-col">
 
         @php $category = postbycategory('curiosidades'); @endphp
@@ -28,6 +30,9 @@
                   {{ the_title() }}
                 </a>
               </h2>
+              </p>
+
+              
               <p class="mb-3 excerpt">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ get_the_excerpt() }}
@@ -39,7 +44,7 @@
         </div>
         <div class="bottom flex flex-col md:flex-row md:gap-8">
         @php $first_loop = false; @endphp
-        @else
+        {{-- @else
 
           <article class="mb-8 w-full md:w-1/2 h-3/6">
             <div class="flex flex-row md:flex-col gap-2 md:gap-0">
@@ -65,7 +70,7 @@
               </a>
             </p>
           </article>
-      
+       --}}
         @endif
         
         @endwhile
@@ -76,6 +81,9 @@
         </div>
       </div>
       @endif
+      <section class="todas-noticias">
+        todas
+      </section>
     </section>
     {{-- @include('partials.hrelement') --}}
     
@@ -85,7 +93,9 @@
       {{-- Next category --}}
     
       <section id="historia-brasil" class="">
-        <span class="category-name mb-4">História do Brasil</span>
+        <span class="category-name mb-4">
+          @php echo caturl('historia-do-brasil') @endphp
+        </span>
 
         @php $category = postbycategory('historia-do-brasil'); @endphp
         @if ($category->have_posts())
@@ -145,7 +155,9 @@
       {{-- Next category --}}  
     
       <section id="direitos-humanos" class="">
-        <span class="category-name mb-4">Direitos Humanos</span>
+        <span class="category-name mb-4">
+          @php echo caturl('direitos-humanos') @endphp
+        </span>
         @php $category = postbycategory('direitos-humanos'); @endphp
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
@@ -203,7 +215,9 @@
       {{-- Next category --}}
   
       <section id="batalhas-historicas" class="">
-        <span class="category-name mb-4">Batalhas Históricas</span>
+        <span class="category-name mb-4">
+          @php echo caturl('batalhas-historicas') @endphp
+        </span>
         @php $category = postbycategory('batalhas-historicas'); @endphp
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
@@ -268,7 +282,9 @@
       @php $category = postbycategory('crime-organizado'); @endphp
     
       <section id="crime-organizado" class="">
-        <span class="category-name mb-4">Crime Organizado</span>
+        <span class="category-name mb-4">
+          @php echo caturl('crime-organizado') @endphp
+        </span>
         @php $category = postbycategory('crime-organizado'); @endphp
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
@@ -326,7 +342,9 @@
       {{-- Next category --}}
     
       <section id="guerras" class="">
-        <span class="category-name mb-4">Guerras</span>
+        <span class="category-name mb-4">
+          @php echo caturl('guerras') @endphp
+        </span>
         @php $category = postbycategory('guerras'); @endphp
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
@@ -384,7 +402,9 @@
       {{-- Next category --}}
   
       <section id="periodos" class="">
-        <span class="category-name mb-4">Períodos</span>
+        <span class="category-name mb-4">
+          @php echo caturl('periodos') @endphp
+        </span>
         @php $category = postbycategory('periodos'); @endphp
         @if ($category->have_posts())
           @php $first_loop = true; @endphp
