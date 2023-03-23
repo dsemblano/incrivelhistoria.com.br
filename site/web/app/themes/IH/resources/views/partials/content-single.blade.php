@@ -1,7 +1,7 @@
 <article @php(post_class('w-full'))>
   
   <header class="">
-    <div class="container relative left-0 top-24 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
+    <div class="container relative left-0 top-10 md:top-20 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
       <h1 class="p-name font-bold text-4xl lg:text-6xl">
         {!! $title !!}
       </h1>
