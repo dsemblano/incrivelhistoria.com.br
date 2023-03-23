@@ -23,6 +23,18 @@ function lastposts($posts=5) {
     wp_reset_postdata();
 }
 
+// function excerpt($num) {
+//     $limit = $num+1;
+//     $excerpt = explode(' ', get_the_excerpt(), $limit);
+//     array_pop($excerpt);
+//     $excerpt = implode(" ",$excerpt)."... (<a href='" .get_permalink($post->ID) ." '>Leia mais</a>)";
+//     echo $excerpt;
+// }
+
+function excerpt($limit) {
+    return wp_trim_words(get_the_excerpt(), $limit);
+}
+
 // Search highlight
 function custom_search_highlight($text) {
     if (is_search()) {

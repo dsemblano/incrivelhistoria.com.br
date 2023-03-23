@@ -1,7 +1,7 @@
 <section {{ $attributes }}>
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
-    <section id="curiosidades-listas" class="w-full border-default pb-12 mb-12">
+    <section id="curiosidades-listas" class="w-full pb-12 mb-12">
       <span class="category-name mb-4">Curiosidades e Listas</span>
       <div class="flex flex-col">
 
@@ -11,18 +11,18 @@
         @while ($category->have_posts()) @php $category->the_post() @endphp
         @if ($first_loop)
 
-        <div class="top flex flex-col lg:flex-row">
-          <article class="h-auto flex flex-col lg:flex-row border-default pb-12 mb-12">
+        <div class="top flex flex-col lg:flex-row mb-12">
+          <article class="flex flex-col lg:flex-row border-default">
           
-            <div class="left mr-4 w-full lg:w-2/3">
+            <div class="left mr-4 w-full lg:w-2/3 h-full">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full h-full rounded-tl-md' ) ) }}
                 </figure>
               </a>
             </div>
             
-            <div class="right flex-row w-full lg:w-1/3 lg:pl-4">
+            <div class="right flex-row w-full lg:w-1/3 lg:p-4">
               <h2 class="text-2xl md:text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
@@ -41,30 +41,29 @@
         @php $first_loop = false; @endphp
         @else
 
-          <article class="mb-8 h-auto w-full md:w-1/2">
+          <article class="mb-8 w-full md:w-1/2 h-3/6">
             <div class="flex flex-row md:flex-col gap-2 md:gap-0">
               <div class="left w-1/2 md:w-full">
                 <a href="{{ get_permalink() }}">
                   <figure class="imgpost">
-                    {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                    {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                   </figure>
                 </a>
               </div>
 
               <div class="right w-1/2 md:w-full md:mt-4">
-                <h2 class="text-lg lg:text-2xl md:my-4 font-bold">
+                <h2 class="text-lg lg:text-2xl md:my-4 font-bold px-4">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
                 </h2>
               </div>              
             </div>
-            <p class="mb-3 excerpt w-full mt-4 md:mt-0">
+            <p class="mb-3 excerpt w-full mt-4 md:mt-0 px-4">
               <a class="postslinks" href="{{ get_permalink() }}">
                 {{ get_the_excerpt() }}
               </a>
             </p>
-            @include('partials.readingtime')
           </article>
       
         @endif
@@ -95,10 +94,10 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+            <article class="border-default pb-8 mb-8 h-3/6">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                 </figure>
               </a>
               <div class="wrap">
@@ -119,7 +118,7 @@
 
             @php $first_loop = false; @endphp
               @else
-              <article class="border-default pb-8 mb-8">
+              <article class="pb-8 mb-8">
                 <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -154,7 +153,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 h-3/6">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -178,7 +177,7 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-default pb-8 mb-8">
+            <article class="pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -212,7 +211,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 h-3/6">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -236,7 +235,7 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-default pb-8 mb-8">
+            <article class="pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -277,7 +276,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 h-3/6">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -301,7 +300,7 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-default pb-8 mb-8">
+            <article class="pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -335,7 +334,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 h-3/6">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -359,7 +358,7 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-default pb-8 mb-8">
+            <article class="pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
@@ -393,7 +392,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-97 lg:h-96">
+          <article class="border-default pb-8 mb-8 h-3/6">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -417,7 +416,7 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="border-default pb-8 mb-8">
+            <article class="pb-8 mb-8">
               <div class="flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">

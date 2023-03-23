@@ -48,7 +48,7 @@ $emphasis: #FFC857;
 $textcolor: #2D3441;
 
 .border-default {
-  @apply border border-gray-200 rounded-t-md bg-white;
+  @apply border border-gray-200 rounded-t-md bg-white shadow-lg;
 }
 
 .wrap {
@@ -78,7 +78,7 @@ body {
     // font-family: 'Roboto Serif', serif;
     font-family: 'Noto Serif', serif;
     color: $textcolor;
-    background-color: #f5f5f5;  
+    // background-color: #f5f5f5;  
 }
 
 ::selection {

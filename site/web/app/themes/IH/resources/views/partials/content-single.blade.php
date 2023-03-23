@@ -1,11 +1,11 @@
 <article @php(post_class('w-full'))>
   
   <header class="">
-    <div class="container relative left-0 top-24 bg-white w-80 md:w-5/6 px-4 lg:px-8 pb-4 text-center">
-      <h1 class="p-name font-bold text-4xl lg:text-8xl">
+    <div class="container relative left-0 top-24 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
+      <h1 class="p-name font-bold text-4xl lg:text-6xl">
         {!! $title !!}
       </h1>
-      <div class="categories lg:text-xl my-4">
+      <div class="categories lg:text-lg my-4">
         {{ the_category(' &bull; ') }}
       </div>
       
@@ -16,7 +16,7 @@
     </div>
     
     <picture class="featured-singleimg w-full">
-      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-screen mb-6') ) }}
+      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-thumb mb-6') ) }}
     </picture>
 {{-- 
     <div class="container flex flex-row justify-around gap-5 md:justify-start">

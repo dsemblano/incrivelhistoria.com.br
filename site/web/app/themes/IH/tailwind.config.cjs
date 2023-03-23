@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       height: {
         "97": "30rem",
+        "thumb": "80vh",
       },
       colors: {
         'IHazul': '#B4CEFC',
