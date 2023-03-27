@@ -1146,6 +1146,21 @@
           "name": "Cinzapadrao",
           "slug": "cinzapadrao",
           "color": "#2d3441"
+        },
+        {
+          "name": "Ihcurioslistas",
+          "slug": "ihcurioslistas",
+          "color": "#ee8927"
+        },
+        {
+          "name": "Ihbrasil",
+          "slug": "ihbrasil",
+          "color": "#ee8927"
+        },
+        {
+          "name": "Ihcrime",
+          "slug": "ihcrime",
+          "color": "#ee8927"
         }
       ]
     },

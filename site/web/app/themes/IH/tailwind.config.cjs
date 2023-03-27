@@ -14,6 +14,9 @@ module.exports = {
       colors: {
         'IHazul': '#B4CEFC',
         'cinzapadrao': '#2D3441',
+        'ihcurioslistas': '#EE8927',
+        'ihbrasil': '#EE8927',
+        'ihcrime': '#EE8927',
       }, // Extend Tailwind's default colors
       // typography: (theme) => ({
       //   DEFAULT: {
