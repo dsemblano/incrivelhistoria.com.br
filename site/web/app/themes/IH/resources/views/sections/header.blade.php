@@ -1,6 +1,6 @@
 <header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 border-b border-gray-200 rounded-b-md">
 
-  <nav class="nav-primary h-full pb-4 border-gray-200 border-b border-solid">
+  <nav class="nav-primary h-full pb-4 xl:border-gray-200 xl:border-b xl:border-solid">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
@@ -35,7 +35,7 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-black pb-4 border-gray-200 border-b border-solid']) !!}
+          {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-black py-4 border-gray-200 border-b border-solid']) !!}
 
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-black w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base  relative']) !!}
