@@ -1,4 +1,4 @@
-@if ( is_category() || is_tag() )
+@if ( is_category() || is_tag() || is_page('categorias') )
 
   <div class="page-header">
     <div class="heading-category container relative left-0 top-16 bg-white w-80 md:w-1/3 px-4 pb-4 text-center">
