@@ -37,7 +37,7 @@
           </div>
           {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-black pb-4 border-gray-200 border-b border-solid']) !!}
 
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-black tracking-widest w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-2 text-black w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base  relative']) !!}
         </div>
   
@@ -45,7 +45,7 @@
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
 
-          {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'container' => 'ul', 'menu_class' => 'text-base flex flex-col py-2 text-black tracking-widest w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'container' => 'ul', 'menu_class' => 'text-base flex flex-col py-2 text-black w-full justify-evenly
           xl:flex-row xl:mt-0 nav relative']) !!}
 
           <div class="relative">

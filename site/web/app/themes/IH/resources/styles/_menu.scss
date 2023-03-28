@@ -1,7 +1,7 @@
 .menu-categorias-menu-container {
   @apply bg-transparent w-full;
 
-  box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.2);
+  // box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.2);
 
   ul#menu-categorias-menu {
 
@@ -10,7 +10,8 @@
     }
 
     .sub-menu {
-      @apply bg-transparent ml-4 border border-solid border-gray-400 pt-4 pl-4 w-11/12 ;
+      // @apply bg-transparent ml-4 border border-solid border-gray-400 pt-4 pl-4 w-11/12 ;
+      @apply bg-transparent ml-4 pt-4 pl-4 w-11/12 ;
 
       margin-left: 1rem;
     }
