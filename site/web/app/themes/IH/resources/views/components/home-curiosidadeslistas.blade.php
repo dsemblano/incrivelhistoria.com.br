@@ -19,12 +19,12 @@
             <div class="left mr-4 w-full lg:w-2/3 h-full">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full h-full rounded-tl-md' ) ) }}
+                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full h-full rounded-t-md xl:rounded-tr-none rounded-tl-md' ) ) }}
                 </figure>
               </a>
             </div>
             
-            <div class="right flex-row w-full lg:w-1/3 lg:p-4">
+            <div class="right flex-row w-full lg:w-1/3 lg:p-4 p-4">
               <h2 class="text-2xl md:text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
