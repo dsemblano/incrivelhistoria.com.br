@@ -55,6 +55,10 @@ $textcolor: #2D3441;
   padding: 1rem;
 }
 
+.banner {
+  box-shadow: 0 2px 22px 0 rgba(0,0,0,.06);
+}
+
 figure.imgpost {
   overflow: hidden;
 }
@@ -103,6 +107,7 @@ h4,
 .postslinks,
 .p-author,
 .heading-category,
+.menu-categorias-menu-container,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -117,7 +122,6 @@ h4,
 .e-content h3,
 .e-content h4,
 .article_categories a,
-.menu-categorias-menu-container,
 .crp_related_shortcode h3 {
     font-family: 'Jenson', serif;
 }

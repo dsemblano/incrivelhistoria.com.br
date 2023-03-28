@@ -1,6 +1,6 @@
-<header class="banner header-home w-full h-full bg-transparent z-50 py-2 mt-4">
+<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 border-b border-gray-200 rounded-b-md">
 
-  <nav class="nav-primary h-full">
+  <nav class="nav-primary h-full pb-4 border-gray-200 border-b border-solid">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
@@ -9,7 +9,7 @@
           @include('partials/logo')        
         </picture>
   
-        {{-- menu mobile --}}
+        {{-- menu mobile --}} 
         <div id="mobile-menu" class="flex flex-wrap order-3 ml-8 xl:hidden">
           <button id="button-search" type="button" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3" aria-expanded="false"
             class="xl:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
@@ -42,13 +42,19 @@
       </nav>
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
+
+          {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'container' => 'ul', 'menu_class' => 'bg-red-700 flex flex-col py-2 text-black tracking-widest w-full justify-evenly
+          xl:flex-row xl:mt-0 nav text-lg 2xl:text-xl relative']) !!}
+
           <div class="relative">
             @include('partials/inputsearch')
           </div>
         </div>
       </div>
     </div>
-      
+    <div class="flex overflow-x-auto">
+      {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'pagemenu bg-green-700 xl:hidden flex flex-row py-2 text-black justify-between justify-items-stretch']) !!}
+    </div>
 
 </header>
 
