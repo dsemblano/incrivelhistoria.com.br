@@ -174,65 +174,65 @@ figure.wp-caption {
   color: #151829;
 }
 
-@mixin border-category {
-  position: relative;
+// @mixin border-category {
+//   position: relative;
 
-  &::before {
-    /* Highlight color */
-    // background-color: #46b96c;
+//   &::before {
+//     /* Highlight color */
+//     // background-color: #46b96c;
   
-    content: "";
-    position: absolute;
-    // width: calc(100% + 25px);
-    // height: 80%;
-    // left: -5px;
-    // bottom: 0px;
-    // z-index: -1;
-    // transform: rotate(-3deg);
-    width: calc(100% + 3rem);
-    height: 5px;
-    left: 0px;
-    bottom: -3px;
-    z-index: -1;
-    transform: rotate(0deg);
-  }
+//     content: "";
+//     position: absolute;
+//     // width: calc(100% + 25px);
+//     // height: 80%;
+//     // left: -5px;
+//     // bottom: 0px;
+//     // z-index: -1;
+//     // transform: rotate(-3deg);
+//     width: calc(100% + 3rem);
+//     height: 5px;
+//     left: 0px;
+//     bottom: -3px;
+//     z-index: -1;
+//     transform: rotate(0deg);
+//   }
 
-}
+// }
 
-#curiosidades-listas .category-name strong {
-  @include border-category;
+// #curiosidades-listas .category-name strong {
+//   @include border-category;
   
-  &::before {
-    @apply bg-ihcurioslistas;
-  }
+//   &::before {
+//     @apply bg-ihcurioslistas;
+//   }
 
-}
+// }
 
-#historia-brasil,
-#direitos-humanos,
-#batalhas-historicas {
-  .category-name strong {
-    @include border-category;
+// #historia-brasil,
+// #direitos-humanos,
+// #batalhas-historicas {
+//   .category-name strong {
+//     @include border-category;
     
-    &::before {
-      @apply bg-ihbrasil;
-    }
+//     &::before {
+//       @apply bg-ihbrasil;
+//     }
   
-  }
-}
+//   }
+// }
 
-#crime-organizado,
-#guerras,
-#periodos {
-  .category-name strong {
-    @include border-category;
+// #crime-organizado,
+// #guerras,
+// #periodos {
+//   .category-name strong {
+//     @include border-category;
     
-    &::before {
-      @apply bg-ihcrime;
-    }
+//     &::before {
+//       @apply bg-ihcrime;
+//     }
   
-  }
-}
+//   }
+// }
 
 
 
