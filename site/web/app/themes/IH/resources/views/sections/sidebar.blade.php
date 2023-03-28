@@ -35,9 +35,9 @@ if ($query->have_posts()) : ?>
     </ul>
 
 <?php endif; wp_reset_postdata(); ?>
-
+@include('partials.hrelement')
 
 @include('partials.lastposts')
+@include('partials.hrelement')
 
-{{-- @include('partials.hrelement') --}}
 @php(dynamic_sidebar('sidebar-primary'))    
