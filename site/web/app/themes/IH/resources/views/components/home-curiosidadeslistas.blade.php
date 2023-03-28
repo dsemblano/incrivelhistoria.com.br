@@ -1,7 +1,7 @@
 <section {{ $attributes }}>
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
-    <section id="curiosidades-listas" class="w-full pb-12 mb-12">
+    <section id="curiosidades-listas" class="w-full">
       <span class="category-name mb-4">
         <strong>@php echo caturl('curiosidades') @endphp</strong>
       </span>
@@ -25,7 +25,7 @@
             </div>
             
             <div class="right flex-row w-full lg:w-1/3 lg:p-4 p-4">
-              <h2 class="text-2xl md:text-3xl lg:text-4xl mb-2 mt-4 lg:mt-0 font-bold">
+              <h2 class="text-2xl md:text-3xl lg:text-3xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -81,9 +81,9 @@
         </div>
       </div>
       @endif
-      <section class="todas-noticias">
+      {{-- <section class="todas-noticias">
         todas
-      </section>
+      </section> --}}
     </section>
     {{-- @include('partials.hrelement') --}}
     
