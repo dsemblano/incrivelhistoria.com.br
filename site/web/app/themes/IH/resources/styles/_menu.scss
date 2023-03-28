@@ -1,10 +1,6 @@
 .menu-categorias-menu-container {
   @apply bg-transparent w-full;
 
-  .menu-item-has-children > :not(.sub-menu) {
-    font-size: 1.5rem;
-  }
-
   // box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.2);
 
   ul#menu-categorias-menu {
@@ -107,4 +103,10 @@
 // menu categories
 .page_item {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .menu-item-has-children > :not(.sub-menu) {
+    font-size: 1.2rem;
+  }
 }
