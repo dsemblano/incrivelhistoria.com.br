@@ -1,5 +1,5 @@
 <section id="recentes" class="mb-6">
-    <h3 class="category-name mb-0">Recentes</h3>
+    <h3 class="category-name mb-0">Últimas</h3>
     
     @php $lastposts = lastposts(4); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp

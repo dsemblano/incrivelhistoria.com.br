@@ -2,14 +2,12 @@
     @include('partials.hrelement')
 </div> --}}
 
-@include('partials.lastposts')
 <h3 class="category-name mb-0">
     <i class="fa-solid fa-fire-flame-curved mr-1 relative bottom-0.5"></i>Populares
 </h3>
+
 <?php
-
 // Get popular posts based on post views
-
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -37,6 +35,9 @@ if ($query->have_posts()) : ?>
     </ul>
 
 <?php endif; wp_reset_postdata(); ?>
+
+
+@include('partials.lastposts')
 
 {{-- @include('partials.hrelement') --}}
 @php(dynamic_sidebar('sidebar-primary'))    
