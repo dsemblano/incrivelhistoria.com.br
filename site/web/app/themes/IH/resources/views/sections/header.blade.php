@@ -52,9 +52,7 @@
         </div>
       </div>
     </div>
-    <div class="flex overflow-x-auto">
-      {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'pagemenu bg-green-700 xl:hidden flex flex-row py-2 text-black justify-between justify-items-stretch']) !!}
-    </div>
+      {{-- {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'menu' => 'pagemenu', 'container' => 'ul', 'menu_class' => 'bg-green-700 xl:hidden flex flex-row py-2 text-black']) !!} --}}
 
 </header>
 

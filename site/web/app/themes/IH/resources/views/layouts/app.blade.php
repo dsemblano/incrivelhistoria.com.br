@@ -8,7 +8,7 @@
 
   <div class="{{ ! is_single() && ! is_category() && ! is_tag() ? "container" : "single" }}">
 
-    <div class="{{ ! is_single() && ! is_category() && ! is_tag() ? "flex flex-col landscape:flex-row lg:flex-row mt-8 justify-between gap-4" : "singleclass"}}">
+    <div class="{{ ! is_single() && ! is_category() && ! is_tag() ? "flex flex-col landscape:flex-row lg:flex-row mt-8 justify-between lg:gap-4" : "singleclass"}}">
 
       <main id="main" class="main {{ (! is_front_page() && ! is_single() && ! is_category() && ! is_tag()) ? "landscape:w-3/4" : '' }}">
         @yield('content')
