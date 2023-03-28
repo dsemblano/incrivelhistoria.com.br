@@ -43,8 +43,18 @@ foreach($terms as $term):
         <!--<?php //echo the_terms( $post->ID, $taxonomy, 'Term: ', ' &raquo; ' );// with link?> &raquo;-->
         <!-- Term(s): <?php //echo join(', ',wp_get_post_terms($post->ID, $taxonomy, array("fields" => "names")));// without link?> &raquo;  -->
         {{-- <a href="{{ get_permalink() }}">{{ the_post_thumbnail('mais_extendida') }} </a> --}}
-        <?php echo '<span class="category-name mb-4 text-red-700 leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</span>';?>
-        <h2 class="text-lg"><a class="postslinks" href="{{ get_permalink() }}">{{ the_title() }}</a></h2>
+        <?php echo '<h2 class="category-name mb-4 text-red-700 leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</h2>';?>
+        <a href={{$get_term_link}}>
+            <figure class="imgpost">
+                <img src="{{ get_taxonomy_image($term_id) }}" alt="Imagem da categoria {{$term_name}}" class="w-full shadow-xl rounded-t-md wp-post-image">
+            </figure>
+        </a>
+        <p class="category-description lg:text-xl my-4">
+            <a class="hover:underline" href={{$get_term_link}}>
+                {!! category_description($term_id) !!}
+            </a>
+          </p>
+        {{-- <h2 class="text-lg"><a class="postslinks" href="{{ get_permalink() }}">{{ the_title() }}</a></h2> --}}
         </article>
     <?php
     endwhile;
