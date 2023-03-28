@@ -3,7 +3,9 @@
 </div> --}}
 
 @include('partials.lastposts')
-<h3 class="category-name mb-0">Mais acessadas</h3>
+<h3 class="category-name mb-0">
+    <i class="fa-solid fa-fire-flame-curved mr-1 relative bottom-0.5"></i>Populares
+</h3>
 <?php
 
 // Get popular posts based on post views

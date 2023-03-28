@@ -1,5 +1,5 @@
 <section id="recentes" class="mb-6">
-    <h3 class="category-name mb-0">Matérias recentes</h3>
+    <h3 class="category-name mb-0">Recentes</h3>
     
     @php $lastposts = lastposts(4); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
@@ -13,7 +13,7 @@
             </a>
         </h4>
         <div class="flex flex-row mt-2 gap-3">
-            @include('partials.readingtime')
+            {{-- @include('partials.readingtime') --}}
             <time class="dt-published text-sm inline-block mt-" datetime="{{ get_post_time('c', true) }}">
                 {{ get_the_date() }}
             </time>

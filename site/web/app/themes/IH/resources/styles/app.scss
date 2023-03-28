@@ -164,7 +164,7 @@ figure.wp-caption {
 // categorias cores borda
 
 .category-name {
-  @apply text-3xl md:text-4xl inline-block;
+  @apply uppercase font-bold text-2xl md:text-xl inline-block;
 
   color: #151829;
 }
