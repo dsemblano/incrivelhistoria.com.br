@@ -14,7 +14,7 @@
 {{-- <span class="category-name mb-4 text-gray-700 uppercase font-bold">Por categoria</span> --}}
 
 <?php
-echo '<div class="gap-4 lg:gap-10 grid grid-cols-2 lg:grid-cols-4">';
+echo '<div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 w-full md:pr-6 lg:pr-8">';
 
 foreach($terms as $term):
 
@@ -46,8 +46,8 @@ foreach($terms as $term):
         {{-- <a href="{{ get_permalink() }}">{{ the_post_thumbnail('mais_extendida') }} </a> --}}
         <?php echo '<h2 class="category-name mb-4 text-red-700 leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</h2>';?>
         <a href={{$get_term_link}}>
-            <figure class="imgpost">
-                <img src="{{ get_taxonomy_image($term_id) }}" alt="Imagem da categoria {{$term_name}}" class="w-full shadow-xl rounded-t-md wp-post-image">
+            <figure class="imgpost h-36">
+                <img src="{{ get_taxonomy_image($term_id) }}" width="350" height="155" alt="Imagem da categoria {{$term_name}}" class="w-full shadow-xl rounded-t-md wp-post-image">
             </figure>
         </a>
         <p class="category-description my-4">
