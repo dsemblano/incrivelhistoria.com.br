@@ -50,8 +50,8 @@ foreach($terms as $term):
                 <img src="{{ get_taxonomy_image($term_id) }}" alt="Imagem da categoria {{$term_name}}" class="w-full shadow-xl rounded-t-md wp-post-image">
             </figure>
         </a>
-        <p class="category-description lg:text-xl my-4">
-            <a class="hover:underline" href={{$get_term_link}}>
+        <p class="category-description my-4">
+            <a class="hover:underline postslinks" href={{$get_term_link}}>
                 {!! category_description($term_id) !!}
             </a>
           </p>
