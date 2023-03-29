@@ -6,6 +6,7 @@
           'taxonomy' => $taxonomy,
           'hide_empty' => 0,
           'hierarchical'=> 1,
+          'exclude' => '1195',
       )
   );
 @endphp
