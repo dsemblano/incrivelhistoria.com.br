@@ -14,7 +14,7 @@
         @if ($first_loop)
 
         <div class="top flex flex-col lg:flex-row mb-12">
-          <article class="flex flex-col lg:flex-row border-default">
+          <article class="flex flex-col lg:flex-row border-default hover:bg-gray-100 hover:rounded">
           
             <div class="left mr-4 w-full lg:w-2/3 h-full">
               <a href="{{ get_permalink() }}">
@@ -104,7 +104,7 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 h-3/6">
+            <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -128,8 +128,8 @@
 
             @php $first_loop = false; @endphp
               @else
-              <article class="pb-8 mb-8">
-                <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+              <article class="hover:bg-gray-100 hover:rounded">
+                <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -165,7 +165,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -189,8 +189,8 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="pb-8 mb-8">
-              <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+            <article class="hover:bg-gray-100 hover:rounded">
+              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -225,7 +225,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -249,8 +249,8 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="pb-8 mb-8">
-              <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+            <article class="hover:bg-gray-100 hover:rounded">
+              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -292,7 +292,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -316,8 +316,8 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="pb-8 mb-8">
-              <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+            <article class="hover:bg-gray-100 hover:rounded">
+              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -352,7 +352,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -376,8 +376,8 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="pb-8 mb-8">
-              <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+            <article class="hover:bg-gray-100 hover:rounded">
+              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -412,7 +412,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
@@ -436,8 +436,8 @@
 
           @php $first_loop = false; @endphp
             @else
-            <article class="pb-8 mb-8">
-              <div class="flex flex-row md:flex-col lg:flex-row gap-2">
+            <article class="hover:bg-gray-100 hover:rounded">
+              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-md' ) ) }}
