@@ -88,7 +88,7 @@
     {{-- @include('partials.hrelement') --}}
     
     {{-- Next grid --}}  
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6">
   
       {{-- Next category --}}
     
@@ -104,20 +104,20 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 md:bg-red-600 md:h-80 md:mb-20 h-3/6 xl:h-3/6 hover:bg-gray-100 hover:rounded">
+            <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                 </figure>
               </a>
               <div class="wrap">
-                <h2 class="md:bg-yellow-500 text-lg md:text-sm xl:text-lg mb-4 font-bold">
+                <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
                 </h2>
   
-                <p class="mb-3 excerpt text-lg md:text-xs xl:text-lg">
+                <p class="mb-3 excerpt">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ get_the_excerpt() }}
                   </a>
@@ -271,197 +271,194 @@
         </div>
       @endif
       </section>
+
+       {{-- Next category --}}
+       @php $category = postbycategory('crime-organizado'); @endphp
+    
+       <section id="crime-organizado" class="">
+         <span class="category-name mb-4">
+           <strong>@php echo caturl('crime-organizado') @endphp</strong>
+         </span>
+         @php $category = postbycategory('crime-organizado'); @endphp
+         @if ($category->have_posts())
+           @php $first_loop = true; @endphp
+           @while ($category->have_posts()) @php $category->the_post() @endphp
+           
+           {{-- @php echo $first_loop; @endphp --}}
+           @if ($first_loop)
+           <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+             <a href="{{ get_permalink() }}">
+               <figure class="imgpost">
+                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+               </figure>
+             </a>
+             <div class="wrap">
+               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ the_title() }}
+                 </a>
+               </h2>
+ 
+               <p class="mb-3 excerpt">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ get_the_excerpt() }}
+                 </a>
+               </p>
+               @include('partials.readingtime')
+             </div>
+           </article>
+ 
+           @php $first_loop = false; @endphp
+             @else
+             <article class="hover:bg-gray-100 hover:rounded">
+               <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
+                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
+                     <figure class="imgpost">
+                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+                     </figure>
+                   </a>
+                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <a class="postslinks" href="{{ get_permalink() }}">
+                     {{ the_title() }}
+                   </a>
+                 </h2>
+               </div>
+             </article>
+           @endif
+         @endwhile
+       @else
+         <div class="alert alert-warning">
+           {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+         </div>
+       @endif
+       </section>
+     
+       {{-- Next category --}}
+     
+       <section id="guerras" class="">
+         <span class="category-name mb-4">
+           <strong>@php echo caturl('guerras') @endphp</strong>
+         </span>
+         @php $category = postbycategory('guerras'); @endphp
+         @if ($category->have_posts())
+           @php $first_loop = true; @endphp
+           @while ($category->have_posts()) @php $category->the_post() @endphp
+           
+           {{-- @php echo $first_loop; @endphp --}}
+           @if ($first_loop)
+           <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+             <a href="{{ get_permalink() }}">
+               <figure class="imgpost">
+                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+               </figure>
+             </a>
+             <div class="wrap">
+               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ the_title() }}
+                 </a>
+               </h2>
+ 
+               <p class="mb-3 excerpt">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ get_the_excerpt() }}
+                 </a>
+               </p>
+               @include('partials.readingtime')
+             </div>
+           </article>
+ 
+           @php $first_loop = false; @endphp
+             @else
+             <article class="hover:bg-gray-100 hover:rounded">
+               <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
+                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
+                     <figure class="imgpost">
+                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+                     </figure>
+                   </a>
+                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <a class="postslinks" href="{{ get_permalink() }}">
+                     {{ the_title() }}
+                   </a>
+                 </h2>
+               </div>
+             </article>
+           @endif
+         @endwhile
+       @else
+         <div class="alert alert-warning">
+           {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+         </div>
+       @endif
+       </section>
+   
+       {{-- Next category --}}
+   
+       <section id="periodos" class="">
+         <span class="category-name mb-4">
+           <strong>@php echo caturl('periodos') @endphp</strong>
+         </span>
+         @php $category = postbycategory('periodos'); @endphp
+         @if ($category->have_posts())
+           @php $first_loop = true; @endphp
+           @while ($category->have_posts()) @php $category->the_post() @endphp
+           
+           {{-- @php echo $first_loop; @endphp --}}
+           @if ($first_loop)
+           <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+             <a href="{{ get_permalink() }}">
+               <figure class="imgpost">
+                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+               </figure>
+             </a>
+             <div class="wrap">
+               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ the_title() }}
+                 </a>
+               </h2>
+ 
+               <p class="mb-3 excerpt">
+                 <a class="postslinks" href="{{ get_permalink() }}">
+                   {{ get_the_excerpt() }}
+                 </a>
+               </p>
+               @include('partials.readingtime')
+             </div>
+           </article>  
+ 
+           @php $first_loop = false; @endphp
+             @else
+             <article class="hover:bg-gray-100 hover:rounded">
+               <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
+                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
+                     <figure class="imgpost">
+                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+                     </figure>
+                   </a>
+                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <a class="postslinks" href="{{ get_permalink() }}">
+                     {{ the_title() }}
+                   </a>
+                 </h2>
+               </div>
+             </article>
+           @endif
+         @endwhile
+       @else
+         <div class="alert alert-warning">
+           {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
+         </div>
+       @endif
+       </section>
+     
+     </div>
+     {{-- end grid --}}
     
     </div>
     {{-- end grid --}}
   
-    {{-- Next grid --}}  
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
-  
-      {{-- Next category --}}
-      @php $category = postbycategory('crime-organizado'); @endphp
-    
-      <section id="crime-organizado" class="">
-        <span class="category-name mb-4">
-          <strong>@php echo caturl('crime-organizado') @endphp</strong>
-        </span>
-        @php $category = postbycategory('crime-organizado'); @endphp
-        @if ($category->have_posts())
-          @php $first_loop = true; @endphp
-          @while ($category->have_posts()) @php $category->the_post() @endphp
-          
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
-            <a href="{{ get_permalink() }}">
-              <figure class="imgpost">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-              </figure>
-            </a>
-            <div class="wrap">
-              <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
-
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-            </div>
-          </article>
-
-          @php $first_loop = false; @endphp
-            @else
-            <article class="hover:bg-gray-100 hover:rounded">
-              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
-                  <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
-                    <figure class="imgpost">
-                      {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-                    </figure>
-                  </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
-                  <a class="postslinks" href="{{ get_permalink() }}">
-                    {{ the_title() }}
-                  </a>
-                </h2>
-              </div>
-            </article>
-          @endif
-        @endwhile
-      @else
-        <div class="alert alert-warning">
-          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-        </div>
-      @endif
-      </section>
-    
-      {{-- Next category --}}
-    
-      <section id="guerras" class="">
-        <span class="category-name mb-4">
-          <strong>@php echo caturl('guerras') @endphp</strong>
-        </span>
-        @php $category = postbycategory('guerras'); @endphp
-        @if ($category->have_posts())
-          @php $first_loop = true; @endphp
-          @while ($category->have_posts()) @php $category->the_post() @endphp
-          
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
-            <a href="{{ get_permalink() }}">
-              <figure class="imgpost">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-              </figure>
-            </a>
-            <div class="wrap">
-              <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
-
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-            </div>
-          </article>
-
-          @php $first_loop = false; @endphp
-            @else
-            <article class="hover:bg-gray-100 hover:rounded">
-              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
-                  <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
-                    <figure class="imgpost">
-                      {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-                    </figure>
-                  </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
-                  <a class="postslinks" href="{{ get_permalink() }}">
-                    {{ the_title() }}
-                  </a>
-                </h2>
-              </div>
-            </article>
-          @endif
-        @endwhile
-      @else
-        <div class="alert alert-warning">
-          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-        </div>
-      @endif
-      </section>
-  
-      {{-- Next category --}}
-  
-      <section id="periodos" class="">
-        <span class="category-name mb-4">
-          <strong>@php echo caturl('periodos') @endphp</strong>
-        </span>
-        @php $category = postbycategory('periodos'); @endphp
-        @if ($category->have_posts())
-          @php $first_loop = true; @endphp
-          @while ($category->have_posts()) @php $category->the_post() @endphp
-          
-          {{-- @php echo $first_loop; @endphp --}}
-          @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
-            <a href="{{ get_permalink() }}">
-              <figure class="imgpost">
-                {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-              </figure>
-            </a>
-            <div class="wrap">
-              <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ the_title() }}
-                </a>
-              </h2>
-
-              <p class="mb-3 excerpt">
-                <a class="postslinks" href="{{ get_permalink() }}">
-                  {{ get_the_excerpt() }}
-                </a>
-              </p>
-              @include('partials.readingtime')
-            </div>
-          </article>  
-
-          @php $first_loop = false; @endphp
-            @else
-            <article class="hover:bg-gray-100 hover:rounded">
-              <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
-                  <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
-                    <figure class="imgpost">
-                      {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-                    </figure>
-                  </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
-                  <a class="postslinks" href="{{ get_permalink() }}">
-                    {{ the_title() }}
-                  </a>
-                </h2>
-              </div>
-            </article>
-          @endif
-        @endwhile
-      @else
-        <div class="alert alert-warning">
-          {{ __('Desculpe, nenhum resultado encontrado.', 'sage') }}
-        </div>
-      @endif
-      </section>
-    
-    </div>
-    {{-- end grid --}}
-  </div>
 
   <aside class="sidebar lg:w-1/4 landscape:w-1/4">
     @include('sections.sidebar')
