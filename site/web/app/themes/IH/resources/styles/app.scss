@@ -111,6 +111,7 @@ h4,
 .menu-categorias-menu-container,
 .pagemenu,
 #menu-pages-menu-1,
+.breadcrumb,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -148,6 +149,7 @@ figure.wp-caption {
 .categories a,
 .e-content a,
 .recent-posts li a,
+.breadcrumb a,
 .crp_title {  
     text-decoration: none;
     &:hover {
@@ -354,4 +356,11 @@ figure.wp-caption {
     ul.sub-menu {
         padding-left: 1rem;
     }
+}
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
 }

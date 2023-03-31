@@ -61,3 +61,27 @@ function custom_search_highlight($text) {
   add_filter('the_excerpt', 'custom_search_highlight');
   add_filter('the_title', 'custom_search_highlight');
   
+// Remove p from category description
+remove_filter('term_description','wpautop');
+
+function get_breadcrumb() {
+    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        $categories = get_the_category(); 
+        // the_category(' &bull; ');
+        echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
+    } elseif (is_page()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo the_title();
+    } elseif (is_search()) {
+        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;Search Results for... ";
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}
