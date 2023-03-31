@@ -104,20 +104,20 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+            <article class="border-default pb-8 mb-8 md:bg-red-600 md:h-80 md:mb-20 h-3/6 xl:h-3/6 hover:bg-gray-100 hover:rounded">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                 </figure>
               </a>
               <div class="wrap">
-                <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+                <h2 class="md:bg-yellow-500 text-lg md:text-sm xl:text-lg mb-4 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
                 </h2>
   
-                <p class="mb-3 excerpt">
+                <p class="mb-3 excerpt text-lg md:text-xs xl:text-lg">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ get_the_excerpt() }}
                   </a>
@@ -165,7 +165,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -225,7 +225,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -292,7 +292,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -352,7 +352,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -412,7 +412,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
