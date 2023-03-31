@@ -104,7 +104,7 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+            <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -165,7 +165,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -225,7 +225,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -292,7 +292,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -352,7 +352,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
@@ -412,7 +412,7 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 md:h-2/5 md:mb-20 h-3/6 lg:h-3/6 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
