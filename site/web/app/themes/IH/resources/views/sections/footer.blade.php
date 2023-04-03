@@ -10,7 +10,7 @@
         {!! do_shortcode('[contact-form-7 id="18361" title="Contato"]') !!}
       </div>
       
-      <div class="footer-right flex flex-col">
+      <div class="footer-right flex flex-col mt-8 md:mt-0">
         
         <div class="relative">
           @include('partials/inputsearch')
