@@ -17,7 +17,10 @@ module.exports = {
         'ihcurioslistas': '#EE8927',
         'ihbrasil': '#EE8927',
         'ihcrime': '#EE8927',
+        // 'ihcor': '#042441',
+        // secondary, accent color
         'ihcor': '#042441',
+        'ihcat': '#dd0847',
       }, // Extend Tailwind's default colors
       // typography: (theme) => ({
       //   DEFAULT: {

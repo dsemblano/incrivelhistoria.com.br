@@ -166,7 +166,7 @@ figure.wp-caption {
     margin-top: 1.5rem;
     h2,
     h3 {
-        @apply category-name inline-block text-xl mb-0 text-red-700;
+        @apply category-name inline-block text-xl mb-0 text-ihcat;
 
         font-family: 'Jenson', serif;
     }
@@ -310,7 +310,7 @@ figure.wp-caption {
 
   .crp_related_shortcode
   h3 {
-    @apply category-name inline-block text-2xl mb-4 text-red-700;
+    @apply category-name inline-block text-2xl mb-4 text-ihcat;
   } 
   .row {
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8
@@ -318,7 +318,7 @@ figure.wp-caption {
 
 // Pagination
 .pagination {
-    @apply text-red-700 my-14;
+    @apply text-ihcat my-14;
 
 
     h2 {
@@ -336,7 +336,7 @@ figure.wp-caption {
       }
 
       .page-numbers:not(.prev):not(.next) {
-        @apply border-r-2 border-red-700;
+        @apply border-r-2 border-ihcat;
 
         padding: 0 1rem 0 1rem;
       }
@@ -378,7 +378,7 @@ figure.wp-caption {
     height: 10rem;
   }
   .wpcf7-submit {
-    @apply bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;    
+    @apply bg-ihcat hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
   }
 
 }

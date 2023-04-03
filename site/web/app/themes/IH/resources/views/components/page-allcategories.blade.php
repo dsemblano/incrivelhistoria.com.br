@@ -44,7 +44,7 @@ foreach($terms as $term):
         <!--<?php //echo the_terms( $post->ID, $taxonomy, 'Term: ', ' &raquo; ' );// with link?> &raquo;-->
         <!-- Term(s): <?php //echo join(', ',wp_get_post_terms($post->ID, $taxonomy, array("fields" => "names")));// without link?> &raquo;  -->
         {{-- <a href="{{ get_permalink() }}">{{ the_post_thumbnail('mais_extendida') }} </a> --}}
-        <?php echo '<h2 class="category-name mb-4 text-red-700 leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</h2>';?>
+        <?php echo '<h2 class="category-name mb-4 text-ihcat leading-8">'.'<a href="'.$get_term_link.'">'.$term_name.'</a>'.'</h2>';?>
         <span>Aqui: {{ $term->count }}</span>
         <a href={{$get_term_link}}>
             <figure class="imgpost h-36">

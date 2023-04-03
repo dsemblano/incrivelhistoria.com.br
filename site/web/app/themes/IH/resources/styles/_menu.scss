@@ -39,7 +39,7 @@
           transition: color 0.2s, border-bottom-color 0.2s;
 
           &:hover {
-            border-bottom: 2px solid #f00
+            @apply border-solid border-b-2 border-ihcat;
           }
         }
       }

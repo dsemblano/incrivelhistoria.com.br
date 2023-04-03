@@ -1165,7 +1165,12 @@
         {
           "name": "Ihcor",
           "slug": "ihcor",
-          "color": "#042441"
+          "color": "#365071"
+        },
+        {
+          "name": "Ihcat",
+          "slug": "ihcat",
+          "color": "#e66b6e"
         }
       ]
     },
