@@ -371,7 +371,7 @@ figure.wp-caption {
   input[type=text],
   input[type=email],
   textarea {
-    @apply w-full md:w-2/4 rounded-lg text-black;
+    @apply w-full md:w-3/4 rounded-lg text-black;
 
   }
   textarea {
@@ -385,8 +385,8 @@ figure.wp-caption {
 
 .footer-right {
   #search-navbar {
-    @apply w-2/4;
+    // @apply w-full md:w-3/4;
 
-    background-color: #2B9EB3;
+    // background-color: #2B9EB3;
   }
 }
