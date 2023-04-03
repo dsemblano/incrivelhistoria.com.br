@@ -177,9 +177,7 @@ li.menu-item a,
 // categorias cores borda
 
 .category-name {
-  @apply uppercase font-bold text-lg inline-block;
-
-  color: #151829;
+  @apply uppercase font-bold text-lg inline-block text-ihcat;
 }
 
 // @mixin border-category {
