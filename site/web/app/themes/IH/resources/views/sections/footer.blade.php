@@ -2,7 +2,7 @@
   <div class="container">
     
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'border-gray-500 border-b border-solid py-8 sitemap-footer text-white flex flex-col tracking-widest w-full justify-evenly
-          xl:flex-row nav text-lg relative']) !!}
+          xl:flex-row nav text-base relative']) !!}
 
     <div class="flex flex-col md:flex-row justify-between py-8">
       <div class="formfooter">

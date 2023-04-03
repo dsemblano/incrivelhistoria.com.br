@@ -113,6 +113,7 @@ h4,
 .pagemenu,
 #menu-pages-menu-1,
 .breadcrumb,
+.wpcf7,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Noto Serif', serif;
@@ -151,6 +152,7 @@ figure.wp-caption {
 .e-content a,
 .recent-posts li a,
 .breadcrumb a,
+li.menu-item a,
 .crp_title {  
     text-decoration: none;
     &:hover {
@@ -367,26 +369,36 @@ figure.wp-caption {
 }
 
 // Footer
-.wpcf7 {
-  input[type=text],
-  input[type=email],
-  textarea {
-    @apply w-full md:w-3/4 rounded-lg text-black;
-
+footer.content-info {
+  .wpcf7 {
+    input[type=text],
+    input[type=email],
+    textarea {
+      @apply w-full md:w-3/4 rounded-lg text-black;
+  
+    }
+    textarea {
+      height: 10rem;
+    }
+    .wpcf7-submit {
+      @apply bg-ihcat hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
+    }
+  
   }
-  textarea {
-    height: 10rem;
+  
+  .footer-right {
+    #search-navbar {
+      // @apply w-full md:w-3/4;
+  
+      // background-color: #2B9EB3;
+    }
   }
-  .wpcf7-submit {
-    @apply bg-ihcat hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
+
+  li.menu-item {
+    line-height: 2;
   }
 
-}
-
-.footer-right {
-  #search-navbar {
-    // @apply w-full md:w-3/4;
-
-    // background-color: #2B9EB3;
+  ul.sub-menu {
+    margin-bottom: 1rem;
   }
 }
