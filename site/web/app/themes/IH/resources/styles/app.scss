@@ -371,16 +371,22 @@ figure.wp-caption {
   input[type=text],
   input[type=email],
   textarea {
-    @apply w-full md:w-1/4 rounded-lg text-black;
+    @apply w-full md:w-2/4 rounded-lg text-black;
 
   }
   textarea {
     height: 10rem;
   }
   .wpcf7-submit {
-    @apply bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
-
-    
+    @apply bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;    
   }
 
+}
+
+.footer-right {
+  #search-navbar {
+    @apply w-2/4;
+
+    background-color: #2B9EB3;
+  }
 }
