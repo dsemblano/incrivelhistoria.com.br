@@ -3,6 +3,6 @@
 
 @include('partials.hrelement')
 
-<section id="all-categories" class="md:my-12 md:pt-8">
+{{-- <section id="all-categories" class="md:my-12 md:pt-8">
     <x-page-allcategories />
-</section>
+</section> --}}

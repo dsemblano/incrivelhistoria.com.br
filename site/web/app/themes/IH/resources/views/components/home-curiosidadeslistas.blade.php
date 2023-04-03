@@ -455,7 +455,10 @@
      
      </div>
      {{-- end grid --}}
-    
+      
+     <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+      <a href="/categorias/">Todas as categorias</a>
+    </button>
     </div>
     {{-- end grid --}}
   

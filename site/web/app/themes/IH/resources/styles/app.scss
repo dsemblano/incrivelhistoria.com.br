@@ -78,10 +78,11 @@ img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, 
 
 
 body {
+  @apply text-ihcor;
+
     // font-family: 'Lato', sans-serif;
     // font-family: 'Roboto Serif', serif;
     font-family: 'Noto Serif', serif;
-    color: $textcolor;
     // background-color: #f5f5f5;
     // background-color: #f8f9fa;  
 }

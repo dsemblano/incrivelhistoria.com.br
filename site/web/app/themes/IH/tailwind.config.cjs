@@ -17,6 +17,7 @@ module.exports = {
         'ihcurioslistas': '#EE8927',
         'ihbrasil': '#EE8927',
         'ihcrime': '#EE8927',
+        'ihcor': '#042441',
       }, // Extend Tailwind's default colors
       // typography: (theme) => ({
       //   DEFAULT: {

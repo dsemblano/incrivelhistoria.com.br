@@ -20,7 +20,7 @@
             </svg>
           </button>
   
-          <button id="button-sandwich" aria-label="Botão menu sanduíche" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-black rounded-lg xl:hidden"     aria-controls="mobile-menu-3" aria-expanded="false">
+          <button id="button-sandwich" aria-label="Botão menu sanduíche" data-collapse-toggle="mobile-menu-3" type="button" class="inline-flex items-center p-2 text-sm text-ihcor rounded-lg xl:hidden"     aria-controls="mobile-menu-3" aria-expanded="false">
             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             </svg>
@@ -35,9 +35,9 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-black py-4 border-gray-200 border-b border-solid']) !!}
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
 
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-4 text-black w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-4 text-ihcor w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base  relative']) !!}
         </div>
   
@@ -45,7 +45,7 @@
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
 
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'text-base flex flex-col py-2 text-black w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'text-base flex flex-col py-2 text-ihcor w-full justify-evenly
           xl:flex-row xl:mt-0 nav relative']) !!}
 
           <div class="relative">

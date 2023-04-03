@@ -1,4 +1,4 @@
-<footer class="content-info bg-gray-800 text-white pb-12">
+<footer class="content-info bg-ihcor text-white pb-12">
   <div class="container">
     
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer pt-8 text-white flex flex-col py-2 tracking-widest w-full justify-evenly
