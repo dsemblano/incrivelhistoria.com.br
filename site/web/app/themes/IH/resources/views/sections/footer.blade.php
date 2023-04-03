@@ -14,6 +14,12 @@
       <div class="relative">
         @include('partials/inputsearch')
       </div>
+    </div>  
+
+    <div class="formfooter">
+      <h3>Contato</h3>  
+      {!! do_shortcode('[contact-form-7 id="18361" title="Contato"]') !!}
     </div>
+    
   </div>
 </footer>

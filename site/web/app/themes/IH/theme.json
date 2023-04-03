@@ -1161,6 +1161,11 @@
           "name": "Ihcrime",
           "slug": "ihcrime",
           "color": "#ee8927"
+        },
+        {
+          "name": "Ihcor",
+          "slug": "ihcor",
+          "color": "#042441"
         }
       ]
     },
