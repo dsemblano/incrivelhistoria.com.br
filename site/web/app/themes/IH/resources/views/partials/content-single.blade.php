@@ -30,12 +30,18 @@
   </header>
 
 <div class="container mb-12">
-  <div class="flex flex-col landscape:flex-row lg:flex-row mt-8 justify-center lg:gap-x-12 e-content">
+  <div class="flex flex-col landscape:flex-row lg:flex-row justify-center lg:gap-x-12 e-content">
     <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl">
-      @include('partials.entry-meta')
-      aqui {!! display_image_author() !!}
+
+      <figure class="!mb-0">
+        <figcaption class="mt-6 flex items-center">
+          {!! get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full') ); !!}
+          @include('partials.entry-meta')
+        
+      </figure>
       @include('partials.readingtime')
       <hr>
+
       @php(the_content())
       @php(comments_template())
       {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}

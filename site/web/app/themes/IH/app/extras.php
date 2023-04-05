@@ -85,10 +85,3 @@ function get_breadcrumb() {
         echo '</em>"';
     }
 }
-
-function display_image_author() {
-    global $post;
-    $author_id = get_post_field( 'post_author', $post->ID );
-    $author_name = get_the_author_meta( 'display_name', $author_id );
-    echo '<div class="image-author">Image by ' . $author_name . '</div>';
-}

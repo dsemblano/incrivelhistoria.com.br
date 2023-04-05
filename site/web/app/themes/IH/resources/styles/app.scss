@@ -294,15 +294,12 @@ li.menu-item a,
 
 // single posts, comments
 
-.e-content {
-  figure:first-of-type {
-    display: none;
-  }
-}
+// .e-content {
+//   figure:first-of-type {
+//     display: none;
+//   }
+// }
 
-.rt-reading-time {
-  @apply text-sm;
-}
 
 #comment {
     width: 100%;
