@@ -19,7 +19,8 @@ module.exports = {
         'ihcrime': '#EE8927',
         // 'ihcor': '#042441',
         // secondary, accent color
-        'ihcor': '#042441',
+        // 'ihcor': '#042441',
+        'ihcor': '#1C2B33',
         'ihcat': '#dd0847',
       }, // Extend Tailwind's default colors
       // typography: (theme) => ({

@@ -6,9 +6,13 @@
       <h1 class="p-name font-bold text-4xl lg:text-6xl">
         {!! $title !!}
       </h1>
-      <div class="container text-center flex flex-col items-center text-xs lg:text-xl gap-1 lg:gap-3">
-        @include('partials.entry-meta')
-      </div>
+      <p class="mb-3 excerpt">
+        {{ get_the_excerpt() }}
+      </p>
+        {{-- <div class="container text-center flex flex-col items-center text-xs lg:text-xl gap-1 lg:gap-3">
+          @include('partials.entry-meta')
+        </div> --}}
+        <hr>
       <div class="categories lg:text-lg my-4">
         {{ the_category(' &bull; ') }}
       </div>
@@ -28,7 +32,9 @@
 <div class="container mb-12">
   <div class="flex flex-col landscape:flex-row lg:flex-row mt-8 justify-center lg:gap-x-12 e-content">
     <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl">
+      @include('partials.entry-meta')
       @include('partials.readingtime')
+      <hr>
       @php(the_content())
       @php(comments_template())
       {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}

@@ -154,7 +154,7 @@ figure.wp-caption {
 .breadcrumb a,
 li.menu-item a,
 .crp_title {  
-    text-decoration: none;
+    // text-decoration: none;
     &:hover {
         @apply no-underline hover:underline hover:text-sky-600;
     }    

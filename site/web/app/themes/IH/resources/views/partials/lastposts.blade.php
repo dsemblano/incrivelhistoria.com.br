@@ -7,6 +7,9 @@
         {{-- <a href="{{ get_permalink() }}">
             {{ the_post_thumbnail('large', array('class' => '') ) }}
         </a> --}}
+        <figure class="imgpost">
+            {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
+          </figure>
         <h4 class="text-base lg:text-lg mt-2">
             <a class="postslinks" href="{{ get_permalink() }}">
                 {{ the_title() }}
