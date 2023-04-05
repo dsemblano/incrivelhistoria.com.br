@@ -33,6 +33,7 @@
   <div class="flex flex-col landscape:flex-row lg:flex-row mt-8 justify-center lg:gap-x-12 e-content">
     <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl">
       @include('partials.entry-meta')
+      {!! wpb_author_info_box('display_name') !!}
       @include('partials.readingtime')
       <hr>
       @php(the_content())
