@@ -4,8 +4,8 @@
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'border-gray-500 border-b border-solid py-8 sitemap-footer text-white flex flex-col tracking-widest w-full justify-evenly
           xl:flex-row nav text-sm relative']) !!}
 
-    <div class="flex flex-col md:flex-row justify-between py-8">
-      <picture class="logos-header order-1">
+    <div class="flex flex-col md:flex-row justify-between items-center py-8">
+      <picture class="logos-header order-1 mb-4">
         @include('partials/logo')
       </picture>
       <div class="formfooter order-2">
