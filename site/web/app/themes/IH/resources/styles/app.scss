@@ -190,6 +190,14 @@ li.menu-item a,
 
 .category-name {
   @apply uppercase font-bold text-lg inline-block text-ihcat;
+
+  &::before {
+    @apply border-l-4 border-l-ihcat pl-2;
+
+    content: "";
+    position: relative;
+    bottom: 2px;
+  }
 }
 
 // @mixin border-category {
