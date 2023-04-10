@@ -47,6 +47,15 @@ $borders: #E0E0E0;
 $emphasis: #FFC857;
 $textcolor: #2D3441;
 
+// Logo
+.banner .brand svg {
+  fill: black;
+}
+
+footer.content-info .brand svg {
+  fill: white;
+}
+
 .border-default {
   @apply border border-gray-200 rounded-t-md bg-white shadow-lg;
 }

@@ -6,7 +6,7 @@
 
     <div class="flex flex-col md:flex-row justify-between py-8">
       <picture class="logos-header order-1">
-        @include('partials/logo')        
+        @include('partials/logo')
       </picture>
       <div class="formfooter order-2">
         <h3 class="text-xl">Email: <a class="hover:underline" href="mailto:contato@incrivelhistoria.com.br">contato@incrivelhistoria.com.br</a></h3>

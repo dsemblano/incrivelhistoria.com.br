@@ -2,7 +2,7 @@
     {{-- <img class="w-full h-16" src="@asset('images/IHlogo.png')" alt="Logo site" width="200" height="107" /> --}}
     <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 400 150.64896" xml:space="preserve" width="10rem" height="4rem">
         <g transform="matrix(.74083 0 0 .74083 -154.31 -146.98)">
-          <g fill="#000">
+          <g>
             <path d="m265.1 382.7v-170.1c0-3.9 3.2-7.1 7.1-7.1h7v-7.1h-70.9v7.1h7.1c3.9 0 7.1 3.2 7.1 7.1v170.1c0 3.9-3.2 7.1-7.1 7.1h-7.1v7.1h70.9v-7.1h-7c-3.9 0-7.1-3.2-7.1-7.1z"
             />
             <path d="m321.7 198.4v79.4h-21.2c-15.7 0-28.3 12.7-28.3 28.3h49.5v90.7h56.7v-14.2h-7.1c-3.9 0-7.1-3.2-7.1-7.1v-155.8c0-3.9 3.2-7.1 7.1-7.1h7.1v-14.2z"
