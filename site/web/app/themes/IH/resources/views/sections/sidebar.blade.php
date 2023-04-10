@@ -35,9 +35,8 @@ if ($query->have_posts()) : ?>
     </ul>
 
 <?php endif; wp_reset_postdata(); ?>
-@include('partials.hrelement')
-
+@include('partials.threedots')
 @include('partials.lastposts')
-@include('partials.hrelement')
+@include('partials.threedots')
 
 @php(dynamic_sidebar('sidebar-primary'))    

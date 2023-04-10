@@ -5,13 +5,16 @@
           xl:flex-row nav text-sm relative']) !!}
 
     <div class="flex flex-col md:flex-row justify-between py-8">
-      <div class="formfooter">
+      <picture class="logos-header order-1">
+        @include('partials/logo')        
+      </picture>
+      <div class="formfooter order-2">
         <h3 class="text-xl">Email: <a class="hover:underline" href="mailto:contato@incrivelhistoria.com.br">contato@incrivelhistoria.com.br</a></h3>
 
         {{-- {!! do_shortcode('[contact-form-7 id="18361" title="Contato"]') !!} --}}
       </div>
       
-      <div class="footer-right flex flex-col mt-8 md:mt-0">
+      <div class="footer-right flex flex-col mt-8 md:mt-0 order-3">
         
         <div class="relative">
           @include('partials/inputsearch')

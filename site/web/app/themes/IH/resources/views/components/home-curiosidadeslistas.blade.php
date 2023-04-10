@@ -85,7 +85,8 @@
         todas
       </section> --}}
     </section>
-    {{-- @include('partials.hrelement') --}}
+    
+    @include('partials.threedots')
     
     {{-- Next grid --}}  
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6 mb-40">
