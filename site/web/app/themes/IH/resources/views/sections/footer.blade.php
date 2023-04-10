@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <p class="mt-4 text-center copyright border-gray-500 border-t border-solid pt-8">© {{date("Y")}} Incrivel História. Todos os direitos reservados</p>
+    <p class="mt-4 text-center copyright border-gray-500 border-t border-solid pt-8">© {{date("Y")}} Incrível História. Todos os direitos reservados</p>
 
   </div>
 </footer>
