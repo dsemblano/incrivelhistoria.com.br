@@ -1,5 +1,8 @@
 <footer class="content-info bg-ihcor text-white pb-12">
   <div class="container">
+
+    {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'border-gray-500 border-b border-solid py-8 sitemap-footer text-white flex flex-col tracking-widest w-full justify-evenly
+          xl:flex-row nav text-sm relative']) !!}
     
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'border-gray-500 border-b border-solid py-8 sitemap-footer text-white flex flex-col tracking-widest w-full justify-evenly
           xl:flex-row nav text-sm relative']) !!}
