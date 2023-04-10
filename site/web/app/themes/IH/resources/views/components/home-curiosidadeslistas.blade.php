@@ -85,11 +85,10 @@
         todas
       </section> --}}
     </section>
-    
-    @include('partials.threedots')
+    {{-- @include('partials.hrelement') --}}
     
     {{-- Next grid --}}  
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6 mb-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-6 mb-8">
   
       {{-- Next category --}}
     
@@ -457,9 +456,13 @@
      </div>
      {{-- end grid --}}
       
-     <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
-      <a href="/categorias/">Todas as categorias</a>
-    </button>
+     <div class="flex items-center justify-center mb-4">
+      <button class="bg-ihcat hover:bg-ihcat text-2xl text-white font-bold py-3 px-6 rounded button">
+        <a href="/categorias/">Mais</a>
+      </button>
+     </div>
+
+    
     </div>
     {{-- end grid --}}
   

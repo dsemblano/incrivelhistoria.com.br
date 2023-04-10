@@ -129,6 +129,7 @@ h4,
 .e-content h3,
 .e-content h4,
 .article_categories a,
+.button,
 .crp_related_shortcode h3 {
     font-family: 'Jenson', serif;
 }
@@ -307,6 +308,12 @@ li.menu-item a,
 //   border-bottom: 1px dashed;
 //   padding-bottom: 3rem;
 // }
+
+.comments {
+  h2 {
+    margin: 0;
+  }
+}
 
 
 #comment {
