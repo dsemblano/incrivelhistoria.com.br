@@ -9,7 +9,7 @@
         @include('partials/logo')
       </picture>
       <div class="formfooter order-2">
-        <h3 class="text-xl">Email: <a class="hover:underline" href="mailto:contato@incrivelhistoria.com.br">contato@incrivelhistoria.com.br</a></h3>
+        <h3 class="text-base">Email: <a class="hover:underline" href="mailto:contato@incrivelhistoria.com.br">contato@incrivelhistoria.com.br</a></h3>
 
         {{-- {!! do_shortcode('[contact-form-7 id="18361" title="Contato"]') !!} --}}
       </div>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <p class="mt-4 text-center copyright border-gray-500 border-t border-solid pt-8">{{date("Y")}} Incrivel História © Todos os direitos reservados</p>
+    <p class="mt-4 text-center copyright border-gray-500 border-t border-solid pt-8">© {{date("Y")}} Incrivel História. Todos os direitos reservados</p>
 
   </div>
 </footer>
