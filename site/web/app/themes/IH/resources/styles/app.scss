@@ -330,6 +330,12 @@ li.menu-item a,
 //   padding-bottom: 3rem;
 // }
 
+figure.wp-caption:first-of-type {
+  @apply border-b border-dashed pb-4;
+}
+
+
+
 .comments {
   h2 {
     margin: 0;
