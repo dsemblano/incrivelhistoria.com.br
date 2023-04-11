@@ -4,7 +4,7 @@
 
     <div class="flex flex-col md:flex-row justify-between items-center py-8 mb-8 border-gray-500 border-b border-solid ">      
 
-      <section id="social-icons" class="footer-right flex flex-col md:mt-8 md:mt-0 order-2 mb-8">
+      <section id="social-icons" class="footer-right flex flex-col md:mt-8 order-2 mb-8">
         <h3 class="span-title text-center text-lg">Siga o Incrível História</h3>
         <ul aria-label="Siga o Incrível História" class="social-icons flex flex-row justify-around text-3xl mt-2">
           <li>

@@ -33,14 +33,12 @@
   <div class="flex flex-col landscape:flex-row lg:flex-row justify-center lg:gap-x-12 e-content">
     <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl">
 
+
+
       <div class="author border-b border-dashed pb-4 mb-4">
-        <figure class="!m-0">
-          <figcaption class="flex items-center">
-            {!! get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full') ); !!}
-            @include('partials.entry-meta')
-        </figure>
-        
+        @include('partials.entry-meta')
       </div>
+      
       @include('partials.readingtime')
       @php(the_content())
       @include('partials.threedots')
