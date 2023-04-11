@@ -9,12 +9,12 @@
 <form role="search" method="get" class="search-form" action="{{ home_url('/') }}">
     <label>
         <span class="sr-only">
-            {{ _x('Busca por:', 'label', 'sage') }}
+            {{ _x('Encontre um artigo:', 'label', 'sage') }}
         </span>
 
         <input type="search" id="search-navbar"
             class="rounded-lg block pl-12 w-full text-gray-900 bg-gray-50  border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-ihcor dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="{!! esc_attr_x('Busca &hellip;', 'placeholder', 'sage') !!}" value="{{ get_search_query() }}"
+            placeholder="{!! esc_attr_x('Encontre um artigo:', 'placeholder', 'sage') !!}" value="{{ get_search_query() }}"
             name="s">
     </label>
 </form>
