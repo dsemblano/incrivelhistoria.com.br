@@ -17,3 +17,10 @@ add_filter('excerpt_more', function () {
 
 // Remove p from category description
 remove_filter('term_description','wpautop');
+
+// remove url field from comments
+add_filter('comment_form_default_fields', function ($fields) {
+    if(isset($fields['url']))
+    unset($fields['url']);
+    return $fields;
+});
