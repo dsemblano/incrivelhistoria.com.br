@@ -27,17 +27,19 @@
   <div class="flex flex-col-reverse md:flex-row-reverse justify-end gap-6 md:items-center mb-6">
     {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'order-2 gap-2 md:gap-10 sitemap-footer text-white flex flex-col tracking-widest w-full
     xl:flex-row nav text-sm relative']) !!}
-    <picture class="logos-header order-1 mb-4">
-      @include('partials/logo')
-    </picture>
+
   </div>
 
-    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer text-white flex flex-col tracking-widest w-full justify-evenly
+    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer text-white flex flex-col tracking-widest w-full justify-start
     xl:flex-row nav text-sm relative']) !!}
 
-    <div class="mt-4 flex flex-row justify-center copyright border-gray-500 border-t border-solid pt-8">
-      <p>© {{date("Y")}} Incrível História. Todos os direitos reservados</p>
-      @include('partials/logoih')</div>
-
+  <div class="text-sm mt-4 flex flex-col items-center copyright border-gray-500 border-t border-solid pt-8 gap-2">
+    <p>© {{date("Y")}} Incrível História. Todos os direitos reservados</p>
+    <a href="/">
+      @include('partials/logoih')
+    </a>
+    
+  </div>
+    
   </div>
 </footer>
