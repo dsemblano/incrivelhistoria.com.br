@@ -457,7 +457,7 @@
      {{-- end grid --}}
       
      <div class="flex items-center justify-center mb-4">
-      <button class="bg-ihcat hover:bg-ihcat text-2xl text-white font-bold py-3 px-6 rounded button">
+      <button class="bg-ihcat hover:bg-ihcat text-2xl text-white font-bold py-3 px-6 rounded button transform hover:scale-110 transition duration-300 ease-in-out">
         <a href="/categorias/">Ver mais »</a>
       </button>
      </div>

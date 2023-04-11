@@ -342,6 +342,18 @@ figure.wp-caption:first-of-type {
   }
 }
 
+.comments {
+  textarea,
+  .comment-form-email input,
+  .comment-form-author input {
+    @apply rounded-lg block text-gray-900 border border-gray-300 bg-gray-50;
+  }
+
+  .form-submit {
+    @apply bg-ihcat hover:bg-ihcat text-xl text-white font-bold py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
+  }
+}
+
 
 #comment {
     width: 100%;
