@@ -458,7 +458,7 @@
       
      <div class="flex items-center justify-center mb-4">
       <button class="bg-ihcat hover:bg-ihcat text-2xl text-white font-bold py-3 px-6 rounded button">
-        <a href="/categorias/">Ver mais</a>
+        <a href="/categorias/">Ver mais »</a>
       </button>
      </div>
 
