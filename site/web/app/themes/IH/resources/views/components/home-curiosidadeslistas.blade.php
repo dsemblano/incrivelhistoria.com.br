@@ -111,7 +111,7 @@
                 </figure>
               </a>
               <div class="wrap">
-                <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+                <h2 class="text-xl my-2 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -172,7 +172,7 @@
               </figure>
             </a>
             <div class="wrap">
-              <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+              <h2 class="text-xl my-2 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -232,7 +232,7 @@
               </figure>
             </a>
             <div class="wrap">
-              <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+              <h2 class="text-xl my-2 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -293,7 +293,7 @@
                </figure>
              </a>
              <div class="wrap">
-               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+               <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
@@ -353,7 +353,7 @@
                </figure>
              </a>
              <div class="wrap">
-               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+               <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
@@ -413,7 +413,7 @@
                </figure>
              </a>
              <div class="wrap">
-               <h2 class="text-lg md:text-base lg:text-lg mb-4 font-bold">
+               <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
