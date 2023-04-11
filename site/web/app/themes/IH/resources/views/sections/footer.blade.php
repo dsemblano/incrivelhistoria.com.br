@@ -32,7 +32,9 @@
       </div>
     </div>
 
-    <p class="mt-4 text-center copyright border-gray-500 border-t border-solid pt-8">© {{date("Y")}} Incrível História. Todos os direitos reservados</p>
+    <div class="mt-4 flex flex-row justify-center copyright border-gray-500 border-t border-solid pt-8">
+      <p>© {{date("Y")}} Incrível História. Todos os direitos reservados</p>
+      @include('partials/logoih')</div>
 
   </div>
 </footer>

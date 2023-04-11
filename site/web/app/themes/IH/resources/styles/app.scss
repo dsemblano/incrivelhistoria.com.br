@@ -113,7 +113,7 @@ h4,
 .wpp-post-title,
 .rt-reading-time,
 .excerpt,
-.recent-posts li a,
+.sidebar li a,
 .categories,
 .postslinks,
 .p-author,
@@ -135,6 +135,7 @@ h4,
 }
 
 .category-name,
+.sidebar-name,
 .e-content h2,
 .e-content h3,
 .e-content h4,
@@ -180,7 +181,7 @@ li.menu-item a,
     margin-top: 1.5rem;
     h2,
     h3 {
-        @apply category-name inline-block text-xl mb-0 text-ihcat;
+        @apply sidebar-name inline-block text-xl mb-0 text-ihcat;
 
         font-family: 'Jenson', serif;
     }
@@ -188,16 +189,17 @@ li.menu-item a,
 
 // categorias cores borda
 
-.category-name {
+.category-name,
+.sidebar-name {
   @apply uppercase font-bold text-lg inline-block text-ihcat;
+}
 
-  &::before {
-    @apply border-l-4 border-l-ihcat pl-2;
+.category-name::before {
+  @apply border-l-4 border-l-ihcat pl-2;
 
-    content: "";
-    position: relative;
-    bottom: 2px;
-  }
+  content: "";
+  position: relative;
+  bottom: 2px;
 }
 
 // @mixin border-category {

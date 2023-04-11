@@ -2,7 +2,7 @@
     @include('partials.hrelement')
 </div> --}}
 
-<h3 class="category-name mb-0">
+<h3 class="sidebar-name mb-0">
     <i class="fa-solid fa-fire-flame-curved mr-1 relative bottom-0.5"></i>Populares
 </h3>
 
@@ -20,7 +20,7 @@ $query = new WP_Query($args);
 
 if ($query->have_posts()) : ?>
 
-    <ul class="recent-posts mb-6">
+    <ul id="popular-posts" class="mb-6">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
         <li class="text-base lg:text-lg mt-2">
             <a href="<?php the_permalink(); ?>">
