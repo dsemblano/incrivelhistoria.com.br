@@ -1,5 +1,6 @@
 import domReady from '@roots/sage/client/dom-ready';
 import 'flowbite/dist/flowbite.js';
+import './arrowtop.js'
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faClock, faCalendarDays } from '@fortawesome/free-regular-svg-icons';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';

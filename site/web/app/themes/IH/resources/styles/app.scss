@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './menu';
+@import "./arrowcdtop.scss";
 
 
 @font-face {
@@ -209,13 +210,6 @@ figure.wp-caption:first-of-type {
 }
 
 // images background pages
-
-.imagecatbg {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-size: cover;
-  height: 100vh;
-}
-
 
 
 
