@@ -40,7 +40,7 @@
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu mt-4 grid grid-cols-2 gap-3 lg:flex lg:flex-col lg:py-4 text-ihcor lg:w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base relative' ]) !!}
 
-          <div class="social-icons mt-8 pt-8 border-t border-solid border-gray-200 lg:hidden">
+          <div class="social-icons mt-8 pt-4 border-t border-solid border-gray-200 lg:hidden">
             @include('partials/socialsiga')
           </div>
           
