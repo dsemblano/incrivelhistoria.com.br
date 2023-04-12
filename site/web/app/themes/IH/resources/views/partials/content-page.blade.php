@@ -1,5 +1,5 @@
 @if (! is_front_page())
-<article class="prose lg:prose-xl border-b border-solid border-gray-400 mb-10">
+<article class="prose lg:prose-xl border-b border-solid border-gray-400 pb-10">
     @php(the_content())
 </article>
 @endif
