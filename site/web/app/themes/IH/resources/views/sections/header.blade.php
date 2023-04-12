@@ -37,8 +37,13 @@
           </div>
           {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
 
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'mt-4 grid grid-cols-2 gap-3 lg:flex lg:flex-col lg:py-4 text-ihcor lg:w-full justify-evenly
-          xl:flex-row xl:mt-0 nav text-base  relative']) !!}
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu mt-4 grid grid-cols-2 gap-3 lg:flex lg:flex-col lg:py-4 text-ihcor lg:w-full justify-evenly
+          xl:flex-row xl:mt-0 nav text-base relative' ]) !!}
+
+          <div class="social-icons mt-8 pt-8 border-t border-solid border-gray-200 lg:hidden">
+            @include('partials/socialsiga')
+          </div>
+          
         </div>
   
       </nav>
