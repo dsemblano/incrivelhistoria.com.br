@@ -19,7 +19,7 @@ function caturl($catname) {
 function postbycategory($arg, $page=3) {
     $array = [
         'category_name' => $arg,
-        'orderby' => 'rand',
+        // 'orderby' => 'rand',
         'posts_per_page'=>$page
         ];
         
