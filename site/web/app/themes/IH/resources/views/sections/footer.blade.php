@@ -13,11 +13,8 @@
 
   </div>
 
-  <div class="flex flex-col-reverse md:flex-row-reverse justify-end gap-6 md:items-center mb-6">
-    {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'order-2 gap-2 md:gap-10 sitemap-footer text-white flex flex-col tracking-widest w-full
-    xl:flex-row nav text-sm relative']) !!}
-
-  </div>
+  {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'flex flex-row mb-8 justify-between lg:justify-start order-2 gap-2 md:gap-10 sitemap-footer text-white tracking-widest w-full
+    nav text-sm relative']) !!}
 
     {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sitemap-footer gap-6 text-white grid grid-cols-2 gap-3 lg:flex lg:flex-col tracking-widest w-full justify-start
     xl:flex-row nav text-sm relative']) !!}
