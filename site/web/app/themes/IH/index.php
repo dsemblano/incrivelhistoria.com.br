@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
     <?php echo \Roots\view('partials/gtaghead')->render(); ?>
+    <?php echo \Roots\view('partials/favicon')->render(); ?>
   </head>
 
   <body <?php (WP_ENV !== 'production') ? body_class('debug-screens') : body_class(''); ?>> 
