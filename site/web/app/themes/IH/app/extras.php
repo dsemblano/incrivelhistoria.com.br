@@ -67,7 +67,7 @@ remove_filter('term_description','wpautop');
 function get_breadcrumb() {
     echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
     if (is_category() || is_single()) {
-        echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
+        echo " › ";
         $categories = get_the_category(); 
         // the_category(' &bull; ');
         echo '<a class="sidebar-name underline" href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
