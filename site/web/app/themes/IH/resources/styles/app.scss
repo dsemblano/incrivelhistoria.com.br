@@ -331,6 +331,10 @@ footer.content-info {
   }
 }
 
-.sitemap-footer>.menu-item>a {
-  font-weight: bold;
+.sitemap-footer,
+#menu-categorias-menu {
+  >.menu-item>a {
+    font-weight: bold;
+  }
+  
 }

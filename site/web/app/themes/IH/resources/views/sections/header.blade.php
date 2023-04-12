@@ -35,9 +35,9 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu text-base  xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
 
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'flex flex-col py-4 text-ihcor w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'mt-4 grid grid-cols-2 gap-3 lg:flex lg:flex-col lg:py-4 text-ihcor lg:w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base  relative']) !!}
         </div>
   
