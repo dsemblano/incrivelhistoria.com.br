@@ -110,3 +110,14 @@
 //     font-size: 1.2rem;
 //   }
 // }
+
+// Menu footer
+
+.sitemap-footer,
+#menu-pages-menu-1 {
+  li.menu-item a {
+    &:hover {
+      @apply border-solid border-b-2 border-ihcat;
+    }
+  }
+}
