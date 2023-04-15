@@ -4,26 +4,21 @@
     <ul id="recent-posts" class="mb-6">
     @php $lastposts = lastposts(4); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
-    <li class="text-lg mt-2">
-        <div class="p-4 flex flex-row md:flex-col lg:flex-row gap-2">
-            <a href="{{ get_permalink() }}" class="w-1/3">
-                <figure class="imgpost">
-                    {{ the_post_thumbnail('mais_extendida', array( 'class' => '' ) ) }}
-                </figure>    
+    <li class="text-base lg:text-lg mt-2 flex flex-row gap-x-4">
+        <a href="{{ get_permalink() }}">
+            <figure class="imgpost">
+                {{ the_post_thumbnail('thumbnail', array( 'class' => 'max-w-none' ) ) }}
+            </figure>    
+        </a>
+        <div class="title-reading flex flex-col">
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
             </a>
-            <div class="w-2/3">
-                <h4>
-                    <a class="postslinks" href="{{ get_permalink() }}">
-                        {{ the_title() }}
-                    </a>
-                </h4>
-                <time class="dt-published text-sm inline-block mt-" datetime="{{ get_post_time('c', true) }}">
-                    {{ get_the_date() }}
-                </time>
-            </div>
-
-            
+            <time class="dt-published text-sm inline-block mt-" datetime="{{ get_post_time('c', true) }}">
+                {{ get_the_date() }}
+            </time>
         </div>
+        
     </li>
     @endwhile
     </ul>

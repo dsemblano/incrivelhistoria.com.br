@@ -337,3 +337,14 @@ footer.content-info {
   }
   
 }
+
+.sidebar {
+  .imgpost {
+    .wp-post-image {
+      object-fit: cover;
+      width: auto;
+      height: 5rem;
+    }
+  }
+}
+

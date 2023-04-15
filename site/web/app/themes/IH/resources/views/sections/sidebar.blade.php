@@ -22,13 +22,20 @@ if ($query->have_posts()) : ?>
 
     <ul id="popular-posts" class="mb-6">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
-        <li class="text-base lg:text-lg mt-2">
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
+        <li class="text-base lg:text-lg mt-2 flex flex-row gap-x-4">
+            <a href="{{ get_permalink() }}">
+                <figure class="imgpost">
+                    {{ the_post_thumbnail('thumbnail', array( 'class' => 'max-w-none' ) ) }}
+                </figure>    
             </a>
-            <span class="rt-reading-time block">
-                <?php echo get_post_meta(get_the_ID(), 'post_views_count', true); ?> leituras
-            </span> 
+            <div class="title-reading flex flex-col">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+                <span class="rt-reading-time block">
+                    <?php echo get_post_meta(get_the_ID(), 'post_views_count', true); ?> leituras
+                </span>
+            </div>
             
         </li>
     <?php endwhile; ?>
