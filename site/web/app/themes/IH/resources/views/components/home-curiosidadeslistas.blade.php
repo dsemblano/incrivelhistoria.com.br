@@ -10,7 +10,7 @@
         @php $destaques = destaques(); @endphp
         @if ($destaques->have_posts())
           @while ($destaques->have_posts()) @php $destaques->the_post() @endphp
-          <div class="top flex flex-col lg:flex-row mb-12">
+          <div class="top flex flex-col lg:flex-row mb-6">
             <article class="flex flex-col lg:flex-row border-default rounded bg-gray-100 hover:bg-gray-200 hover:rounded">
             
               <div class="left w-full lg:w-2/3 h-full">
@@ -56,7 +56,7 @@
         @while ($category->have_posts()) @php $category->the_post() @endphp
         @if ($first_loop)
 
-        <div class="top flex flex-col lg:flex-row mb-12">
+        <div class="top flex flex-col lg:flex-row mb-6">
           <article class="flex flex-col lg:flex-row border-default rounded bg-gray-100 hover:bg-gray-200 hover:rounded">
           
             <div class="left w-full lg:w-2/3 h-full">
