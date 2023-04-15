@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       height: {
-        "97": "30rem",
+        "97": "26rem",
         "thumb": "80vh",
       },
       colors: {
