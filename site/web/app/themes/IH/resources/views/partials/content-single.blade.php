@@ -31,7 +31,7 @@
 
 <div class="container mb-12">
   <div class="flex flex-col landscape:flex-row lg:flex-row justify-center lg:gap-x-12 e-content">
-    <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl prose-blockquote:border-l-ihcat">
+    <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl prose-blockquote:border-l-ihcat prose-figure:m-0 prose-a:no-underline">
 
 
 

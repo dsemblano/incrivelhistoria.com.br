@@ -238,10 +238,10 @@ figure.wp-caption:first-of-type {
 
   .crp_related_shortcode
   h3 {
-    @apply sidebar-name inline-block text-2xl mb-4 text-ihcat;
+    @apply sidebar-name inline-block text-2xl text-ihcat;
   } 
   .row {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8;
+    @apply grid grid-cols-2 xl:grid-cols-4 gap-2;
     
     padding-left: 0 !important;
     list-style: none !important;
