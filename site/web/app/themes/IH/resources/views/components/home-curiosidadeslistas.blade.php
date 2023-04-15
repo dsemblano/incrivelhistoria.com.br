@@ -24,7 +24,7 @@
               </a>
             </div>
             
-            <div class="right flex-row w-full lg:w-1/3 lg:p-4 p-4">
+            <div class="right flex-row w-full lg:w-1/3 p-8">
               <h2 class="text-2xl md:text-3xl lg:text-3xl mb-2 mt-4 lg:mt-0 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
@@ -104,13 +104,13 @@
           
             {{-- @php echo $first_loop; @endphp --}}
             @if ($first_loop)
-            <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h- hover:bg-gray-100 hover:rounded">
+            <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                   {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                 </figure>
               </a>
-              <div class="wrap">
+              <div class="wrap h-auto">
                 <h2 class="text-xl my-2 font-bold">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
@@ -165,13 +165,13 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h-4/6  hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
               </figure>
             </a>
-            <div class="wrap">
+            <div class="wrap h-auto">
               <h2 class="text-xl my-2 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
@@ -225,13 +225,13 @@
           
           {{-- @php echo $first_loop; @endphp --}}
           @if ($first_loop)
-          <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h-4/6  hover:bg-gray-100 hover:rounded">
+          <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
             <a href="{{ get_permalink() }}">
               <figure class="imgpost">
                 {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
               </figure>
             </a>
-            <div class="wrap">
+            <div class="wrap h-auto">
               <h2 class="text-xl my-2 font-bold">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
@@ -286,13 +286,13 @@
            
            {{-- @php echo $first_loop; @endphp --}}
            @if ($first_loop)
-           <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h-4/6  hover:bg-gray-100 hover:rounded">
+           <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
              <a href="{{ get_permalink() }}">
                <figure class="imgpost">
                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                </figure>
              </a>
-             <div class="wrap">
+             <div class="wrap h-auto">
                <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
@@ -346,13 +346,13 @@
            
            {{-- @php echo $first_loop; @endphp --}}
            @if ($first_loop)
-           <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h-4/6  hover:bg-gray-100 hover:rounded">
+           <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
              <a href="{{ get_permalink() }}">
                <figure class="imgpost">
                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                </figure>
              </a>
-             <div class="wrap">
+             <div class="wrap h-auto">
                <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
@@ -406,13 +406,13 @@
            
            {{-- @php echo $first_loop; @endphp --}}
            @if ($first_loop)
-           <article class="border-default pb-8 mb-8 h-3/6 md:h-2/5 xl:h-4/6  hover:bg-gray-100 hover:rounded">
+           <article class="border-default pb-8 mb-8 hover:bg-gray-100 hover:rounded">
              <a href="{{ get_permalink() }}">
                <figure class="imgpost">
                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                </figure>
              </a>
-             <div class="wrap">
+             <div class="wrap h-auto">
                <h2 class="text-xl my-2 font-bold">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
