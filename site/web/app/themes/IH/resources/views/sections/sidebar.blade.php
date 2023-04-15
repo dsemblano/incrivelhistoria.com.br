@@ -20,9 +20,9 @@ $query = new WP_Query($args);
 
 if ($query->have_posts()) : ?>
 
-    <ul id="popular-posts" class="mb-6">
+    <section id="popular-posts" class="mb-6">
     <?php while ($query->have_posts()) : $query->the_post(); ?>
-        <li class="text-base lg:text-lg mt-2 flex flex-row gap-x-4">
+        <article class="text-base lg:text-lg mt-2 flex flex-row gap-x-4">
             <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
                     {{ the_post_thumbnail('thumbnail', array( 'class' => 'max-w-none' ) ) }}
@@ -37,9 +37,9 @@ if ($query->have_posts()) : ?>
                 </span>
             </div>
             
-        </li>
+        </article>
     <?php endwhile; ?>
-    </ul>
+    </section>
 
 <?php endif; wp_reset_postdata(); ?>
 @include('partials.hrelement')
