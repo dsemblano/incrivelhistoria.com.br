@@ -1,6 +1,49 @@
 <section {{ $attributes }}>
 
   <div class="landscape:w-3/4 w-full md:pr-6 lg:pr-8">
+
+    <section id="destaques" class="w-full mb-8">
+      <span class="category-name mb-4">
+        <strong>Destaques</strong>
+      </span>
+      <div class="flex flex-col">
+        @php $destaques = destaques(); @endphp
+        @if ($destaques->have_posts())
+          @while ($destaques->have_posts()) @php $destaques->the_post() @endphp
+          <div class="top flex flex-col lg:flex-row mb-12">
+            <article class="flex flex-col lg:flex-row border-default hover:bg-gray-100 hover:rounded">
+            
+              <div class="left mr-4 w-full lg:w-2/3 h-full">
+                <a href="{{ get_permalink() }}">
+                  <figure class="imgpost">
+                    {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full h-full rounded-t-md xl:rounded-tr-none rounded-tl-md' ) ) }}
+                  </figure>
+                </a>
+              </div>
+              
+              <div class="right flex-row w-full lg:w-1/3 p-8">
+                <h2 class="text-2xl md:text-3xl lg:text-3xl mb-2 mt-4 lg:mt-0 font-bold">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ the_title() }}
+                  </a>
+                </h2>
+                </p>
+  
+                
+                <p class="mb-3 excerpt">
+                  <a class="postslinks" href="{{ get_permalink() }}">
+                    {{ get_the_excerpt() }}
+                  </a>
+                </p>
+                @include('partials.readingtime')
+              </div>
+            </article>
+          </div>
+          @endwhile
+        @endif
+      </div>
+    </section>
+
     <section id="curiosidades-listas" class="w-full">
       <span class="category-name mb-4">
         <strong>@php echo caturl('curiosidades') @endphp</strong>
@@ -44,33 +87,6 @@
         </div>
         <div class="bottom flex flex-col md:flex-row md:gap-8">
         @php $first_loop = false; @endphp
-        {{-- @else
-
-          <article class="mb-8 w-full md:w-1/2 h-3/6">
-            <div class="flex flex-row md:flex-col gap-2 md:gap-0">
-              <div class="left w-1/2 md:w-full">
-                <a href="{{ get_permalink() }}">
-                  <figure class="imgpost">
-                    {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
-                  </figure>
-                </a>
-              </div>
-
-              <div class="right w-1/2 md:w-full md:mt-4">
-                <h2 class="text-lg lg:text-2xl md:my-4 font-bold px-4">
-                  <a class="postslinks" href="{{ get_permalink() }}">
-                    {{ the_title() }}
-                  </a>
-                </h2>
-              </div>              
-            </div>
-            <p class="mb-3 excerpt w-full mt-4 md:mt-0 px-4">
-              <a class="postslinks" href="{{ get_permalink() }}">
-                {{ get_the_excerpt() }}
-              </a>
-            </p>
-          </article>
-       --}}
         @endif
         
         @endwhile
@@ -81,9 +97,7 @@
         </div>
       </div>
       @endif
-      {{-- <section class="todas-noticias">
-        todas
-      </section> --}}
+
     </section>
     {{-- @include('partials.hrelement') --}}
     

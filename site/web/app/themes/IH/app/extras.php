@@ -2,6 +2,19 @@
 
 // All custom functions here
 
+function destaques() {
+    $args = array(
+        'posts_per_page' => 3,
+        'post__in' => get_option( 'sticky_posts' ),
+        'ignore_sticky_posts' => 1
+    );
+    
+    $sticky_query = new WP_Query( $args );
+
+    return $sticky_query;
+    wp_reset_postdata();
+}
+
 function caturl($catname) {
     $category = get_category_by_slug(sanitize_title($catname));
     $cat_name = get_category_by_slug($catname)->cat_name;
