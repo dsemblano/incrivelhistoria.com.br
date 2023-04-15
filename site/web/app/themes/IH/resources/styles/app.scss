@@ -245,6 +245,10 @@ figure.wp-caption:first-of-type {
     
     padding-left: 0 !important;
     list-style: none !important;
+
+    .crp_title {
+      @apply text-base lg:text-lg mt-4 inline-block;
+    }
   }
 
 // Pagination
