@@ -20,7 +20,7 @@
     xl:flex-row nav text-sm relative']) !!}
 
   <div class="text-sm mt-4 flex flex-col items-center copyright border-gray-500 border-t border-solid pt-8 gap-2">
-    <p>© 2017 - {{date("Y")}} Incrível História<span class="sup align-text-bottom">&reg;</span> Todos os direitos reservados</p>
+    <p>© 2017 - {{date("Y")}} Incrível História<span class="sup align-text-bottom">&reg;</span></p>
     <a href="/">
       @include('partials/logoih')
     </a>
