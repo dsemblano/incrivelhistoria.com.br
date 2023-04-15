@@ -1,8 +1,12 @@
-{{-- <span class="category-name mb-4 text-gray-700 uppercase font-bold">Destaques</span> --}}
-<x-home-curiosidadeslistas id="categorias" class="flex flex-col mb-8 landscape:flex-row gap-4 lg:flex-row justify-around content-around" />
+<div id="categorias" class="flex flex-col mb-8 landscape:flex-row gap-4 lg:flex-row justify-around content-around">
+    
+    <div class="landscape:w-3/4 w-full lg:pr-4">
+        <x-home-destaques id="destaques" class="w-full mb-8" />
+        <x-home-curiosidadeslistas id="curiosidades-listas" class="w-full" />
+    </div>
 
-{{-- @include('partials.hrelement') --}}
+    <aside class="sidebar lg:w-1/4 landscape:w-1/4">
+        @include('sections.sidebar')
+    </aside>
 
-{{-- <section id="all-categories" class="md:my-12 md:pt-8">
-    <x-page-allcategories />
-</section> --}}
+</div>
