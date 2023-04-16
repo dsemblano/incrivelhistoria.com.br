@@ -1,4 +1,4 @@
-<a class="brand" href="{{ home_url('/') }}">
+<a class="brand" aria-label="logo" href="{{ home_url('/') }}">
     {{-- <img class="w-full h-16" src="@asset('images/IHlogo.png')" alt="Logo site" width="200" height="107" /> --}}
     <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 400 150.64896" xml:space="preserve" width="10rem" height="4rem">
         <g transform="matrix(.74083 0 0 .74083 -154.31 -146.98)">
