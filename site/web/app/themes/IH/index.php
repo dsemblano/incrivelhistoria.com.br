@@ -1,10 +1,4 @@
 <!doctype html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif:wght@400;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
-
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="utf-8">
