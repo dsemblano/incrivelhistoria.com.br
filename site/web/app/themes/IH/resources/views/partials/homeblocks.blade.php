@@ -2,7 +2,7 @@
     
     <div class="landscape:w-3/4 w-full lg:pr-4">
         <x-home-destaques id="destaques" class="w-full mb-8" />
-        <x-home-curiosidadeslistas id="curiosidades-listas" class="w-full" />
+        <x-home-curiosidadeslistas id="curiosidades-listas" class="w-full my-4 pb-4" />
     </div>
 
     <aside class="sidebar lg:w-1/4 landscape:w-1/4">
