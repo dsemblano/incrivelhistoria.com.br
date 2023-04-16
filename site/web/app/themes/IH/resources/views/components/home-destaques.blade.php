@@ -48,12 +48,12 @@
             <article class="rounded bg-gray-70 hover:bg-gray-100 hover:rounded mb-6 p-4 md:p-0">
                 {{-- inicio mobile --}}
                 <div class="flex flex-row justify-between gap-x-4 md:hidden">
-                    <a class="" href="{{ get_permalink() }}">
+                    <a class="w-1/2" href="{{ get_permalink() }}">
                         <figure class="imgpost">
                             {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                         </figure>
                     </a>
-                    <h2 class="text-lg md:text-base lg:text-lg font-bold">
+                    <h2 class="w-1/2 text-lg md:text-base lg:text-lg font-bold">
                         <a class="postslinks" href="{{ get_permalink() }}">
                             {{ the_title() }}
                         </a>
