@@ -45,7 +45,7 @@
             @endif
           @php $second_loop = true; @endphp
           @if ($second_loop) 
-            <article class="rounded bg-gray-70 hover:bg-gray-100 hover:rounded mb-6">
+            <article class="rounded bg-gray-70 hover:bg-gray-100 hover:rounded mb-6 p-4 md:p-0">
                 {{-- inicio mobile --}}
                 <div class="flex flex-row justify-between gap-x-4 md:hidden">
                     <a class="" href="{{ get_permalink() }}">
@@ -66,7 +66,7 @@
                   </p>
                 {{-- fim mobile   --}}
 
-                <div class="hidden md:flex p-4 flex-row gap-2">
+                <div class="hidden md:flex p-4 flex-row">
                   <a class="w-1/2 md:w-full lg:w-1/2" href="{{ get_permalink() }}">
                     <figure class="imgpost">
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
