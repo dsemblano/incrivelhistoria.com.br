@@ -5,9 +5,17 @@
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
   
+        @if ( is_home() || is_front_page() )
+        <h1 class=logo>
+          <picture class="logos-header order-2 xl:order-1">
+            @include('partials/logo')        
+          </picture>
+        </h1>
+        @else
         <picture class="logos-header order-2 xl:order-1">
           @include('partials/logo')        
         </picture>
+        @endif
   
         {{-- menu mobile --}} 
         <div id="mobile-menu" class="flex flex-wrap order-3 ml-8 xl:hidden">

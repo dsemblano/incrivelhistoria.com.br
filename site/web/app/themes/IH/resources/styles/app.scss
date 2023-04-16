@@ -17,22 +17,6 @@
 }
 
 @font-face {
-  font-family: 'RedactionRegular';
-  src: url('~@fonts/redaction/Redaction-Regular.otf');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'RedactionBold';
-  src: url('~@fonts/redaction/Redaction-Bold.otf');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Jenson';
   src: url('~@fonts/jenson/Jenson-Pro-Regular.otf');
   font-display: swap;
@@ -128,9 +112,11 @@ h4,
 .wpcf7,
 .copyright,
 .menu-footer-container,
-#search-navbar, 
+#search-navbar,
+.logoh1,
 .dt-published {
     font-family: 'Lato', sans-serif;
+    // font-family: 'Signore', serif;
     // font-family: 'Noto Serif', serif;
 }
 
