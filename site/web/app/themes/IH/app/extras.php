@@ -98,3 +98,27 @@ function get_breadcrumb() {
         echo '</em>"';
     }
 }
+
+// Remove wp_block_library_css
+/* Check if page uses blocks */
+
+function is_gutenberg_page() {
+    global $post;
+    if ( function_exists( 'has_blocks' ) && has_blocks( $post->ID ) ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+/* Remove Gutenberg stuff when no blocks being used. */
+add_action( 'wp_enqueue_scripts', 'conditionally_load_gutenberg_styles' );
+function conditionally_load_gutenberg_styles() {
+// if this is a Gutenberg, abort.
+if ( is_gutenberg_page() ) {
+    return;
+}
+wp_dequeue_style( 'wp-block-library' );
+wp_dequeue_style( 'wp-block-library-theme' );
+wp_dequeue_style( 'wc-block-style' );
+wp_dequeue_style( 'wc-blocks-style' );
+}
