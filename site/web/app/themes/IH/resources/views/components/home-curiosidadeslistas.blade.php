@@ -23,7 +23,7 @@
             </div>
             
             <div class="right flex-row w-full lg:w-1/3 p-4">
-              <h2 class="text-2xl md:text-3xl lg:text-2xl mb-2 font-bold">
+              <h2 class="text-2xl md:text-3xl lg:text-2xl mb-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -57,7 +57,7 @@
                             {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                         </figure>
                     </a>
-                    <h2 class="w-1/2 text-lg md:text-base lg:text-lg font-bold">
+                    <h2 class="w-1/2 text-lg md:text-base lg:text-lg">
                         <a class="postslinks" href="{{ get_permalink() }}">
                             {{ the_title() }}
                         </a>
@@ -77,7 +77,7 @@
                     </figure>
                   </a>
                   <div class="w-1/2 md:w-full lg:w-1/2 pl-4">
-                    <h2 class="text-lg md:text-base lg:text-lg font-bold">
+                    <h2 class="text-lg md:text-base lg:text-lg">
                         <a class="postslinks" href="{{ get_permalink() }}">
                           {{ the_title() }}
                         </a>
@@ -122,7 +122,7 @@
                 </figure>
               </a>
               <div class="wrap h-auto">
-                <h2 class="text-xl mb-2 font-bold">
+                <h2 class="text-xl mb-2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -146,7 +146,7 @@
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                     </figure>
                   </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                  <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                     <a class="postslinks" href="{{ get_permalink() }}">
                       {{ the_title() }}
                     </a>
@@ -183,7 +183,7 @@
               </figure>
             </a>
             <div class="wrap h-auto">
-              <h2 class="text-xl mb-2 font-bold">
+              <h2 class="text-xl mb-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -207,7 +207,7 @@
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                     </figure>
                   </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                  <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -243,7 +243,7 @@
               </figure>
             </a>
             <div class="wrap h-auto">
-              <h2 class="text-xl mb-2 font-bold">
+              <h2 class="text-xl mb-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>
@@ -267,7 +267,7 @@
                       {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                     </figure>
                   </a>
-                  <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                  <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                   <a class="postslinks" href="{{ get_permalink() }}">
                     {{ the_title() }}
                   </a>
@@ -304,7 +304,7 @@
                </figure>
              </a>
              <div class="wrap h-auto">
-               <h2 class="text-xl mb-2 font-bold">
+               <h2 class="text-xl mb-2">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
@@ -328,7 +328,7 @@
                        {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                      </figure>
                    </a>
-                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                    <a class="postslinks" href="{{ get_permalink() }}">
                      {{ the_title() }}
                    </a>
@@ -364,7 +364,7 @@
                </figure>
              </a>
              <div class="wrap h-auto">
-               <h2 class="text-xl mb-2 font-bold">
+               <h2 class="text-xl mb-2">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
@@ -388,7 +388,7 @@
                        {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                      </figure>
                    </a>
-                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                    <a class="postslinks" href="{{ get_permalink() }}">
                      {{ the_title() }}
                    </a>
@@ -424,7 +424,7 @@
                </figure>
              </a>
              <div class="wrap h-auto">
-               <h2 class="text-xl mb-2 font-bold">
+               <h2 class="text-xl mb-2">
                  <a class="postslinks" href="{{ get_permalink() }}">
                    {{ the_title() }}
                  </a>
@@ -448,7 +448,7 @@
                        {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                      </figure>
                    </a>
-                   <h2 class="text-lg md:text-base lg:text-lg font-bold w-1/2 md:w-full lg:w-1/2">
+                   <h2 class="text-lg md:text-base lg:text-lg w-1/2 md:w-full lg:w-1/2">
                    <a class="postslinks" href="{{ get_permalink() }}">
                      {{ the_title() }}
                    </a>
@@ -468,7 +468,7 @@
      {{-- end grid --}}
       
      <div class="flex items-center justify-center mb-4">
-      <button class="bg-ihcat hover:bg-ihcat text-2xl text-white font-bold py-3 px-6 rounded button transform hover:scale-110 transition duration-300 ease-in-out">
+      <button class="bg-ihcat hover:bg-ihcat text-2xl text-white py-3 px-6 rounded button transform hover:scale-110 transition duration-300 ease-in-out">
         <a href="/categorias/">Ver mais »</a>
       </button>
      </div>

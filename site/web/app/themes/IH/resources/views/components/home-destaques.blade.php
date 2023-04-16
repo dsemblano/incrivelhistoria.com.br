@@ -20,7 +20,7 @@
             </div>
             
             <div class="right flex-row w-full lg:w-1/3 p-4">
-              <h2 class="text-2xl md:text-3xl lg:text-2xl mb-2 font-bold">
+              <h2 class="text-2xl md:text-3xl lg:text-2xl mb-2">
                 <a class="postslinks" href="{{ get_permalink() }}">
                   {{ the_title() }}
                 </a>

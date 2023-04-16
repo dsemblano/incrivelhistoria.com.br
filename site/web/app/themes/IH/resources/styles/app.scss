@@ -4,17 +4,36 @@
 @import './menu';
 @import "./arrowcdtop.scss";
 
+@font-face {
+  font-family: 'Lato';
+  src: url('~@fonts/Lato/Lato-Regular.ttf') format("truetype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Signore';
-    src: url('~@fonts/signore/Signore_Serif_Typeface.otf'),
-        url('~@fonts/signore/Signore_Serif_Typeface.woff2') format("woff2"), 
-        url('~@fonts/signore/Signore_Serif_Typeface.woff') format("woff"), 
-        url('~@fonts/signore/Signore_Serif_Typeface.ttf') format("truetype");
+  font-family: 'Lato Bold';
+  src: url('~@fonts/Lato/Lato-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('~@fonts/Noto_Serif/NotoSerif-Regular.ttf') format("truetype");
     font-display: swap;
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'NotoBold Serif';
+  src: url('~@fonts/Noto_Serif/NotoSerif-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+
+
 
 @font-face {
   font-family: 'Jenson';
@@ -91,16 +110,12 @@ h1 {
     line-height: 3.25rem;
 }
 
-h2,
-h3,
-h4,
 .crp_title,
 .wpp-post-title,
 .rt-reading-time,
 .excerpt,
 .sidebar li a,
 .categories,
-.postslinks,
 .span-title,
 .p-author,
 .heading-category,
@@ -118,6 +133,13 @@ h4,
     font-family: 'Lato', sans-serif;
     // font-family: 'Signore', serif;
     // font-family: 'Noto Serif', serif;
+}
+
+h2,
+h3,
+h4,
+.sidebar article {
+  font-family: 'Lato Bold', sans-serif;
 }
 
 .wpp-post-title {
@@ -180,7 +202,7 @@ figure.wp-caption {
 
 .category-name,
 .sidebar-name {
-  @apply uppercase font-bold text-lg inline-block text-ihcat;
+  @apply uppercase text-lg inline-block text-ihcat;
 }
 
 .category-name::before {
@@ -213,7 +235,7 @@ figure.wp-caption:first-of-type {
   }
 
   .form-submit {
-    @apply bg-ihcat hover:bg-ihcat text-xl text-white font-bold py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
+    @apply bg-ihcat hover:bg-ihcat text-xl text-white py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
   }
 }
 
@@ -288,21 +310,21 @@ figure.wp-caption:first-of-type {
 }
 
 footer.content-info {
-  .wpcf7 {
-    input[type=text],
-    input[type=email],
-    textarea {
-      @apply w-full md:w-3/4 rounded-lg text-black;
+  // .wpcf7 {
+  //   input[type=text],
+  //   input[type=email],
+  //   textarea {
+  //     @apply w-full md:w-3/4 rounded-lg text-black;
   
-    }
-    textarea {
-      height: 10rem;
-    }
-    .wpcf7-submit {
-      @apply bg-ihcat hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
-    }
+  //   }
+  //   textarea {
+  //     height: 10rem;
+  //   }
+  //   .wpcf7-submit {
+  //     @apply bg-ihcat hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
+  //   }
   
-  }
+  // }
   
   .footer-right {
     #search-navbar {
