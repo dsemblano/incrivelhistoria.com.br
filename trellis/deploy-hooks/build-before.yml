@@ -11,22 +11,22 @@
   command: yarn
   delegate_to: localhost
   args:
-    chdir: "{{ project_local_path }}/web/app/themes/IH"
+    chdir: "{{ project_local_path }}/web/app/themes/incrivelhistoria"
 
 - name: Install Composer dependencies
   command: composer install --no-ansi --no-dev --no-interaction --no-progress --optimize-autoloader --no-scripts --classmap-authoritative
   args:
-    chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/IH"
+    chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/incrivelhistoria"
 
 - name: Compile assets for production
   command: yarn build
   delegate_to: localhost
   args:
-    chdir: "{{ project_local_path }}/web/app/themes/IH"
+    chdir: "{{ project_local_path }}/web/app/themes/incrivelhistoria"
 
 - name: Check for entrypoints
   stat:
-    path: "{{ project_local_path }}/web/app/themes/IH/public/entrypoints.json"
+    path: "{{ project_local_path }}/web/app/themes/incrivelhistoria/public/entrypoints.json"
   delegate_to: localhost
   register: entrypoints_data
 
@@ -37,8 +37,8 @@
 
 - name: Copy production assets
   synchronize:
-    src: "{{ project_local_path }}/web/app/themes/IH/public"
-    dest: "{{ deploy_helper.new_release_path }}/web/app/themes/IH"
+    src: "{{ project_local_path }}/web/app/themes/incrivelhistoria/public"
+    dest: "{{ deploy_helper.new_release_path }}/web/app/themes/incrivelhistoria"
     group: no
     owner: no
     rsync_opts: --chmod=Du=rwx,--chmod=Dg=rx,--chmod=Do=rx,--chmod=Fu=rw,--chmod=Fg=r,--chmod=Fo=r
