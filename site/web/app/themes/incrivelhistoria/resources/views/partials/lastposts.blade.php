@@ -1,5 +1,9 @@
 <section id="recent-posts" class="mb-6">
-    <h3 class="sidebar-name mb-0">Últimas</h3>
+    <h3 class="sidebar-name mb-0">
+        <strong>
+            Últimas
+        </strong>        
+    </h3>
     @php $lastposts = lastposts(4); @endphp
     @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
     <article class="text-base mt-2 flex flex-row gap-x-4">
