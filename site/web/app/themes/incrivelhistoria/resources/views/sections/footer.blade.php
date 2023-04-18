@@ -21,9 +21,9 @@
 
   <div class="text-sm mt-4 flex flex-col items-center copyright border-gray-500 border-t border-solid pt-8 gap-2">
     <p>© 2017 - {{date("Y")}} Incrível História<span class="sup align-text-bottom">&reg;</span></p>
-    <a href="/">
+    {{-- <a href="/">
       @include('partials/logoih')
-    </a>
+    </a> --}}
     
   </div>
     
