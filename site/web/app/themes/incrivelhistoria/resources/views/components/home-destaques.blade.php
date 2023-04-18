@@ -53,7 +53,7 @@
                             {{ the_post_thumbnail('curiosidades_small', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
                         </figure>
                     </a>
-                    <h2 class="text-xl mb-2">
+                    <h2 class="text-xl mb-2 w-1/2">
                         <a class="postslinks" href="{{ get_permalink() }}">
                             {{ the_title() }}
                         </a>
