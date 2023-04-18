@@ -85,6 +85,12 @@ img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, 
 	transform: scale(1.3);
 }
 
+.page-header {
+  img {
+    @apply h-72 lg:h-screen object-cover w-full;
+  }
+}
+
 
 body {
   @apply text-ihcor;

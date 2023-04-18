@@ -10,7 +10,7 @@
     @if ( is_page('categorias') || is_tag() )
     <img src="@asset('images/bg/periodos-bg1920.webp')" alt="background image categoria" class="" />
     @else
-    <img src="{{ get_taxonomy_image(get_queried_object()->term_id) }}" alt="Background imagem categoria {{get_queried_object()->name}}" style="width: 100%; height: 33rem; object-fit: cover;" class="imagecatbg w-full shadow-xl rounded-t-md wp-post-image">
+    <img src="{{ get_taxonomy_image(get_queried_object()->term_id) }}" alt="Background imagem categoria {{get_queried_object()->name}}" class="imagecatbg w-full shadow-xl rounded-t-md wp-post-image">
     @endif  
   </div>
 
