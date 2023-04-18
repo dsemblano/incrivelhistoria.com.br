@@ -20,6 +20,9 @@ module.exports = {
         'ihcor': '#1C2B33',
         'ihcat': '#dd0847',
       },
+      backgroundPosition: {
+        desktop: 'bottom 0px right 4rem',
+      }
     },
   },
   plugins: [

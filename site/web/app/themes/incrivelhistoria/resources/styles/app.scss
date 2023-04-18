@@ -297,7 +297,7 @@ footer.content-info {
 
   .container {
     &::before {
-      @apply bg-bottom bg-contain lg:bg-right-bottom;
+      @apply bg-bottom bg-contain lg:bg-desktop;
 
       content: ' ';
       display: block;
@@ -309,8 +309,8 @@ footer.content-info {
       opacity: 0.3;
       background-image: url("../images/ihcropped.svg");
       background-repeat: no-repeat;
-      // background-position: 100% 75%;
-      background-size: 30rem 30rem;
+      // background-position: bottom 0px right 4rem;
+      background-size: 20rem 25rem;
     }
   }
 
