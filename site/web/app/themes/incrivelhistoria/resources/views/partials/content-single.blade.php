@@ -1,11 +1,13 @@
 <article @php(post_class('w-full'))>
   
   <header class="header-post">
-    {{-- <div class="breadcrumb container lg:text-lg mt-4 pb-4 border-b border-gray-300 md:border-b-0 text-gray-500"><?php get_breadcrumb(); ?></div> --}}
     <div class="container relative left-0 top-10 md:top-20 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
 
       <span class="category-post text-ihcat font-bold text-2xl lg:text-4xl">
-        {{ esc_html( get_the_category()[0]->name)  }}
+        {{-- {{ esc_html( get_the_category()[0]->name)  }} --}}
+
+        <a class="no_underline hover:underline" href="{{esc_url( get_category_link( get_the_category()[0]->term_id ) )}}">{{esc_html( get_the_category()[0]->name )}}</a>
+
       </span>
 
       <h1 class="p-name text-4xl lg:text-6xl my-4">
