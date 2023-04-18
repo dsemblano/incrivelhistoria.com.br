@@ -145,6 +145,7 @@ h4,
 .e-content h3,
 .e-content h4,
 .article_categories a,
+.category-post,
 .crp_related_shortcode h3 {
     font-family: 'Jenson', serif;
 }
@@ -284,12 +285,12 @@ figure.wp-caption:first-of-type {
     }
 }
 
-.breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-  border-radius: 4px;
-}
+// .breadcrumb {
+//   padding: 8px 15px;
+//   margin-bottom: 20px;
+//   list-style: none;
+//   border-radius: 4px;
+// }
 
 footer.content-info {  
   li.menu-item {

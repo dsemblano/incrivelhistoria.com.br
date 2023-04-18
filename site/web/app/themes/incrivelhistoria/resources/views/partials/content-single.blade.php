@@ -1,9 +1,14 @@
 <article @php(post_class('w-full'))>
   
   <header class="header-post">
-    <div class="breadcrumb container lg:text-lg my-4 border-b border-gray-300 md:border-b-0"><?php get_breadcrumb(); ?></div>
+    <div class="breadcrumb container lg:text-lg mt-4 border-b border-gray-300 md:border-b-0"><?php get_breadcrumb(); ?></div>
     <div class="container relative left-0 top-10 md:top-20 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
-      <h1 class="p-name text-4xl lg:text-6xl">
+
+      <span class="category-post text-ihcat font-bold text-2xl lg:text-4xl">
+        {{ esc_html( get_the_category()[0]->name)  }}
+      </span>
+
+      <h1 class="p-name text-4xl lg:text-6xl my-4">
         {!! $title !!}
       </h1>
       <p class="mb-3 excerpt">

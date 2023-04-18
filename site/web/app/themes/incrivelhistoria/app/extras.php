@@ -78,11 +78,11 @@ function get_breadcrumb() {
         echo " › ";
         $categories = get_the_category(); 
         // the_category(' &bull; ');
-        echo '<a class="sidebar-name underline" href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
-            // if (is_single()) {
-            //     echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
-            //     the_title();
-            // }
+        echo '<a class="underline" href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+            if (is_single()) {
+                echo " &nbsp;&nbsp;&#187;&nbsp;&nbsp; ";
+                the_title();
+            }
     } elseif (is_page()) {
         echo "&nbsp;&nbsp;&#187;&nbsp;&nbsp;";
         echo the_title();
