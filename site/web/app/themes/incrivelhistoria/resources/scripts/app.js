@@ -1,5 +1,5 @@
 import domReady from '@roots/sage/client/dom-ready';
-
+import './arrowtop.js';
 /**
  * Application entrypoint
  */

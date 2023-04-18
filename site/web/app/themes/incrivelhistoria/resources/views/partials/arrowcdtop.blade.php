@@ -1,1 +1,1 @@
-<a href="#0" class="cd-top">Top</a>
+<a href="#" id="scroll-to-top">^</a>
