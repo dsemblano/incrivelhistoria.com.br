@@ -32,7 +32,7 @@ add_filter('the_content', function($content) {
         $author_name = get_the_author_meta('display_name');
         $author_bio = get_the_author_meta('description');
 
-        $author_box = '<div class="flex flex-col items-center author author-box mt-6">';
+        $author_box = '<div class="flex flex-col items-center author author-box mt-10 pt-10 border-gray-200 border-t border-solid"">';
         $author_box .= '<figure class="!m-0">';
         $author_box .= '<figcaption class="flex items-center !mt-0">';
         $author_box .= '<div class="author-avatar avatar avatar-128 photo rounded-full">' . get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full !m-0') ) . '</div>';
