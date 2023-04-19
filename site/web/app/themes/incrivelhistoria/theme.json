@@ -1171,6 +1171,11 @@
           "name": "Ihcat",
           "slug": "ihcat",
           "color": "#dd0847"
+        },
+        {
+          "name": "Ihcompl",
+          "slug": "ihcompl",
+          "color": "#e2f9ff"
         }
       ]
     },
