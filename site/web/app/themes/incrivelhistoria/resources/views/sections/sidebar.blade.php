@@ -13,7 +13,7 @@
 </h3>
 
     <section id="popular-posts" class="mb-6">
-    {!! do_shortcode('[wpp]') !!}
+    {!! do_shortcode('[wpp range="all"]') !!}
     </section>
 
 @include('partials.hrelement')
