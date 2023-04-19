@@ -18,7 +18,7 @@ module.exports = {
         'ihbrasil': '#EE8927',
         'ihcrime': '#EE8927',
         'ihcor': '#1C2B33',
-        'ihcat': '#dd0847',
+        'ihcat': '#BB2649',
         'ihcompl': '#e2f9ff', //complementary footer
       },
       backgroundPosition: {
