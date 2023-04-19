@@ -9,11 +9,11 @@
 <form role="search" method="get" class="search-form" action="{{ home_url('/') }}">
     <label>
         <span class="sr-only">
-            {{ _x('Busque um artigo...', 'label', 'sage') }}
+            {{ _x('Busque um artigo:', 'label', 'sage') }}
         </span>
 
         <input type="search" class="searchbar rounded-lg block pl-10 w-full text-gray-900 bg-gray-50  border border-gray-300 sm:text-sm focus:ring-ihcat focus:border-ihcat dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-ihcor dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="{!! esc_attr_x('Busque um artigo...', 'placeholder', 'sage') !!}" value="{{ get_search_query() }}"
+            placeholder="{!! esc_attr_x('Busque um artigo:', 'placeholder', 'sage') !!}" value="{{ get_search_query() }}"
             name="s">
     </label>
 </form>
