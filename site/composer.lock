@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da22b2afcb64b4f108640fcbb7b06766",
+    "content-hash": "e384f0fc0d3960e9abdb0d9df9f6b608",
     "packages": [
         {
             "name": "brick/math",
@@ -5375,6 +5375,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-dbmanager/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-latest-posts",
+            "version": "5.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-latest-posts/",
+                "reference": "tags/5.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-latest-posts.5.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-latest-posts/"
         },
         {
             "name": "wpackagist-plugin/wps-hide-login",

@@ -87,7 +87,7 @@ img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, 
 
 .page-header {
   img {
-    @apply h-72 lg:h-screen object-cover w-full;
+    @apply h-72 lg:h-thumb object-cover w-full;
   }
 }
 
