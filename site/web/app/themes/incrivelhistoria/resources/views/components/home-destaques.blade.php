@@ -14,7 +14,7 @@
             <div class="left w-full lg:w-2/3 h-full">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">
-                  {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full h-full rounded-t-md xl:rounded-tr-none rounded-tl-md' ) ) }}
+                  {{ the_post_thumbnail('large', array( 'class' => 'w-full h-full rounded-t-md xl:rounded-tr-none rounded-tl-md' ) ) }}
                 </figure>
               </a>
             </div>
