@@ -14,7 +14,7 @@
 {{-- <span class="category-name mb-4 text-gray-700 uppercase font-bold">Por categoria</span> --}}
 
 <?php
-echo '<div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 w-full lg:pr-6 lg:pr-8">';
+echo '<div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 w-full lg:pr-6 lg:pr-8 mb-6">';
 
 foreach($terms as $term):
 

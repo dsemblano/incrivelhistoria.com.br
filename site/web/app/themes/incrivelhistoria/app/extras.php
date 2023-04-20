@@ -97,39 +97,39 @@ function get_breadcrumb() {
 // Remove wp_block_library_css
 /* Check if page uses blocks */
 
-// function is_gutenberg_page() {
-//     global $post;
-//     if ( function_exists( 'has_blocks' ) && has_blocks( $post->ID ) ) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// /* Remove Gutenberg stuff when no blocks being used. */
-// add_action( 'wp_enqueue_scripts', 'conditionally_load_gutenberg_styles' );
-// function conditionally_load_gutenberg_styles() {
-// // if this is a Gutenberg, abort.
-// if ( is_gutenberg_page() ) {
-//     return;
-// }
+function is_gutenberg_page() {
+    global $post;
+    if ( function_exists( 'has_blocks' ) && has_blocks( $post->ID ) ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+/* Remove Gutenberg stuff when no blocks being used. */
+add_action( 'wp_enqueue_scripts', 'conditionally_load_gutenberg_styles' );
+function conditionally_load_gutenberg_styles() {
+// if this is a Gutenberg, abort.
+if ( is_gutenberg_page() ) {
+    return;
+}
 // wp_dequeue_style( 'wp-block-library' );
-// wp_dequeue_style( 'wp-block-library-theme' );
-// wp_dequeue_style( 'wc-block-style' );
-// wp_dequeue_style( 'wc-blocks-style' );
-// }
+wp_dequeue_style( 'wp-block-library-theme' );
+wp_dequeue_style( 'wc-block-style' );
+wp_dequeue_style( 'wc-blocks-style' );
+}
 
 // Remove svg duotone
-// add_action('after_setup_theme', function () {
-//     remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
-//     remove_action( 'in_admin_header', 'wp_global_styles_render_svg_filters' );
-// } );
+add_action('after_setup_theme', function () {
+    remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
+    remove_action( 'in_admin_header', 'wp_global_styles_render_svg_filters' );
+} );
 
-// // Disable REST API link in HTTP headers
-// remove_action('template_redirect', 'rest_output_link_header', 11, 0);
+// Disable REST API link in HTTP headers
+remove_action('template_redirect', 'rest_output_link_header', 11, 0);
  
-// // REMOVE WP EMOJI
-// remove_action('wp_head', 'print_emoji_detection_script', 7);
-// remove_action('wp_print_styles', 'print_emoji_styles');
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
  
-// remove_action('admin_print_scripts', 'print_emoji_detection_script');
-// remove_action('admin_print_styles', 'print_emoji_styles');
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('admin_print_styles', 'print_emoji_styles');
