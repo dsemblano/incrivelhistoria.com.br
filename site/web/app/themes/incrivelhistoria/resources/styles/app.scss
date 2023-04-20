@@ -220,7 +220,7 @@ figure.wp-caption:first-of-type {
   textarea,
   .comment-form-email input,
   .comment-form-author input {
-    @apply rounded-lg block text-gray-900 border border-gray-300 bg-gray-50;
+    @apply rounded-lg block text-gray-900 border border-gray-300 bg-gray-50 focus:ring-ihcat focus:border-ihcat;
   }
 
   .form-submit {
