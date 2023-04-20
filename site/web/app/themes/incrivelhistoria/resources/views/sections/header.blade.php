@@ -43,7 +43,7 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenu leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenumobile leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid']) !!}
 
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu mt-4 grid grid-cols-2 gap-3 lg:flex lg:flex-col lg:py-4 text-ihcor lg:w-full justify-evenly
           xl:flex-row xl:mt-0 nav text-base relative' ]) !!}
@@ -58,7 +58,7 @@
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
 
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'menupages text-base flex flex-col py-2 text-ihcor w-full justify-evenly
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenudesktop text-base flex flex-col py-2 text-ihcor w-full justify-evenly
           xl:flex-row xl:mt-0 relative']) !!}
 
           <div class="relative">

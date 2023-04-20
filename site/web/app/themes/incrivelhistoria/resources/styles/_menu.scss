@@ -117,7 +117,8 @@
 
 // Menu footer
 
-.menupages,
+.pagemenumobile,
+.pagemenudesktop,
 .sitemap-footer,
 .nav {
   li.menu-item a {
@@ -140,7 +141,8 @@
 // }
 
 .nav,
-.menupages {
+.pagemenumobile,
+.pagemenudesktop {
   .current-menu-item>a {
     position: relative;
   
