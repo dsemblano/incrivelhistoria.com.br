@@ -178,6 +178,10 @@ figure.wp-caption {
     }    
 }
 
+.a.tag-cloud-link {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
 .post .e-content a:not(.sidebar a, .crp_related a) {
   @apply underline text-sky-600 hover:text-sky-900;
 }
