@@ -2,7 +2,7 @@
 
 <ul aria-label="Siga o Incrível História" class="social-icons flex flex-row justify-around text-3xl mt-2 gap-x-4">
     <li class="instagram transform hover:scale-125 transition duration-300 ease-in-out">
-        <a href="https://www.instagram.com/incrivelhistoria/" target="_blank">
+        <a href="https://www.instagram.com/incrivelhistoria/" target="_blank" aria-label="Siga nosso Instagram Incrível História">
             <svg viewBox="367.672 215.059 20 20" width="30" height="30">
                 <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" transform="matrix(1, 0, 0, 1, 367.67218, 215.059387)">
                   <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
@@ -15,14 +15,14 @@
         </a>
     </li>
     <li class="facebook transform hover:scale-125 transition duration-300 ease-in-out">
-        <a href="https://www.facebook.com/incrivel.historia" target="_blank">
+        <a href="https://www.facebook.com/incrivel.historia" target="_blank" aria-label="Siga nossa página Incrível História no Facebook">
             <svg viewBox="311.259 139.09 20 19.92" width="30" height="30">
             <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z" transform="matrix(1, 0, 0, 1, 309.258911, 137.049896)"></path>
             </svg>
         </a>  
     </li>
     <li class="relative bottom-1 transform hover:scale-125 transition duration-300 ease-in-out">
-        <a href="https://www.youtube.com/@incrivelhistoriaoficial/" target="_blank">
+        <a href="https://www.youtube.com/@incrivelhistoriaoficial/" target="_blank" aria-label="Siga nosso canal no Youtube Incrível História">
         <svg viewBox="406.865 199.057 20 14" width="40" height="40">
         <g id="Page-1" stroke="none" stroke-width="1"  fill-rule="evenodd" transform="matrix(1, 0, 0, 1, 406.864594, 199.057007)">
             <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)">
