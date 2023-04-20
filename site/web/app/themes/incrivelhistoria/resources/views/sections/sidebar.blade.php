@@ -1,6 +1,6 @@
-{{-- <div class="md:hidden">
+<div class="lg:hidden">
     @include('partials.hrelement')
-</div> --}}
+</div>
 
 <h3 class="sidebar-name mb-0">
     <svg class="inline-block relative bottom-1 fill-ihcat" viewBox="310.318 187.925 15.944 20.826" width="15.944" height="20.826">

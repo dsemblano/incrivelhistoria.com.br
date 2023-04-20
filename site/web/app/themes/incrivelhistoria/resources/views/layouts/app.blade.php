@@ -14,7 +14,7 @@
         @yield('content')
       </main>
     
-      @if (! is_front_page() && ! is_single() && ! is_category() && ! is_tag() && ! is_page('categorias'))
+      @if (is_search() || is_404())
       <aside class="sidebar landscape:w-1/4 lg:w-1/4 h-">
         @include('sections.sidebar')
       </aside>
