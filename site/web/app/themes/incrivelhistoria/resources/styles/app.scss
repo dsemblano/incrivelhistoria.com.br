@@ -186,7 +186,7 @@ figure.wp-caption {
     margin-top: 1.5rem;
     h2,
     h3 {
-        @apply sidebar-name inline-block text-xl mb-0 text-ihcat;
+        @apply sidebar-name inline-block text-xl mb-0 text-ihcat font-bold;
 
         font-family: 'Jenson', serif;
     }
