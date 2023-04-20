@@ -117,6 +117,7 @@
 
 // Menu footer
 
+// hover border-left effect
 .pagemenumobile,
 .pagemenudesktop,
 .sitemap-footer,
@@ -132,14 +133,7 @@
   }
 }
 
-
-
-// .menu-categorias-menu-container .current-menu-item>a::before {
-//     @apply border-l-4 border-l-ihcat absolute bottom-0 -left-2 h-full;
-
-//     content: "";
-// }
-
+// border-left effect li actual page
 .nav,
 .pagemenumobile,
 .pagemenudesktop {
@@ -154,6 +148,7 @@
   } 
 } 
 
+// border-left effect on footer li actual page
 .sitemap-footer .current-menu-item>a {
   position: relative;
   &:before {
