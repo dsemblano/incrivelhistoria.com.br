@@ -58,6 +58,7 @@
     "wpackagist-plugin/enhanced-comment-validation":">=1.0.1",
     "wpackagist-plugin/wordpress-popular-posts":">=6.1.1",
     "wpackagist-plugin/wp-latest-posts":">=5.0.3",
+    "wpackagist-plugin/shareaholic":">=9.7.7",
     "roots/acorn": "^3.1"
   },
   "require-dev": {

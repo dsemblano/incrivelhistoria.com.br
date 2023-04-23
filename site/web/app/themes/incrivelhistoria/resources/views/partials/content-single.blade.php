@@ -42,6 +42,7 @@
       <div class="author border-b border-dashed !my-4 lg:!my-6">
         @include('partials.entry-meta')
         @include('partials.readingtime')
+        <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content"></div>
       </div>
       @php(the_content())
       @include('partials.threedots')
