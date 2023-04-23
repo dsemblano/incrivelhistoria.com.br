@@ -133,3 +133,11 @@ remove_action('wp_print_styles', 'print_emoji_styles');
  
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('admin_print_styles', 'print_emoji_styles');
+
+// load script only to posts
+function load_my_script() {
+    if ( is_singular('post') ) {
+        wp_enqueue_script( 'my-script', '//cdn.shareaholic.net/assets/pub/shareaholic.js', array(), '1.0', true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_my_script' );
