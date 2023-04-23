@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eba3c15789a6196a907ee3fe3000bd6e",
+    "content-hash": "44d20b44892ab6362a74b91621f83a6a",
     "packages": [
         {
             "name": "brick/math",
@@ -5251,6 +5251,24 @@
             "homepage": "https://wordpress.org/plugins/open-external-links-in-a-new-window/"
         },
         {
+            "name": "wpackagist-plugin/plugin-load-filter",
+            "version": "4.0.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/plugin-load-filter/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/plugin-load-filter.zip?timestamp=1674524785"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/plugin-load-filter/"
+        },
+        {
             "name": "wpackagist-plugin/reading-time-wp",
             "version": "2.0.13",
             "source": {
@@ -5321,24 +5339,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/remove-category-url/"
-        },
-        {
-            "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.3.51",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1681379984"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/sassy-social-share/"
         },
         {
             "name": "wpackagist-plugin/shareaholic",
