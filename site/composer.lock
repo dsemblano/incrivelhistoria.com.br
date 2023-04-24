@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44d20b44892ab6362a74b91621f83a6a",
+    "content-hash": "a0a298a3a387d1563f062b64595972a8",
     "packages": [
         {
             "name": "brick/math",
@@ -5267,6 +5267,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/plugin-load-filter/"
+        },
+        {
+            "name": "wpackagist-plugin/read-meter",
+            "version": "1.0.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/read-meter/",
+                "reference": "tags/1.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/read-meter.1.0.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/read-meter/"
         },
         {
             "name": "wpackagist-plugin/reading-time-wp",

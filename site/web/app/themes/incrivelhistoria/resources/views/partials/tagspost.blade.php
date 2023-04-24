@@ -5,7 +5,7 @@
     <ul class="tags-posts flex flex-row gap-8">
     @if ($posttags)
         @foreach($posttags as $tag)
-        <li class="bg-gray-100 rounded-lg p-2 text-base transform hover:scale-110 transition duration-300 ease-in-out">
+        <li class="bg-gray-100 text-ihcinza rounded-lg p-2 text-base transform hover:scale-110 transition duration-300 ease-in-out">
             <a href="/tag/{{$tag->slug}}">
                 {{$tag->name}}
             </a>
