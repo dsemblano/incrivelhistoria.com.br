@@ -3,16 +3,20 @@
 // All custom functions here
 
 function destaques() {
-    $args = array(
-        'posts_per_page' => 3,
-        'post__in' => get_option( 'sticky_posts' ),
-        'ignore_sticky_posts' => 1
-    );
+    if ( is_front_page() ) {
+        $args = array(
+            'posts_per_page' => 3,
+            'orderby' => 'modified',
+            'order' => 'DESC',
+            'post__in' => get_option( 'sticky_posts' ),
+            'ignore_sticky_posts' => 1
+        );
+        
+        $sticky_query = new WP_Query( $args );
     
-    $sticky_query = new WP_Query( $args );
-
-    return $sticky_query;
-    wp_reset_postdata();
+        return $sticky_query;
+        wp_reset_postdata();
+    }
 }
 
 function caturl($catname) {
@@ -132,4 +136,4 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
  
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
-remove_action('admin_print_styles', 'print_emoji_styles');
+remove_action('admin_print_styles', 'print_emoji_styles');  
