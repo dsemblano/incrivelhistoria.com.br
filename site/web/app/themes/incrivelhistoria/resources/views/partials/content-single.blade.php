@@ -37,6 +37,7 @@
         @include('partials.share')
       </div>
       @php(the_content())
+      @include('partials.tagspost')
       @include('partials.threedots')
       @include('partials.share')
       @php(comments_template())

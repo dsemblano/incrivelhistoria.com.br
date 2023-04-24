@@ -147,6 +147,7 @@ h4,
 
 .category-name,
 .sidebar-name,
+.tags-posts-title,
 .e-content h2,
 .e-content h3,
 .e-content h4,
@@ -182,7 +183,7 @@ a.tag-cloud-link {
   padding: 0rem 0rem 1rem 0rem;
 }
 
-.post .e-content a:not(.sidebar a, .crp_related a) {
+.post .e-content a:not(.sidebar a, .crp_related a, .tags-posts a) {
   @apply underline text-sky-600 hover:text-sky-900;
 }
 
@@ -198,6 +199,7 @@ a.tag-cloud-link {
 
 // categorias cores borda
 .category-name,
+.tags-posts h3,
 .sidebar-name {
   @apply uppercase text-lg inline-block text-ihcat;
 }
