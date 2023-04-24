@@ -28,7 +28,7 @@
         'time_quantity' => 1,
         'time_unit' => 'hour',
         'range' => 'all',
-        'post_html' => '<li><article class="text-base mt-2 flex flex-row gap-x-4">{thumb}<div class="title-reading flex flex-col"><a href="{url}">{text_title}</a>{views} visualizações</div></article></li>'
+        'post_html' => '<li><article class="text-base mt-2 flex flex-row gap-x-4">{thumb}<div class="title-reading flex flex-col"><a href="{url}">{text_title}</a><span class="popular-views">{views} visualizações</span></div></article></li>'
         );
         wpp_get_mostpopular($args);
     @endphp
