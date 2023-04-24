@@ -16,9 +16,6 @@
       <p class="mb-3 excerpt">
         {{ get_the_excerpt() }}
       </p>
-        {{-- <div class="container text-center flex flex-col items-center text-xs lg:text-xl gap-1 lg:gap-3">
-          @include('partials.entry-meta')
-        </div> --}}
         <hr>
       <div class="categories lg:text-lg my-6">
         {{ the_category(' &bull; ') }}
@@ -28,11 +25,6 @@
     <picture class="featured-singleimg w-full">
       {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-thumb mb-6') ) }}
     </picture>
-{{-- 
-    <div class="container flex flex-row justify-around gap-5 md:justify-start">
-      @include('partials.entry-meta')
-      @include('partials.readingtime')
-    </div> --}}
     
   </header>
 
@@ -42,10 +34,11 @@
       <div class="author border-b border-dashed !my-4 lg:!my-6">
         @include('partials.entry-meta')
         @include('partials.readingtime')
-        <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content"></div>
+        @include('partials.share')
       </div>
       @php(the_content())
       @include('partials.threedots')
+      @include('partials.share')
       @php(comments_template())
       {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}
     </div>
