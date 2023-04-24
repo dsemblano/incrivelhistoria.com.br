@@ -1,7 +1,7 @@
 <header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 border-b border-gray-200 rounded-b-md">
-@if (is_single())
+{{-- @if (is_single())
 @include ('partials.readingprogressbar')
-@endif
+@endif --}}
   <nav class="nav-primary h-full pb-4 xl:border-gray-200 xl:border-b xl:border-solid">
     <div class="container">
 
