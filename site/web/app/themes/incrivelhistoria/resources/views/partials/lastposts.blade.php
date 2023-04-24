@@ -19,12 +19,13 @@
                         <?php the_title(); ?>
                     </a>
                     @php
-                        $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
-                        $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
+                        // $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
+                        // $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
                         // echo $date_format; // Output the date in dd-mm-yyyy format
+                        $modified_date = get_the_modified_date('d-m-Y');
                     @endphp
-                    <time class="dt-published text-sm inline-block mt-" datetime="{{$date_format}}">
-                        {{$date_format}}
+                    <time class="dt-published text-sm inline-block mt-" datetime="{{$modified_date}}">
+                        {{$modified_date}}
                     </time>
                 </div>
                 
