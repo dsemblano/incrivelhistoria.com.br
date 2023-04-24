@@ -13,7 +13,22 @@
 </h3>
 
     <section id="popular-posts" class="mb-6">
-    {!! do_shortcode('[wpp range="all"]') !!}
+    @php
+        $args = array(
+        'limit' => 6,
+        'thumbnail_width' => 100,
+        'thumbnail_height' => 75,
+        'post_type' => 'post',
+        'wpp_start' => '<ol>',
+        'wpp_end' => '</ol>',
+        'stats_views' => 1,
+        'stats_date' => 1,
+        'stats_date_format' => 'd-m-Y',
+        'range' => 'all',
+        'post_html' => '<li><article class="text-base mt-2 flex flex-row gap-x-4">{thumb} <a href="{url}">{text_title}</a></article></li>'
+        );
+        wpp_get_mostpopular($args);
+    @endphp
     </section>
 
 @include('partials.hrelement')
