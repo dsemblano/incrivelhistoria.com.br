@@ -16,16 +16,19 @@
     @php
         $args = array(
         'limit' => 6,
-        'thumbnail_width' => 100,
-        'thumbnail_height' => 75,
+        'thumbnail_width' => 80,
+        'thumbnail_height' => 80,
         'post_type' => 'post',
+        'freshness' => 1,
         'wpp_start' => '<ol>',
         'wpp_end' => '</ol>',
         'stats_views' => 1,
         'stats_date' => 1,
         'stats_date_format' => 'd-m-Y',
+        'time_quantity' => 1,
+        'time_unit' => 'hour',
         'range' => 'all',
-        'post_html' => '<li><article class="text-base mt-2 flex flex-row gap-x-4">{thumb} <a href="{url}">{text_title}</a></article></li>'
+        'post_html' => '<li><article class="text-base mt-2 flex flex-row gap-x-4">{thumb}<div class="title-reading flex flex-col"><a href="{url}">{text_title}</a>{views} visualizações</div></article></li>'
         );
         wpp_get_mostpopular($args);
     @endphp
