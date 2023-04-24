@@ -5,7 +5,7 @@
         </strong>        
     </h3>
     @php $lastposts = lastposts(4); @endphp
-    <ol id="lastposts-list">
+    <ol id>
         @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
         <li>
             <article class="text-base mt-2 flex flex-row gap-x-4">
@@ -18,8 +18,13 @@
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
-                    <time class="dt-published text-sm inline-block mt-" datetime="{{ get_post_time('c', true) }}">
-                        {{ get_the_date() }}
+                    @php
+                        $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
+                        $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
+                        // echo $date_format; // Output the date in dd-mm-yyyy format
+                    @endphp
+                    <time class="dt-published text-sm inline-block mt-" datetime="{{$date_format}}">
+                        {{$date_format}}
                     </time>
                 </div>
                 

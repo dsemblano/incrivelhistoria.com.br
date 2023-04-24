@@ -44,13 +44,17 @@ function postbycategory($arg, $page=3) {
     wp_reset_postdata();
 }
 
-function lastposts($posts=5) {
+function lastposts($posts=6) {
     $args = array(
         'post_type'      => 'post',
         'post_status'    => 'publish',
+        'update_post_meta_cache' => false,
+        'update_post_term_cache' => false,
         'orderby'        => 'date',
         'order'          => 'DESC',
         'posts_per_page' => $posts,
+        'meta_key'       => 'start',
+        'meta_type'      => 'DATETIME'
     );
 
     return new WP_Query( $args );
