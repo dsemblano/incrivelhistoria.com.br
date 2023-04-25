@@ -116,7 +116,7 @@ function conditionally_load_gutenberg_styles() {
 if ( is_gutenberg_page() ) {
     return;
 }
-// wp_dequeue_style( 'wp-block-library' );
+wp_dequeue_style( 'wp-block-library' );
 wp_dequeue_style( 'wp-block-library-theme' );
 wp_dequeue_style( 'wc-block-style' );
 wp_dequeue_style( 'wc-blocks-style' );
