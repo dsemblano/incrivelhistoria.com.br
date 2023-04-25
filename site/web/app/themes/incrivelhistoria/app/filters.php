@@ -46,3 +46,11 @@ add_filter('the_content', function($content) {
     }
     return $content;
 });
+
+// defer local script
+add_filter('script_loader_tag', function ($url) {
+    if ( is_user_logged_in() ) return $url; //don't break WP Admin
+    if ( FALSE === strpos( $url, '.js' ) ) return $url;
+    if ( strpos( $url, 'jquery.min.js' ) ) return $url;
+    return str_replace( ' src', ' defer src', $url );
+});
