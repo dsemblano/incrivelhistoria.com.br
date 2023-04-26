@@ -27,6 +27,7 @@
     "@tailwindcss/typography": "^0.5.9"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "flowbite": "^1.6.5"
   }
 }
