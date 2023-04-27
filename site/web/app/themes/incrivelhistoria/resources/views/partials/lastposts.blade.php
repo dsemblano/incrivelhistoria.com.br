@@ -23,9 +23,13 @@
                         // $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
                         // echo $date_format; // Output the date in dd-mm-yyyy format
                         $modified_date = get_the_modified_date('d-m-Y');
+                        $created_date = get_the_date('d-m-Y');
                     @endphp
+                    <time class="dt-published text-sm inline-block mt-" datetime="{{$created_date}}">
+                        Criado em {{$created_date}}
+                    </time>
                     <time class="dt-published text-sm inline-block mt-" datetime="{{$modified_date}}">
-                        {{$modified_date}}
+                    Atualizado em {{$modified_date}}
                     </time>
                 </div>
                 
