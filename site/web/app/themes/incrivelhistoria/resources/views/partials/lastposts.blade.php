@@ -4,7 +4,7 @@
             Últimas
         </strong>        
     </h3>
-    @php $lastposts = lastposts(4); @endphp
+    @php $lastposts = lastposts(5); @endphp
     <ol id>
         @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
         <li>
