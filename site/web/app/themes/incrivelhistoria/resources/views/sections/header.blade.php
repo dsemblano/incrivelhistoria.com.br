@@ -88,21 +88,22 @@
     <span class="sr-only">Carregando...</span>
 </div>
 
-<div id="ad-container" style="display: none;">
-  <!-- Ad container -->
-  <script>
-    function handleAdLoaded() {
-      var adContainer = document.getElementById('ad-container');
-      adContainer.style.display = 'block';
-    }
-  </script>
-</div>
-
 <script>
-  window.addEventListener('load', function () {
+  function handleAdLoaded() {
     var skeletonLoading = document.getElementById('skeleton-loading');
     skeletonLoading.style.display = 'none';
-  });
+  }
+
+  function checkAdLoaded() {
+    var adElement = document.querySelector('.google-auto-placed');
+    if (adElement) {
+      handleAdLoaded();
+    } else {
+      setTimeout(checkAdLoaded, 100);
+    }
+  }
+
+  window.addEventListener('load', checkAdLoaded);
 </script>
 
 
