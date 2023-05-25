@@ -60,7 +60,7 @@
       {{-- gogole ads container --}}
 
       
-<div class="skeleton-loading flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
+<div id="skeleton-loading" class="flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
     <div class="bg-gray-200 h-52 sm:h-full sm:w-72 rounded-xl animate-pulse">
     </div>
     <div class="flex flex-col flex-1 gap-5 sm:p-2">
@@ -88,41 +88,23 @@
     <span class="sr-only">Carregando...</span>
 </div>
 
-<div class="google-auto-placed" style="display: none;">
-  <!-- Ad container -->
-</div>
-
 <script>
   function handleAdLoaded() {
     var skeletonLoading = document.getElementById('skeleton-loading');
-    var adContainer = document.querySelector('.google-auto-placed');
-
     skeletonLoading.style.display = 'none';
-    adContainer.style.display = 'block';
   }
 
   function checkAdLoaded() {
-    var adContainer = document.querySelector('.google-auto-placed');
-    var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        if (mutation.type === 'childList' && adContainer.children.length > 0) {
-          handleAdLoaded();
-          observer.disconnect();
-        }
-      });
-    });
-    
-    observer.observe(adContainer, { childList: true });
-
-    setTimeout(function() {
+    var adElement = document.querySelector('.google-auto-placed');
+    if (adElement) {
       handleAdLoaded();
-      observer.disconnect();
-    }, 5000); // Timeout in milliseconds (adjust as needed)
+    } else {
+      setTimeout(checkAdLoaded, 100);
+    }
   }
 
   window.addEventListener('load', checkAdLoaded);
 </script>
-
 
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
