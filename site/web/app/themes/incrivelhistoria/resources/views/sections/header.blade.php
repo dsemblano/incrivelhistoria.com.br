@@ -88,17 +88,27 @@
     <span class="sr-only">Carregando...</span>
 </div>
 
-<div id="ad-container">
+<div class="ad-container">
+  <!-- Ad container -->
   <script>
     function handleAdLoaded() {
-      var skeletonLoading = document.getElementById('skeleton-loading');
-      var adContainer = document.getElementById('ad-container');
+      var skeletonLoading = document.querySelector('.skeleton-loading');
+      var adContainer = document.querySelector('.ad-container');
+      var adElement = document.querySelector('.google-auto-placed');
 
       skeletonLoading.style.display = 'none';
       adContainer.style.display = 'block';
+
+      if (adElement) {
+        adElement.style.visibility = 'visible';
+      }
     }
   </script>
 </div>
+
+<script>
+  window.addEventListener('load', handleAdLoaded);
+</script>
 
 
       <div class="hidden xl:block mt-3 container">
