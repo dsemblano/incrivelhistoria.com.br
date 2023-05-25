@@ -60,7 +60,7 @@
       {{-- gogole ads container --}}
 
       
-<div class="flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
+<div class="skeleton-loading flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
     <div class="bg-gray-200 h-52 sm:h-full sm:w-72 rounded-xl animate-pulse">
     </div>
     <div class="flex flex-col flex-1 gap-5 sm:p-2">
@@ -86,6 +86,18 @@
         </div>
     </div>
     <span class="sr-only">Carregando...</span>
+</div>
+
+<div id="ad-container">
+  <script>
+    function handleAdLoaded() {
+      var skeletonLoading = document.getElementById('skeleton-loading');
+      var adContainer = document.getElementById('ad-container');
+
+      skeletonLoading.style.display = 'none';
+      adContainer.style.display = 'block';
+    }
+  </script>
 </div>
 
 
