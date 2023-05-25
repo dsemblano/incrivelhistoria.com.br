@@ -98,12 +98,10 @@
     var adElement = document.querySelector('.google-auto-placed');
     if (adElement) {
       handleAdLoaded();
-    } else {
-      setTimeout(checkAdLoaded, 100);
     }
   }
 
-  window.addEventListener('load', checkAdLoaded);
+  document.addEventListener('DOMContentLoaded', checkAdLoaded);
 </script>
 
 
