@@ -102,12 +102,22 @@
   }
 
   function checkAdLoaded() {
-    var adElement = document.querySelector('.google-auto-placed');
-    if (adElement && adElement.innerHTML.trim() !== '') {
+    var adContainer = document.querySelector('.google-auto-placed');
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'childList' && adContainer.children.length > 0) {
+          handleAdLoaded();
+          observer.disconnect();
+        }
+      });
+    });
+    
+    observer.observe(adContainer, { childList: true });
+
+    setTimeout(function() {
       handleAdLoaded();
-    } else {
-      setTimeout(checkAdLoaded, 100);
-    }
+      observer.disconnect();
+    }, 5000); // Timeout in milliseconds (adjust as needed)
   }
 
   window.addEventListener('load', checkAdLoaded);
