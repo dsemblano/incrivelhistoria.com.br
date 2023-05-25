@@ -100,8 +100,15 @@
 
 <script>
   window.addEventListener('load', function () {
-    var skeletonLoading = document.getElementById('skeleton-loading');
-    skeletonLoading.style.display = 'none';
+    function checkAdLoaded() {
+      var adElement = document.querySelector('.google-auto-placed');
+      if (adElement) {
+        handleAdLoaded();
+      } else {
+        setTimeout(checkAdLoaded, 100);
+      }
+    }
+    checkAdLoaded();
   });
 </script>
 
