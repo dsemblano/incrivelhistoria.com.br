@@ -94,6 +94,7 @@
       var adElement = document.querySelector('.google-auto-placed');
 
       skeletonLoading.style.display = 'none';
+      adElement.style.display = 'block';
     }
   </script>
 
