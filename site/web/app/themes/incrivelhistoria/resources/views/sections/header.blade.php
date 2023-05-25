@@ -101,7 +101,15 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', checkAdLoaded);
+  function listenForGTM() {
+    if (window.google_tag_manager && window.google_tag_manager[{{"GTM-NLDGHWQ"}}]) {
+      checkAdLoaded();
+    } else {
+      setTimeout(listenForGTM, 200);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', listenForGTM);
 </script>
 
 
