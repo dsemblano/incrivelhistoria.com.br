@@ -60,7 +60,7 @@
       {{-- gogole ads container --}}
 
       
-<div id="skeleton-loading" class="flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
+<div id="skeleton-loading" class="google-auto-placed flex flex-col w-1/2 gap-5 p-2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-64 rounded-2xl sm:flex-row ">
     <div class="bg-gray-200 h-52 sm:h-full sm:w-72 rounded-xl animate-pulse">
     </div>
     <div class="flex flex-col flex-1 gap-5 sm:p-2">
@@ -88,23 +88,23 @@
     <span class="sr-only">Carregando...</span>
 </div>
 
+<div id="ad-container" style="display: none;">
+  <!-- Ad container -->
+  <script>
+    function handleAdLoaded() {
+      var adContainer = document.getElementById('ad-container');
+      adContainer.style.display = 'block';
+    }
+  </script>
+</div>
+
 <script>
-  function handleAdLoaded() {
+  window.addEventListener('load', function () {
     var skeletonLoading = document.getElementById('skeleton-loading');
     skeletonLoading.style.display = 'none';
-  }
-
-  function checkAdLoaded() {
-    var adElement = document.querySelector('.google-auto-placed');
-    if (adElement) {
-      handleAdLoaded();
-    } else {
-      setTimeout(checkAdLoaded, 100);
-    }
-  }
-
-  window.addEventListener('load', checkAdLoaded);
+  });
 </script>
+
 
       <div class="hidden xl:block mt-3 container">
         <div class="flex flex-row justify-end">
