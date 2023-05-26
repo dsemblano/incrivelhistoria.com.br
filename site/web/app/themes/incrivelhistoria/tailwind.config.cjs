@@ -11,7 +11,7 @@ module.exports = {
         "97": "26rem",
         "70": "282px",
         "75": "304px",
-        "76": "345px",
+        "76": "346px",
         "thumb": "80vh",
       },
       colors: {
