@@ -94,22 +94,16 @@
     skeletonLoading.style.display = 'none';
   }
 
-  function checkAdLoaded() {
+  function checkAdVisibility() {
     var adElement = document.querySelector('.google-auto-placed');
-    if (adElement) {
+    if (adElement && adElement.offsetHeight > 0) {
       handleAdLoaded();
-    }
-  }
-
-  function listenForGTM() {
-    if (window.google_tag_manager && window.google_tag_manager[{{"GTM-NLDGHWQ"}}]) {
-      checkAdLoaded();
     } else {
-      setTimeout(listenForGTM, 200);
+      window.requestAnimationFrame(checkAdVisibility);
     }
   }
 
-  document.addEventListener('DOMContentLoaded', listenForGTM);
+  document.addEventListener('DOMContentLoaded', checkAdVisibility);
 </script>
 
 
