@@ -10,7 +10,7 @@ module.exports = {
       height: {
         "97": "26rem",
         "70": "282px",
-        "75": "303px",
+        "75": "304px",
         "thumb": "80vh",
       },
       colors: {
