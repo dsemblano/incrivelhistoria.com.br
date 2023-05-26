@@ -60,8 +60,8 @@
       {{-- gogole ads container --}}
 
       
-<div id="skeleton-loading" class="flex flex-col gap-5 h-70 w-1/2 mx-auto bg-white shadow-lg select-none sm:p-4 sm:h-70 rounded-2xl sm:flex-row ">
-    <div class="bg-gray-200 h-52 sm:h-full sm:w-72 rounded-xl animate-pulse">
+<div id="skeleton-loading" class="flex flex-col gap-5 h-70 w-1/2 mx-auto my-2 bg-white shadow-lg select-none sm:p-4 sm:h-70 rounded-2xl sm:flex-row ">
+    <div class="bg-gray-200 sm:h-full sm:w-72 rounded-xl animate-pulse w-full h-auto">
     </div>
     <div class="flex flex-col flex-1 gap-5 sm:p-2">
         <div class="flex flex-col flex-1 gap-3">
