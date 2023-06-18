@@ -9,11 +9,11 @@
 
   <div class="text-base leading-6 text-gray-600">
     <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
-      @if (get_the_date() != get_the_modified_date())
+      {{-- @if (get_the_date() != get_the_modified_date())
       <span>Atualizado em {{ get_the_modified_date() }}</span>
       @else
       <span>Publicado em {{ get_the_date() }} </span>
-      @endif
+      @endif --}}
     </time>
   </div>
 </div>
