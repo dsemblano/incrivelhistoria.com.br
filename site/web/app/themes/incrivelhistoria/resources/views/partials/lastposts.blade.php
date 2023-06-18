@@ -30,7 +30,7 @@
                     </time>
                     <time class="dt-published text-sm inline-block mt-" datetime="{{$modified_date}}">
                     Atualizado em {{$modified_date}} --}}
-                    <p><i class="fa-regular fa-calendar-days mr-2"></i> Publicado em {{ get_the_date() }} </p>
+                    <p><i class="fa-regular fa-calendar-days mr-2"></i>{{ get_the_date() }}</p>
                     </time>
                 </div>
                 
