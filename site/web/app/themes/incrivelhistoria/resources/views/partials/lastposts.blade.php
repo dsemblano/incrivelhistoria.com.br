@@ -5,7 +5,7 @@
         </strong>        
     </h3>
     @php $lastposts = lastposts(5); @endphp
-    <ol id>
+    <ol id="ultimas">
         @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
         <li>
             <article class="text-base mt-2 flex flex-row gap-x-4">
@@ -18,7 +18,7 @@
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
-                    @php
+                    {{-- @php
                         // $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
                         // $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
                         // echo $date_format; // Output the date in dd-mm-yyyy format
@@ -29,7 +29,12 @@
                         Criado em {{$created_date}}
                     </time>
                     <time class="dt-published text-sm inline-block mt-" datetime="{{$modified_date}}">
-                    Atualizado em {{$modified_date}}
+                    Atualizado em {{$modified_date}} --}}
+                    @if (get_the_date() != get_the_modified_date())
+                    <p><i class="fa-regular fa-calendar-days mr-2"></i> Atualizado em {{ get_the_modified_date() }}</p>
+                    @else
+                    <p><i class="fa-regular fa-calendar-days mr-2"></i> Publicado em {{ get_the_date() }} </p>
+                    @endif
                     </time>
                 </div>
                 
