@@ -1,4 +1,4 @@
-<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 border-b border-gray-200 rounded-b-md">
+<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 rounded-b-md">
 {{-- @if (is_single())
 @include ('partials.readingprogressbar')
 @endif --}}
