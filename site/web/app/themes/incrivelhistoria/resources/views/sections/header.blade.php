@@ -2,7 +2,7 @@
 {{-- @if (is_single())
 @include ('partials.readingprogressbar')
 @endif --}}
-  <nav class="nav-primary h-full pb-4 xl:border-gray-200 xl:border-b xl:border-solid">
+  <nav class="nav-primary h-full pb-4 border-gray-300 border-b border-solid shadow-md">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
