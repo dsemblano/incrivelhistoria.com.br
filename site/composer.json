@@ -58,8 +58,6 @@
     "wpackagist-plugin/wordpress-popular-posts":">=6.1.1",
     "wpackagist-plugin/wp-latest-posts":">=5.0.3",
     "wpackagist-plugin/shareaholic":">=9.7.7",
-    "wpackagist-plugin/plugin-load-filter": ">=2.5.1",
-    "wpackagist-plugin/read-meter":">=1.0.6",
     "roots/acorn": "^3.1"
   },
   "require-dev": {
