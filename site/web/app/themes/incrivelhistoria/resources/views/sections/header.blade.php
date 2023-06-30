@@ -1,8 +1,8 @@
-<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4 rounded-b-md">
+<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4">
 {{-- @if (is_single())
 @include ('partials.readingprogressbar')
 @endif --}}
-  <nav class="nav-primary h-full pb-4 border-gray-300 border-b border-solid shadow-md">
+  <nav class="nav-primary h-full pb-2 border-gray-300 border-b border-solid shadow-md">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
@@ -55,6 +55,20 @@
           </div>
           
         </div>
+
+      </div>
+      <div class="hidden xl:block mt-3 container">
+        <div class="flex flex-row justify-end">
+
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenudesktop text-base flex flex-col py-2 text-ihcor w-full justify-evenly
+          xl:flex-row xl:mt-0 relative']) !!}
+
+          <div class="relative">
+            @include('partials/inputsearch')
+          </div>
+        </div>
+      </div>
+      {{-- fim       --}}
   
       </nav>
       {{-- gogole ads container --}}
@@ -105,20 +119,6 @@
 
   document.addEventListener('DOMContentLoaded', checkAdVisibility);
 </script>
-
-
-      <div class="hidden xl:block mt-3 container">
-        <div class="flex flex-row justify-end">
-
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenudesktop text-base flex flex-col py-2 text-ihcor w-full justify-evenly
-          xl:flex-row xl:mt-0 relative']) !!}
-
-          <div class="relative">
-            @include('partials/inputsearch')
-          </div>
-        </div>
-      </div>
-    </div>
 
 </header>
 
