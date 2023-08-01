@@ -8,7 +8,7 @@ const snippetText = partytownSnippet();
 const { copyLibFiles } = require('@builder.io/partytown/utils'); // CommonJS
 
 async function myBuildTask() {
-  await copyLibFiles('public/~partytown');
+  await copyLibFiles(path.join(__dirname, "public", "~partytown"));
 }
 
 /**
