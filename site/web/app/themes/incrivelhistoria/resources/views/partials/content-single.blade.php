@@ -10,7 +10,7 @@
 
       </span>
 
-      <h1 class="p-name text-4xl lg:text-6xl my-4">
+      <h1 class="p-name text-4xl lg:text-6xl my-4 font-bold">
         {!! $title !!}
       </h1>
       <p class="mb-3 excerpt">
