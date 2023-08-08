@@ -1,15 +1,15 @@
 import domReady from '@roots/sage/client/dom-ready';
 import './arrowtop.js';
 import 'flowbite/dist/flowbite.js';
-import { partytownSnippet } from '@builder.io/partytown/integration';
-const snippetText = partytownSnippet();
+// import { partytownSnippet } from '@builder.io/partytown/integration';
+// const snippetText = partytownSnippet();
 
 // import { copyLibFiles } from '@builder.io/partytown/utils'; // ESM
-const { copyLibFiles } = require('@builder.io/partytown/utils'); // CommonJS
+// const { copyLibFiles } = require('@builder.io/partytown/utils'); // CommonJS
 
-async function myBuildTask() {
-  await copyLibFiles(path.join(__dirname, "public", "~partytown"));
-}
+// async function myBuildTask() {
+//   await copyLibFiles('./public/~partytown');
+// }
 
 /**
  * Application entrypoint
