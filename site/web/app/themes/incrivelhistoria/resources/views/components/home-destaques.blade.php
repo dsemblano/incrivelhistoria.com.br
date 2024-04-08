@@ -10,7 +10,7 @@
         @while ($destaques->have_posts()) @php $destaques->the_post() @endphp
         
         @if ($first_loop)
-          <article class="flex flex-col lg:flex-row mb-4 border-default rounded bg-gray-70 hover:bg-gray-100 hover:rounded">
+          <article class="flex flex-col lg:flex-row mb-4 card">
             <div class="left w-full lg:w-2/3 h-full">
               <a href="{{ get_permalink() }}">
                 <figure class="imgpost">

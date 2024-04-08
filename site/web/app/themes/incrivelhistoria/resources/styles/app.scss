@@ -57,15 +57,15 @@ body {
 }
 
 .border-default {
-  @apply border border-gray-200 rounded-t-md bg-white shadow-lg;
+  @apply border border-gray-200 rounded-t-lg bg-white shadow-md hover:shadow-2xl;
 }
 
 .wrap {
   padding: 1rem;
 }
 
-.banner {
-  // @apply shadow-md;
+.card {
+  @apply border-default rounded-lg ;
 }
 
 figure.imgpost {
