@@ -408,3 +408,8 @@ span.span-reading-time.rt-reading-time {
     z-index: 100000; /* Above WP toolbar. */
   }
 }
+
+iframe#_nbtads_alert {
+  top: 25.5rem !important;
+  left: 2rem;
+}
