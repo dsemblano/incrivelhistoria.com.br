@@ -3,8 +3,13 @@ module.exports = {
   content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}', './node_modules/flowbite/**/*.js'],
   theme: {
     container: {
-      center: true,
-      padding: '1rem',
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      },
+        center: true,
     },
     extend: {
       height: {
