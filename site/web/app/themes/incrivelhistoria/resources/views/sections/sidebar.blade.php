@@ -7,4 +7,4 @@
 @include('partials.hrelement')
 
 {{-- for tags widget --}}
-@php(dynamic_sidebar('sidebar-primary'))    
+@php(dynamic_sidebar('sidebar-primary'))

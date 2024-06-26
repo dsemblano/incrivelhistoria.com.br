@@ -26,11 +26,12 @@ class Post extends Composer
     {
         return [
             'title' => $this->title(),
+            'pagination' => $this->pagination(),
         ];
     }
 
     /**
-     * Returns the post title.
+     * Retrieve the post title.
      *
      * @return string
      */
@@ -66,5 +67,19 @@ class Post extends Composer
         }
 
         return get_the_title();
+    }
+
+    /**
+     * Retrieve the pagination links.
+     *
+     * @return string
+     */
+    public function pagination()
+    {
+        return wp_link_pages([
+            'echo' => 0,
+            'before' => '<p>'.__('Pages:', 'sage'),
+            'after' => '</p>',
+        ]);
     }
 }

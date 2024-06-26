@@ -1,6 +1,10 @@
-// https://tailwindcss.com/docs/configuration
-module.exports = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}', './node_modules/flowbite/**/*.js'],
+import screens from 'tailwindcss-debug-screens';
+import typography from '@tailwindcss/typography';
+
+
+/** @type {import('tailwindcss').Config} config */
+const config = {
+  content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
     container: {
       padding: {
@@ -32,11 +36,13 @@ module.exports = {
       },
       backgroundPosition: {
         desktop: 'bottom 0px right 4rem',
-      }
+      },
     },
   },
   plugins: [
-    require('flowbite/plugin'),
-    require('@tailwindcss/typography')
+    screens,
+    typography,
   ],
 };
+
+export default config;

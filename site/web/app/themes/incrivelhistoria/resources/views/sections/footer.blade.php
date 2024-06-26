@@ -1,5 +1,5 @@
 <footer class="content-info bg-ihcor text-ihcompl pb-12">
-  
+    @php(dynamic_sidebar('sidebar-footer'))
   <div class="container">
 
     <div class="flex flex-col md:flex-row justify-between items-center text-ihcompl py-8 mb-8 border-gray-500 border-b border-solid ">      

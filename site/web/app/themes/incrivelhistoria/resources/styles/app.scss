@@ -1,6 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './menu';
 @import "./arrowcdtop.scss";
 
@@ -360,7 +361,6 @@ footer.content-info {
 }
 
 .grid-article {
-  background-color: green;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);

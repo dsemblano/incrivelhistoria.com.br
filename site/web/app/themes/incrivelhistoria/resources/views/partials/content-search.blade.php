@@ -17,13 +17,6 @@
       </a>
     </p>
 
-    {{-- @include('partials.entry-meta') --}}
-    {{-- <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
-      {{ get_the_date() }}
-    </time> --}}
+    {{-- @includeWhen(get_post_type() === 'post', 'partials.entry-meta') --}}
   </header>
-{{-- 
-  <div class="entry-summary">
-    @php(the_excerpt())
-  </div> --}}
 </article>
