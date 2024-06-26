@@ -67,7 +67,7 @@
         </div>
 
       </div>
-      <div id="menu-pages" class="mt-3 container">
+      <div id="menu-pages" class="mt-3 container hidden xl:block">
         <div class="flex flex-row justify-end">
 
           {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' =>
