@@ -1,6 +1,8 @@
 import domReady from '@roots/sage/client/dom-ready';
 import './arrowtop.js';
 import 'flowbite/dist/flowbite.js';
+import './logoscroll.js';
+
 // import { partytownSnippet } from '@builder.io/partytown/integration';
 // const snippetText = partytownSnippet();
 

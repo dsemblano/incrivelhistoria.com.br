@@ -1,3 +1,61 @@
+#Layer_1 {
+  transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  transform: translate(0, 0); /* Add a transform effect */
+}
+
+#banner #banner-nav {
+  @apply h-16 pb-20;
+
+  transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  transform: translate(0, 0); /* Add a transform effect */
+
+  #button-sandwich {
+    @apply pt-0;
+  }
+
+  img {
+    @apply relative pb-4 w-14;  
+  }
+} 
+
+#banner #banner-nav.shrink {
+  @apply pb-16;
+
+  transform: translate(0, -20px); /* Add a transform effect */
+  transition: 0.5s;
+
+  // #button-sandwich {
+  //   @apply pt-6;
+  // }
+
+  img {
+    @apply top-6 w-8;
+  }
+} 
+
+@screen lg {
+  #banner #banner-nav {
+    @apply h-36;
+
+    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transform: translate(0, 0); /* Add a transform effect */    
+  } 
+
+  #banner #banner-nav.shrink {
+    @apply h-20 pb-16;
+
+    transform: translate(0, -20px); /* Add a transform effect */
+    transition: 0.5s;
+    
+    #mobile-menu-3 {
+      img {
+        @apply top-0 w-10;
+      }
+    }
+  }
+
+}
+
 .menu-categorias-menu-container {
   @apply bg-transparent w-full;
 
@@ -25,7 +83,7 @@
 
 }
 
-@screen xl {
+@screen lg {
 
   .menu-categorias-menu-container {
     box-shadow: none;

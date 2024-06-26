@@ -1,6 +1,6 @@
 <section {{ $attributes }}>
   <span class="category-name mb-4">
-    <strong>@php echo caturl('curiosidades') @endphp</strong>
+    @php echo caturl('curiosidades') @endphp
   </span>
   <div class="flex flex-col">
 
@@ -106,7 +106,7 @@
 
   <section id="historia-brasil" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('historia-do-brasil') @endphp</strong>
+      @php echo caturl('historia-do-brasil') @endphp
     </span>
 
     @php $category = postbycategory('historia-do-brasil'); @endphp
@@ -168,7 +168,7 @@
 
   <section id="direitos-humanos" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('direitos-humanos') @endphp</strong>
+      @php echo caturl('direitos-humanos') @endphp
     </span>
     @php $category = postbycategory('direitos-humanos'); @endphp
     @if ($category->have_posts())
@@ -228,7 +228,7 @@
 
   <section id="batalhas-historicas" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('batalhas-historicas') @endphp</strong>
+      @php echo caturl('batalhas-historicas') @endphp
     </span>
     @php $category = postbycategory('batalhas-historicas'); @endphp
     @if ($category->have_posts())
@@ -289,7 +289,7 @@
 
   <section id="crime-organizado" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('crime-organizado') @endphp</strong>
+      @php echo caturl('crime-organizado') @endphp
     </span>
     @php $category = postbycategory('crime-organizado'); @endphp
     @if ($category->have_posts())
@@ -349,7 +349,7 @@
 
   <section id="guerras" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('guerras') @endphp</strong>
+      @php echo caturl('guerras') @endphp
     </span>
     @php $category = postbycategory('guerras'); @endphp
     @if ($category->have_posts())
@@ -409,7 +409,7 @@
 
   <section id="periodos" class="">
     <span class="category-name mb-4">
-      <strong>@php echo caturl('periodos') @endphp</strong>
+      @php echo caturl('periodos') @endphp
     </span>
     @php $category = postbycategory('periodos'); @endphp
     @if ($category->have_posts())

@@ -142,6 +142,11 @@ h4,
   font-family: 'Lato Bold', sans-serif;
 }
 
+.category-name,
+.sidebar-name {
+  font-weight: bold;
+}
+
 .wpp-post-title {
   @apply text-base lg:text-lg mt-2;
 }

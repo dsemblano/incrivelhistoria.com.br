@@ -1,9 +1,5 @@
 <section id="recent-posts" class="mb-6">
-    <h3 class="sidebar-name mb-0">
-        <strong>
-            Últimas
-        </strong>        
-    </h3>
+    <h3 class="sidebar-name mb-0">Últimas</h3>
     @php $lastposts = lastposts(5); @endphp
     <ol id="ultimas">
         @while ($lastposts->have_posts()) @php $lastposts->the_post() @endphp
@@ -12,31 +8,31 @@
                 <a href="{{ get_permalink() }}">
                     <figure class="imgpost">
                         {{ the_post_thumbnail('thumbnail', array( 'class' => 'max-w-none' ) ) }}
-                    </figure>    
+                    </figure>
                 </a>
                 <div class="title-reading flex flex-col">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
                     {{-- @php
-                        // $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
-                        // $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
-                        // echo $date_format; // Output the date in dd-mm-yyyy format
-                        $modified_date = get_the_modified_date('d-m-Y');
-                        $created_date = get_the_date('d-m-Y');
+                    // $post_time = get_post_time('U', true); // Get the post time in Unix timestamp format
+                    // $date_format = date('d-m-Y', $post_time); // Convert Unix timestamp to dd-mm-yyyy format
+                    // echo $date_format; // Output the date in dd-mm-yyyy format
+                    $modified_date = get_the_modified_date('d-m-Y');
+                    $created_date = get_the_date('d-m-Y');
                     @endphp
                     <time class="dt-published text-sm inline-block mt-" datetime="{{$created_date}}">
                         Criado em {{$created_date}}
                     </time>
                     <time class="dt-published text-sm inline-block mt-" datetime="{{$modified_date}}">
-                    Atualizado em {{$modified_date}} --}}
-                    <p><i class=""></i>{{ get_the_date() }}</p>
+                        Atualizado em {{$modified_date}} --}}
+                        <p><i class=""></i>{{ get_the_date() }}</p>
                     </time>
                 </div>
-                
+
             </article>
         </li>
-    @endwhile
+        @endwhile
     </ol>
-    
+
 </section>
