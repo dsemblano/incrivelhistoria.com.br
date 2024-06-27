@@ -21,7 +21,7 @@
 
     @include('sections.header')
     <div class="{{ (is_single() || is_category() || is_tag() || is_page('categorias')) ? "" : " container" }}">
-      <main id=" main" class="main">
+      <main id=" main" class="main mt-4">
         @yield('content')
       </main>
 
