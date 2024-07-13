@@ -90,7 +90,13 @@ img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, 
 }
 
 
-body {
+::selection {
+    @apply bg-IHazul;
+}
+
+body,
+.excerpt,
+.category-description {
   @apply text-ihcor;
 
     // font-family: 'Noto Serif', serif;
@@ -98,20 +104,9 @@ body {
     font-weight: 400; /* Set the desired font weight */
 }
 
-::selection {
-    @apply bg-IHazul;
-}
-
-h1 {
-    font-family: 'Jenson', serif;
-    font-size: 2.75rem;
-    line-height: 3.25rem;
-}
-
 .crp_title,
 .wpp-post-title,
 .rt-reading-time,
-.excerpt,
 .sidebar li a,
 .categories,
 .span-title,
@@ -127,7 +122,7 @@ h1 {
 .menu-footer-container,
 .searchbar,
 .logoh1,
-.category-description,
+.wp-block-tag-cloud,
 .dt-published {
     font-family: 'Lato', sans-serif;
     // font-family: 'Signore', serif;
@@ -157,6 +152,12 @@ h4,
 .category-post,
 .crp_related_shortcode h3 {
     font-family: 'Jenson', serif;
+}
+
+h1 {
+  font-family: 'Jenson', serif;
+  font-size: 2.75rem;
+  line-height: 3.25rem;
 }
 
 figure.wp-caption {
