@@ -5,6 +5,17 @@
 @import './menu';
 @import "./arrowcdtop.scss";
 
+
+// For posts headings
+@font-face {
+  font-family: 'Jenson';
+  src: url('~@fonts/jenson/Jenson-Pro-Regular.otf');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// For headings on cards
 @font-face {
   font-family: 'Lato';
   src: url('~@fonts/Lato/Lato-Regular.ttf') format("truetype");
@@ -13,12 +24,14 @@
   font-style: normal;
 }
 
+// For headings on cards
 @font-face {
   font-family: 'Lato Bold';
   src: url('~@fonts/Lato/Lato-Bold.ttf') format("truetype");
   font-display: swap;
 }
 
+// For body text
 @font-face {
   font-family: 'Open Sans';
   src: url('~@fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
