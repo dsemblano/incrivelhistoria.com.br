@@ -19,29 +19,13 @@
   font-display: swap;
 }
 
-
 @font-face {
-    font-family: 'Noto Serif';
-    src: url('~@fonts/Noto_Serif/NotoSerif-Regular.ttf') format("truetype");
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'NotoBold Serif';
-  src: url('~@fonts/Noto_Serif/NotoSerif-Bold.ttf') format("truetype");
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Jenson';
-  src: url('~@fonts/jenson/Jenson-Pro-Regular.otf');
-  font-display: swap;
-  font-weight: normal;
+  font-family: 'Open Sans';
+  src: url('~@fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
   font-style: normal;
 }
+
 
 body {
   background-color: transparent;
@@ -96,7 +80,9 @@ img:not(.featured-singleimg .wp-post-image, .sidebar img, .post .e-content img, 
 body {
   @apply text-ihcor;
 
-    font-family: 'Noto Serif', serif;
+    // font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Set the desired font weight */
 }
 
 ::selection {

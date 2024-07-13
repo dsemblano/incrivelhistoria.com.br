@@ -1251,6 +1251,11 @@
           "slug": "rose-950"
         },
         {
+          "color": "#fffaf4",
+          "name": "Whitebg",
+          "slug": "whitebg"
+        },
+        {
           "color": "#b4cefc",
           "name": "IHazul",
           "slug": "ihazul"

@@ -24,6 +24,7 @@ const config = {
         "thumb": "80vh",
       },
       colors: {
+        'whitebg': '#FFFAF4',
         'IHazul': '#B4CEFC',
         'cinzapadrao': '#2D3441',
         'ihcurioslistas': '#EE8927',
