@@ -445,6 +445,10 @@ iframe#_nbtads_alert {
   padding: 0.5em 10px;
   position: relative;
   color: #383838;
+
+  p {
+    margin: 0rem 0 1rem 0;
+  }
 }
 
 .prose blockquote::before {
