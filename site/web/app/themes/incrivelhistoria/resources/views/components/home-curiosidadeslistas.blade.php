@@ -116,7 +116,7 @@
 
     {{-- @php echo $first_loop; @endphp --}}
     @if ($first_loop)
-    <article class="border-default pb-8 mb-8 card h-97 bg-orange-500">
+    <article class="border-default pb-8 mb-8 card h-97">
       <a href="{{ get_permalink() }}">
         <figure class="imgpost">
           {{ the_post_thumbnail('mais_extendida', array( 'class' => 'w-full shadow-xl rounded-t-md' ) ) }}
