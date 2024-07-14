@@ -10,10 +10,10 @@
     <div class="text-base leading-6 text-gray-600">
       <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
         @if (get_the_date() != get_the_modified_date())
-        <span>Criado em {{ get_the_date() }}<br></span>
-        <span>Atualizado em {{ get_the_modified_date() }}</span>
+        <span>Matéria criada em {{ get_the_date() }}<br></span>
+        <span>Atualizada em {{ get_the_modified_date() }}</span>
         @else
-        <span>Criado em {{ get_the_date() }} </span>
+        <span>Matéria criada em {{ get_the_date() }} </span>
         @endif
       </time>
     </div>
