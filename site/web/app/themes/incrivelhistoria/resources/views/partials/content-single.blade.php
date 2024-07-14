@@ -2,7 +2,7 @@
 
   <header class="header-post">
     <div
-      class="container relative left-0 top-10 md:top-20 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center">
+      class="container relative left-0 top-10 md:top-20 bg-white w-80 md:w-5/6 px-4 lg:w-2/5 lg:px-8 pb-4 text-center rounded-md">
 
       <span class="category-post text-ihcat font-bold text-2xl lg:text-4xl">
         {{-- {{ esc_html( get_the_category()[0]->name) }} --}}
