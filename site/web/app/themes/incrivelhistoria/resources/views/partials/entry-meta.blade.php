@@ -5,27 +5,28 @@
   </figure>
   <div class="text-ihcinza dark:text-white p-author h-card inline-block ml-4">
     <span>{{ __('Escrito por', 'sage') }}</span>
-  <span class="font-semibold p-author mt-4">{{ get_the_author() }}</span>
+    <span class="font-semibold p-author mt-4">{{ get_the_author() }}</span>
 
-  <div class="text-base leading-6 text-gray-600">
-    <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
-      {{-- @if (get_the_date() != get_the_modified_date())
-      <span>Atualizado em {{ get_the_modified_date() }}</span>
-      @else
-      <span>Publicado em {{ get_the_date() }} </span>
-      @endif --}}
-    </time>
+    <div class="text-base leading-6 text-gray-600">
+      <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
+        @if (get_the_date() != get_the_modified_date())
+        <span>Criado em {{ get_the_date() }}<br></span>
+        <span>Atualizado em {{ get_the_modified_date() }}</span>
+        @else
+        <span>Criado em {{ get_the_date() }} </span>
+        @endif
+      </time>
+    </div>
   </div>
 </div>
-</div>
 
-<time class="dt-published" datetime="{{ get_post_time('c', true) }}">
+{{-- <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
   {{ get_the_date() }}
-</time>
+</time> --}}
 
-<p>
+{{-- <p>
   <span>{{ __('By', 'sage') }}</span>
   <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" class="p-author h-card">
     {{ get_the_author() }}
   </a>
-</p>
+</p> --}}
