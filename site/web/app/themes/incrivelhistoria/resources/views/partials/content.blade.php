@@ -6,7 +6,7 @@
   </a>
   <header>
     <div class="wrap">
-      <h2 class="text-xl my-2 font-bold">
+      <h2 class="text-xl mb-2 font-bold">
         <a class="postslinks" href="{{ get_permalink() }}">
           {!! $title !!}
         </a>
