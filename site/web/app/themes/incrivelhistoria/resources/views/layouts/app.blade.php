@@ -10,35 +10,38 @@
   <?php echo \Roots\view('partials/favicon')->render(); ?>
 </head>
 
-<body @php(body_class('debug-screens'))>
-  @php(wp_body_open())
-  <?php echo \Roots\view('partials/gtagbody')->render(); ?>
+<body @php(body_class())>
+  {{--
 
-  <div id="app">
-    <a class="sr-only focus:not-sr-only" href="#main">
-      {{ __('Skip to content') }}
-    </a>
+  <body @php(body_class('debug-screens'))> --}}
+    @php(wp_body_open())
+    <?php echo \Roots\view('partials/gtagbody')->render(); ?>
 
-    @include('sections.header')
-    <div class="{{ (is_single() || is_category() || is_tag() || is_page('categorias')) ? "" : " container" }}">
-      <main id=" main" class="main mt-4">
-        @yield('content')
-      </main>
+    <div id="app">
+      <a class="sr-only focus:not-sr-only" href="#main">
+        {{ __('Skip to content') }}
+      </a>
 
-      @if (is_search() || is_404())
-      @hasSection('sidebar')
-      <aside class="sidebar landscape:w-1/4 lg:w-1/4 h-">
-        @yield('sidebar')
-      </aside>
-      @endif
-      </aside>
-      @endif
+      @include('sections.header')
+      <div class="{{ (is_single() || is_category() || is_tag() || is_page('categorias')) ? "" : " container" }}">
+        <main id=" main" class="main mt-4">
+          @yield('content')
+        </main>
+
+        @if (is_search() || is_404())
+        @hasSection('sidebar')
+        <aside class="sidebar landscape:w-1/4 lg:w-1/4 h-">
+          @yield('sidebar')
+        </aside>
+        @endif
+        </aside>
+        @endif
+      </div>
+      @include('sections.footer')
     </div>
-    @include('sections.footer')
-  </div>
 
-  @php(do_action('get_footer'))
-  @php(wp_footer())
-</body>
+    @php(do_action('get_footer'))
+    @php(wp_footer())
+  </body>
 
 </html>
