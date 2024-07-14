@@ -1,4 +1,4 @@
-<article @php(post_class('w-full'))>
+<article @php(post_class('w-full single-post'))>
 
   <header class="header-post">
     <div
@@ -26,7 +26,7 @@
     </div>
 
     <picture class="featured-singleimg w-full">
-      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl lg:h-thumb mb-6') ) }}
+      {{ the_post_thumbnail('', array( 'class' => 'w-full shadow-xl h-auto lg:h-thumb mb-6') ) }}
     </picture>
 
   </header>
