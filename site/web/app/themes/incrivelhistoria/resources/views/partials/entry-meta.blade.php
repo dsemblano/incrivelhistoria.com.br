@@ -4,8 +4,9 @@
       {!! get_avatar( get_the_author_meta('ID'), 64, '', 'avatar', array('class' => 'rounded-full !m-0') ); !!}
   </figure>
   <div class="text-ihcinza dark:text-white p-author h-card inline-block ml-4">
-    <span>{{ __('Escrito por', 'sage') }}</span>
-    <span class="font-semibold p-author mt-4">{{ get_the_author() }}</span>
+    <div class="inline-block">
+      {{ __('Autor: ', 'sage') }}<span class="font-bold">{{ get_the_author() }}</span>
+    </div>
 
     <div class="text-base leading-6 text-gray-600">
       <time class="dt-published" datetime="{{ get_post_time('c', true) }}">
