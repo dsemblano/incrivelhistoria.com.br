@@ -33,8 +33,7 @@
 
   <div class="container mb-12">
     <div class="flex flex-col landscape:flex-row lg:flex-row justify-center lg:gap-x-12 e-content">
-      <div
-        class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl prose-a:no-underline prose-figure:!m-0 prose-blockquote:!border-l-ihcat">
+      <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl prose-a:no-underline prose-figure:!m-0">
         <div class="author border-b border-dashed !my-4 lg:!my-6">
           @include('partials.entry-meta')
           @include('partials.readingtime')
