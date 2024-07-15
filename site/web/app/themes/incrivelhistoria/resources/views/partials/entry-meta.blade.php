@@ -10,14 +10,12 @@
 
     <div class="text-base leading-6 text-gray-600">
       <time class="dt-published text-sm" datetime="{{ get_post_time('c', true) }}">
-        {{-- Pra quando a matéria tiver em atualização, a data de criada mostra como mais nova que atualizada --}}
-        @if ( get_the_modified_date() < get_the_date() ) <span>Matéria criada em {{ get_the_date() }}<br></span>
-          @elseif ( get_the_modified_date() > get_the_date() )
-          <span>Matéria criada em {{ get_the_date() }}<br></span>
-          <span>Atualizada em {{ get_the_modified_date() }}</span>
-          @else
-          <span>Matéria criada em {{ get_the_date() }} </span>
-          @endif
+        @if ( get_the_modified_time( 'U' ) > get_the_time( 'U' ) )
+        <span>Matéria criada em {{ the_time('j F Y') }}<br></span>
+        <span>Atualizada em {{ the_modified_time('j F Y') }}</span>
+        @else
+        <span>Matéria criada em {{ the_time('j F Y') }} </span>
+        @endif
       </time>
     </div>
   </div>
