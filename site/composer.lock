@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0190a7b96d7e9a2b76387e8133b2b42c",
+    "content-hash": "959e9fb92cc0e93fec7868d2fa274bd1",
     "packages": [
         {
             "name": "brick/math",
@@ -4025,16 +4025,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.5.5",
+            "version": "6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
-                "reference": "41ff6e23ccbc3a1691406d69fe8c211a225514e2"
+                "reference": "1bdabdb9171ac5323edbf4792ce353d475467d27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/wordpress/zipball/41ff6e23ccbc3a1691406d69fe8c211a225514e2",
-                "reference": "41ff6e23ccbc3a1691406d69fe8c211a225514e2",
+                "url": "https://api.github.com/repos/roots/wordpress/zipball/1bdabdb9171ac5323edbf4792ce353d475467d27",
+                "reference": "1bdabdb9171ac5323edbf4792ce353d475467d27",
                 "shasum": ""
             },
             "require": {
@@ -4056,7 +4056,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.5.5"
+                "source": "https://github.com/roots/wordpress/tree/6.6"
             },
             "funding": [
                 {
@@ -4064,7 +4064,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-01T16:54:37+00:00"
+            "time": "2024-07-16T12:03:00+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -4139,22 +4139,22 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.5.5",
+            "version": "6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.5.5"
+                "reference": "6.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.5.5-no-content.zip",
-                "shasum": "064943063cafd63743ae303ec07225f173279527"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.6-no-content.zip",
+                "shasum": "6c0d82185d47782aab67a72d07dee459f9f6ceba"
             },
             "require": {
                 "php": ">= 7.0.0"
             },
             "provide": {
-                "wordpress/core-implementation": "6.5.5"
+                "wordpress/core-implementation": "6.6"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -4205,7 +4205,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-06-24T19:14:42+00:00"
+            "time": "2024-07-16T16:26:38+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -6552,24 +6552,6 @@
             "homepage": "https://wordpress.org/plugins/humanstxt/"
         },
         {
-            "name": "wpackagist-plugin/open-external-links-in-a-new-window",
-            "version": "1.44",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/open-external-links-in-a-new-window/",
-                "reference": "tags/1.44"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/open-external-links-in-a-new-window.1.44.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/open-external-links-in-a-new-window/"
-        },
-        {
             "name": "wpackagist-plugin/reading-time-wp",
             "version": "2.0.16",
             "source": {
@@ -6678,24 +6660,6 @@
             "homepage": "https://wordpress.org/plugins/wordpress-popular-posts/"
         },
         {
-            "name": "wpackagist-plugin/wp-dbmanager",
-            "version": "2.80.9",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-dbmanager/",
-                "reference": "tags/2.80.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-dbmanager.2.80.9.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-dbmanager/"
-        },
-        {
             "name": "wpackagist-plugin/wp-latest-posts",
             "version": "5.0.8",
             "source": {
@@ -6733,15 +6697,15 @@
         },
         {
             "name": "wpackagist-theme/twentytwentythree",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentytwentythree/",
-                "reference": "1.4"
+                "reference": "1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwentythree.1.4.zip"
+                "url": "https://downloads.wordpress.org/theme/twentytwentythree.1.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6757,12 +6721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "c31e886d98723c528ab99e920e7903ccb7391bd0"
+                "reference": "d44cb505c9515db5ff905ec510d69a0f80b366a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c31e886d98723c528ab99e920e7903ccb7391bd0",
-                "reference": "c31e886d98723c528ab99e920e7903ccb7391bd0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d44cb505c9515db5ff905ec510d69a0f80b366a2",
+                "reference": "d44cb505c9515db5ff905ec510d69a0f80b366a2",
                 "shasum": ""
             },
             "conflict": {
@@ -7400,7 +7364,7 @@
                 "topthink/framework": "<6.0.17|>=6.1,<6.1.5|>=8,<8.0.4",
                 "topthink/think": "<=6.1.1",
                 "topthink/thinkphp": "<=3.2.3",
-                "torrentpier/torrentpier": "<=2.4.1",
+                "torrentpier/torrentpier": "<=2.4.3",
                 "tpwd/ke_search": "<4.0.3|>=4.1,<4.6.6|>=5,<5.0.2",
                 "tribalsystems/zenario": "<9.5.60602",
                 "truckersmp/phpwhois": "<=4.3.1",
@@ -7442,7 +7406,8 @@
                 "wallabag/tcpdf": "<6.2.22",
                 "wallabag/wallabag": "<2.6.7",
                 "wanglelecc/laracms": "<=1.0.3",
-                "web-auth/webauthn-framework": ">=3.3,<3.3.4",
+                "web-auth/webauthn-framework": ">=3.3,<3.3.4|>=4.5,<4.9",
+                "web-auth/webauthn-lib": ">=4.5,<4.9",
                 "web-feet/coastercms": "==5.5",
                 "webbuilders-group/silverstripe-kapost-bridge": "<0.4",
                 "webcoast/deferred-image-processing": "<1.0.2",
@@ -7558,7 +7523,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-11T20:05:10+00:00"
+            "time": "2024-07-15T18:05:53+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
