@@ -3,7 +3,7 @@
     <figcaption class="flex items-center !mt-0">
       {!! get_avatar( get_the_author_meta('ID'), 64, '', 'avatar', array('class' => 'rounded-full !m-0') ); !!}
   </figure>
-  <div class="text-ihcinza p-author h-card inline-block ml-4">
+  <div class="text-ihcat p-author h-card inline-block ml-4">
     <div class="inline-block">
       {{ __('Autor: ', 'sage') }}<span class="font-bold">{{ get_the_author() }}</span>
     </div>

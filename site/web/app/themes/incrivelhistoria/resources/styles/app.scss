@@ -233,6 +233,10 @@ figure.wp-caption:first-of-type {
     @apply rounded-lg block text-gray-900 border border-gray-300 bg-gray-50 focus:ring-ihcat focus:border-ihcat;
   }
 
+  .comment-reply-title {
+    @apply text-ihcat;
+  }
+
   .form-submit {
     @apply bg-ihcat hover:bg-ihcat shadow-sm text-base text-white py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
   }

@@ -38,7 +38,7 @@ add_filter('the_content', function($content) {
         $author_box .= '<div class="author-avatar avatar avatar-128 photo rounded-full">' . get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full !m-0') ) . '</div>';
         $author_box .= '</figure>';
         $author_box .= '<span class="p-author author-info text-center mt-8">';
-        $author_box .= '<span class="font-semibold p-author mt-4 text-ihcinza">' . $author_name . '</span>';
+        $author_box .= '<span class="font-semibold p-author mt-4 text-ihcat">' . $author_name . '</span>';
         $author_box .= '<p class="author-bio text-ihcinza text-base">' . $author_bio . '</p>';
         $author_box .= '</span>';
         $author_box .= '</div>';
