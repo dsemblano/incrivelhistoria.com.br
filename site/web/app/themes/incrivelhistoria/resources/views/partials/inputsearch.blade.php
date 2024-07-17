@@ -13,7 +13,7 @@
         </span>
 
         <input type="search"
-            class="searchbar rounded-lg block py-2 px-10 w-auto text-gray-900 bg-gray-50  border border-gray-300 sm:text-sm focus:ring-ihcat focus:border-ihcat dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-ihcor dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="searchbar rounded-lg block py-2 px-10 w-auto text-gray-900 bg-gray-50  border border-gray-300 sm:text-sm focus:ring-ihcat focus:border-ihcat"
             placeholder="{!! esc_attr_x('Busque um artigo:', 'placeholder', 'sage') !!}"
             value="{{ get_search_query() }}" name="s">
     </label>
