@@ -56,7 +56,8 @@ body {
 
 article.type-post,
 .border-default {
-  @apply rounded-t-lg shadow-md hover:shadow-2xl;
+  // @apply rounded-t-lg shadow-md hover:shadow-2xl;
+  @apply rounded-t-lg;
 }
 
 .wrap {
