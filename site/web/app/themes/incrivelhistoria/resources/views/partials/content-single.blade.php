@@ -44,6 +44,7 @@
         @include('partials.threedots')
         @include('partials.share')
         @php(comments_template())
+        @include('partials.threedots')
         {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}
       </div>
       <aside class="sidebar landscape:w-1/4 lg:w-1/4 lg:self-end">
