@@ -220,17 +220,30 @@ figure.wp-caption:first-of-type {
   @apply border-b border-dashed pb-4;
 }
 
-.comments {
-  h2 {
-    margin: 0;
-  }
-}
+// .comments {
+//   h2 {
+//     margin: 0;
+//   }
+// }
 
 .comments {
+  font-size: 1rem;
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .comment-form {
+    @apply mt-2;
+
+    .comment-notes {
+      margin-bottom: 0.5rem;
+    }
+  }
+
   textarea,
   .comment-form-email input,
   .comment-form-author input {
-    @apply rounded-lg block text-gray-900 border border-gray-300 bg-gray-50 focus:ring-ihcat focus:border-ihcat;
+    @apply rounded-lg p-2 text-gray-900 border border-gray-300 bg-gray-50 focus:ring-ihcat focus:border-ihcat;
   }
 
   .comment-reply-title {
@@ -238,7 +251,7 @@ figure.wp-caption:first-of-type {
   }
 
   .form-submit {
-    @apply bg-ihcat hover:bg-ihcat shadow-sm text-base text-white py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
+    @apply mt-4 bg-ihcat hover:bg-ihcat shadow-sm text-base text-white py-3 px-4 rounded button w-48 transform hover:scale-110 transition duration-300 ease-in-out;
   }
 }
 
