@@ -10,10 +10,11 @@
   <?php echo \Roots\view('partials/favicon')->render(); ?>
 </head>
 
-<body @php(body_class())>
-  {{--
+{{--
 
-  <body @php(body_class('debug-screens'))> --}}
+<body @php(body_class())> --}}
+
+  <body @php(body_class())>
     @php(wp_body_open())
     <?php echo \Roots\view('partials/gtagbody')->render(); ?>
 
