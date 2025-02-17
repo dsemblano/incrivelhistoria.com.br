@@ -1,5 +1,5 @@
 @if (! post_password_required())
-<section id="comments" class="comments not-prose">
+<section id="comments" class="comments not-prose mb-12">
   @if ($responses)
   <h2>
     {!! $title !!}
