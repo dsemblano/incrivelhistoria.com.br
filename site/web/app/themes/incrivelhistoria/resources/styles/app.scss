@@ -5,6 +5,11 @@
 @import './menu';
 @import "./arrowcdtop.scss";
 
+body {
+  background-color: transparent;
+  font-family: sans-serif; /* Fallback font */
+ }
+
 
 // For posts headings
 @font-face {
@@ -41,11 +46,6 @@
   font-weight: 100 900;
   font-style: normal;
 }
-
-
-body {
-  background-color: transparent;
- }
 
 
 // Logo
