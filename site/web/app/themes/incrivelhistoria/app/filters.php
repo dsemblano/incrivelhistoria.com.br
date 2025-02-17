@@ -27,25 +27,25 @@ add_filter('comment_form_default_fields', function ($fields) {
 
 // Author box
 
-add_filter('the_content', function($content) {
-    if (is_single()) {
-        $author_name = get_the_author_meta('display_name');
-        $author_bio = get_the_author_meta('description');
+// add_filter('the_content', function($content) {
+//     if (is_single()) {
+//         $author_name = get_the_author_meta('display_name');
+//         $author_bio = get_the_author_meta('description');
 
-        $author_box = '<div class="flex flex-col items-center author author-box mt-10 pt-10 border-gray-200 border-t border-solid"">';
-        $author_box .= '<figure class="!m-0">';
-        $author_box .= '<figcaption class="flex items-center !mt-0">';
-        $author_box .= '<div class="author-avatar avatar avatar-128 photo rounded-full">' . get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full !m-0') ) . '</div>';
-        $author_box .= '</figure>';
-        $author_box .= '<span class="p-author author-info text-center mt-8">';
-        $author_box .= '<span class="font-semibold p-author mt-4 text-ihcat">' . $author_name . '</span>';
-        $author_box .= '<p class="author-bio text-ihcinza text-base">' . $author_bio . '</p>';
-        $author_box .= '</span>';
-        $author_box .= '</div>';
-        $content .= $author_box;
-    }
-    return $content;
-});
+//         $author_box = '<div class="flex flex-col items-center author author-box mt-10 pt-10 border-gray-200 border-t border-solid"">';
+//         $author_box .= '<figure class="!m-0">';
+//         $author_box .= '<figcaption class="flex items-center !mt-0">';
+//         $author_box .= '<div class="author-avatar avatar avatar-128 photo rounded-full">' . get_avatar( get_the_author_meta('ID'), 128, '', 'avatar', array('class' => 'rounded-full !m-0') ) . '</div>';
+//         $author_box .= '</figure>';
+//         $author_box .= '<span class="p-author author-info text-center mt-8">';
+//         $author_box .= '<span class="font-semibold p-author mt-4 text-ihcat">' . $author_name . '</span>';
+//         $author_box .= '<p class="author-bio text-ihcinza text-base">' . $author_bio . '</p>';
+//         $author_box .= '</span>';
+//         $author_box .= '</div>';
+//         $content .= $author_box;
+//     }
+//     return $content;
+// });
 
 // defer local script
 add_filter('script_loader_tag', function ($url) {

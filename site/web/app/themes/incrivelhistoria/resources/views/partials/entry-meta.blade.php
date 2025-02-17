@@ -1,22 +1,17 @@
-<div class="flex flex-row items-center author mb-4">
-  <figure class="!m-0">
-    <figcaption class="flex items-center !mt-0">
-      {!! get_avatar( get_the_author_meta('ID'), 64, '', 'avatar', array('class' => 'rounded-full !m-0') ); !!}
+<div class="flex flex-col lg:flex-row items-center author py-2">
+  <figure class="lg:w-1/5">
+    <figcaption class="">
+      {{-- {!! get_avatar( get_the_author_meta('ID'), 64, '', 'avatar', array('class' => 'rounded-full !m-0') ); !!} --}}
+      <img src="@asset('images/Eudes-Bezerra.webp')" alt="Autor Eudes Bezerra" class="rounded-full" />
   </figure>
-  <div class="text-ihcat p-author h-card inline-block ml-4">
-    <div class="inline-block">
+  <div class="text-ihcat p-author h-card lg:w-4/5">
+    <div class="inline-block text-center">
       {{ __('Autor: ', 'sage') }}<span class="font-bold">{{ get_the_author() }}</span>
-    </div>
-
-    <div class="text-base leading-6 text-gray-600">
-      <time class="dt-published text-sm" datetime="{{ get_post_time('c', true) }}">
-        @if ( get_the_modified_time( 'U' ) > get_the_time( 'U' ) )
-        <span>Matéria criada em {{ the_time('j F Y') }}<br></span>
-        <span>Atualizada em {{ the_modified_time('j F Y') }}</span>
-        @else
-        <span>Matéria criada em {{ the_time('j F Y') }} </span>
-        @endif
-      </time>
+      <p class="author-bio text-ihcinza text-sm text-center">
+        @php
+        echo get_the_author_meta('description');
+        @endphp
+      </p>
     </div>
   </div>
 </div>

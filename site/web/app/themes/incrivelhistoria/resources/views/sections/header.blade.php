@@ -1,14 +1,12 @@
-<header class="banner header-home w-full h-full bg-transparent z-50 py-2 pt-4">
-  {{-- @if (is_single())
-  @include ('partials.readingprogressbar')
-  @endif --}}
-  <nav class="nav-primary h-full pb-2 border-gray-300 border-b border-solid shadow-md">
+<header id="header" class="banner sticky top-0 left-0 header-home w-full bg-white z-50 py-2 pt-4 text-gray-800">
+
+  <nav class="nav-primary h-full pb-2 border-gray-300 border-b border-solid shadow-md h-">
     <div class="container">
 
       <div class="flex flex-wrap xl:flex-nowrap justify-between items-center mx-auto">
 
         @if ( is_home() || is_front_page() )
-        <h1 class=logo>
+        <h1 id="logo" class=logo>
           <picture class="logos-header order-2 xl:order-1">
             @include('partials/logo')
           </picture>
@@ -52,8 +50,10 @@
           <div class="relative mt-3 xl:hidden">
             @include('partials/inputsearch')
           </div>
-          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' => 'pagemenumobile
-          leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b border-solid'])
+          {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' =>
+          'pagemenumobile
+          leading-loose text-base xl:hidden flex flex-col py-2 text-ihcor py-4 border-gray-200 border-b
+          border-solid'])
           !!}
 
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu mt-4 grid grid-cols-2 gap-3
@@ -67,7 +67,7 @@
         </div>
 
       </div>
-      <div class="hidden xl:block mt-3 container">
+      <div id="menupages" class="mt-3 container">
         <div class="flex flex-row justify-end">
 
           {!! wp_nav_menu(['theme_location' => 'second_navigation', 'container' => 'ul', 'menu_class' =>

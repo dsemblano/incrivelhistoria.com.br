@@ -13,10 +13,11 @@
 
       </span>
 
-      <h1 class="p-name text-4xl lg:text-6xl my-4 font-bold">
+      <h1 class="p-name text-4xl lg:text-6xl my-2 font-bold">
         {!! $title !!}
       </h1>
-      <p class="mb-3 excerpt">
+      @include('partials.criacaomateria')
+      <p class="my-3 excerpt">
         {{ get_the_excerpt() }}
       </p>
       <hr>
@@ -34,17 +35,15 @@
   <div class="container mb-12">
     <div class="flex flex-col landscape:flex-row lg:flex-row justify-center lg:gap-x-12 e-content">
       <div class="landscape:w-3/4 prose xl:prose-lg 2xl:prose-xl prose-a:no-underline prose-figure:!m-0">
-        <div class="author border-b border-dashed !my-4 lg:!my-6">
-          @include('partials.entry-meta')
-          @include('partials.readingtime')
-          @include('partials.share')
-        </div>
+        {{-- @include('partials.criacaomateria') --}}
+        @include('partials.readingtime')
         @php(the_content())
         @include('partials.tagspost')
         @include('partials.threedots')
         @include('partials.share')
         @php(comments_template())
         @include('partials.threedots')
+        @include('partials.author')
         {!! do_shortcode('[crp limit="4" heading="1" cache="1"]') !!}
       </div>
       <aside class="sidebar landscape:w-1/4 lg:w-1/4 lg:self-end">

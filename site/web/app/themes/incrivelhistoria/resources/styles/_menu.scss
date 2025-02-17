@@ -1,3 +1,43 @@
+#header {
+  #logo {
+    @apply relative;
+
+    transition: 0.2s;
+    /* Add a transition effect (when scrolling - and font size is decreased) */
+    transform: translate(0, 0);
+    /* Add a transform effect */
+
+    #logosvg {
+      @apply w-auto;
+    }
+  }
+
+  #menupages {
+    @apply hidden lg:block;
+  }
+
+  &.shrink {
+    #logo {
+      @apply top-8 relative;
+
+      // background-color: green;
+      transform: translate(0, -20px);
+      /* Add a transform effect */
+      transition: 0.2s;
+
+      #logosvg {
+        @apply w-24 relative bottom-4;
+      }
+    }
+
+    #menupages {
+      @apply hidden;
+    }
+  }
+
+
+}
+
 .menu-categorias-menu-container {
   @apply bg-transparent w-full;
 
@@ -8,11 +48,11 @@
     li {
       margin-bottom: 0.5rem;
     }
-    
+
 
     .sub-menu {
       // @apply bg-transparent ml-4 border border-solid border-gray-400 pt-4 pl-4 w-11/12 ;
-      @apply bg-transparent ml-4 pt-2 w-11/12 ;
+      @apply bg-transparent ml-4 pt-2 w-11/12;
 
       margin-left: 1rem;
     }
@@ -139,21 +179,22 @@
 .pagemenudesktop {
   .current-menu-item>a {
     position: relative;
-  
+
     &:before {
       @apply border-l-4 border-l-ihcat absolute top-0 -left-2 h-5;
-    
-        content: "";
+
+      content: "";
     }
-  } 
-} 
+  }
+}
 
 // border-left effect on footer li actual page
 .sitemap-footer .current-menu-item>a {
   position: relative;
+
   &:before {
     @apply border-l-4 border-l-ihcat absolute top-0 -left-2 h-5;
-  
-      content: "";
+
+    content: "";
   }
 }
