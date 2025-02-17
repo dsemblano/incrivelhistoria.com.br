@@ -5,7 +5,7 @@
 <link rel="manifest" href="@asset('images/favicon/site.webmanifest')">
 <link rel="mask-icon" href="@asset('images/favicon/safari-pinned-tab.svg')" color="#c27525">
 <link rel="shortcut icon" href="@asset('images/favicon/favicon.ico')">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Incr&iacute;vel Hist&oacute;ria">
 <meta name="application-name" content="Incr&iacute;vel Hist&oacute;ria">
