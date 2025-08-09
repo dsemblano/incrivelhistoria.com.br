@@ -1,7 +1,7 @@
 /* TEAM */
 Site: https://incrivelhistoria.com.br
 Owner: Eudes Bezerra
-Location: Recife - PernambucoBR
+Location: Recife - Pernambuco, BR
 Developer: Daniel Semblano
 Contact: dsemblano [at] gmail.com
 Twitter: @dsemblano
