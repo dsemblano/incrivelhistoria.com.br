@@ -1,0 +1,1 @@
+app/themes/incrivelhistoria/public/humans.txt
