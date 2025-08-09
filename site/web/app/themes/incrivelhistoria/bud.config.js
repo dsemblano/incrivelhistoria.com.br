@@ -24,6 +24,10 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
    */
   app.setPublicPath('/app/themes/incrivelhistoria/public/');
+  app.copy({
+    from: app.path('@src/static'),
+    to: app.path('@dist'),
+  })
 
   /**
    * Development server settings

@@ -1,0 +1,16 @@
+/* TEAM */
+Site: https://incrivelhistoria.com.br
+Owner: Eudes Bezerra
+Location: Recife - PernambucoBR
+Developer: Daniel Semblano
+Contact: dsemblano [at] gmail.com
+Twitter: @dsemblano
+
+
+/* SITE */
+Site name: Incrível História
+Descrição: Propagação de conteúdo e fatos históricos de maneira séria, didática e imparcial. Curiosidades, listas, biografias, guerras e muito mais!
+Description: Propagating historical content and facts in a serious, educational, and impartial manner. Fun facts, lists, biographies, wars, and much more!
+Standards: HTML5, CSS3, JS
+Language: Brazilian Portuguese
+Components: This website was built with Roots stack (Trellis, Bedrock, Sage, Tailwind CSS)

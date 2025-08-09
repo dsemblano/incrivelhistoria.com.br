@@ -7,10 +7,11 @@
   @php(do_action('get_header'))
   @php(wp_head())
   <?php echo \Roots\view('partials/gtaghead')->render(); ?>
+  <link rel="author" type="text/plain" href="{{ asset('humans.txt') }}" />
   <?php echo \Roots\view('partials/favicon')->render(); ?>
 </head>
 
-{{--
+{{--d
 
 <body @php(body_class())> --}}
 
